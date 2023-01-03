@@ -1,19 +1,26 @@
 import { Link } from "gatsby";
 import * as React from "react";
+import Image1 from "../images/Logo.svg";
+import Menu from "../images/menu.svg";
 
 const Header = () => (
   <section className="absolute w-full z-30 text-white">
-    <nav className="flex flex-col justify-between items-center p-6 sm:flex-row">
-      <Link to="/" className="text-4xl font-bold">
-        logotest
+    <nav className="flex justify-between items-center max-w-[1200px]  mx-auto p-6">
+      <Link to="/">
+        <img className="h-auto w-[10rem]" src={Image1} alt="logo" />
       </Link>
-      <ul className="flex gap-2 text-sm font-bold pt-6 sm:pt-0 sm:gap-4 sm:text-lg">
+
+      <button className="icon-toggle md:hidden">
+        <img className="w-6 " src={Menu} alt="menu" />
+      </button>
+
+      <ul className="hidden text-xs px-2 gap-2 md:flex">
         <li>
           <Link
             to="/"
             className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
-            info1
+            PRODUITS
           </Link>
         </li>
         <li>
@@ -21,7 +28,7 @@ const Header = () => (
             to="/"
             className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
-            info2
+            DEMO
           </Link>
         </li>
         <li>
@@ -29,7 +36,7 @@ const Header = () => (
             to="/"
             className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
-            info3
+            SUPPORT
           </Link>
         </li>
         <li>
@@ -37,28 +44,28 @@ const Header = () => (
             to="/"
             className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
-            info4
+            CONTACT
           </Link>
         </li>
       </ul>
 
-      <ul className="flex gap-2 text-sm font-bold pt-6 sm:pt-0 sm:gap-4 sm:text-lg">
+      <ul className="hidden gap-2 text-sm  pt-6 sm:pt-0 sm:gap-4 sm:text-md md:flex">
         <li>
           {" "}
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="rounded-full font-bold px-6 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
-            testage1
+            CONNEXION
           </Link>
         </li>
         <li>
           {" "}
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="text-black bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
           >
-            testage2
+            COMMENCER
           </Link>
         </li>
       </ul>

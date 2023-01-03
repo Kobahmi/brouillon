@@ -1,4 +1,5 @@
 import * as React from "react";
+import Divider from "../components/Divider";
 import Hero from "../components/Hero";
 
 import Layout from "../components/layout";
@@ -8,6 +9,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero />
+      <Divider />
     </Layout>
   );
 };
