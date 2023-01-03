@@ -4,7 +4,7 @@ import Image from "../images/stock1.svg";
 
 const Hero = () => {
   return (
-    <section className="overflow-x-hidden bg-neutral-800 h-screen">
+    <section className="overflow-x-hidden bg-neutral-800 min-h-[680px] h-screen">
       <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-16 md:pt-0 md:flex-row">
         <div className="flex flex-col justify-center items-center text-center md:items-start md:text-start">
           <h1 className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
