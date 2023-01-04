@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../images/Group.png";
+import Image from "../images/Group.webp";
 
 const Hero = () => {
   return (
