@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import Image1 from "../images/Layer1.svg";
+import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
   return (
@@ -32,11 +34,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover "
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover " src={Image1} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -50,11 +48,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover md:order-2"
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover md:order-2" src={Image2} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 md:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -69,11 +63,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover "
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover " src={Image1} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -87,11 +77,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover md:order-2"
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover md:order-2" src={Image2} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 md:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -102,11 +88,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover "
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover " src={Image1} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -117,11 +99,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <StaticImage
-            className="object-cover md:order-2"
-            src="../images/Images.jpg"
-            alt="travail"
-          />
+          <img className="object-cover md:order-2" src={Image2} alt="travail" />
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 md:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
