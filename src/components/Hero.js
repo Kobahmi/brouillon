@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import Image from "../images/Group.png";
 
 const Hero = () => {
   return (
@@ -22,6 +23,11 @@ const Hero = () => {
             DEMANDER UNE DEMO
           </Link>
         </div>
+        <img
+          className="z-0 md:ml-[-20rem] w-full h-full object-cover"
+          src={Image}
+          alt="stock"
+        />
       </div>
     </section>
   );
