@@ -1,11 +1,15 @@
 import * as React from "react";
+import Automatisation from "../components/Automatisation";
+import Contact from "../components/Contact";
 import Divider from "../components/Divider";
 import Dividerleft from "../components/Dividerleft";
+import Dividerleftthree from "../components/Dividerleftthree";
 import Dividerlefttwo from "../components/Dividerlefttwo";
 import Dividerright from "../components/Dividerright";
 import Dividerrightthree from "../components/Dividerrightthree";
 import Dividerrighttwo from "../components/Dividerrighttwo";
 import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Integration from "../components/Integration";
 import Integre from "../components/Integre";
@@ -31,6 +35,10 @@ const IndexPage = () => {
       <Dividerrighttwo />
       <Syndication />
       <Dividerrightthree />
+      <Automatisation />
+      <Dividerleftthree />
+      <Contact />
+      <Footer />
     </Layout>
   );
 };

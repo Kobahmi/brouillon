@@ -10,11 +10,11 @@ const Header = () => (
         <img className="h-auto w-[10rem]" src={Image1} alt="logo" />
       </Link>
 
-      <button className="icon-toggle md:hidden">
+      <button className="icon-toggle lg:hidden">
         <img className="w-6 " src={Menu} alt="menu" />
       </button>
 
-      <ul className="hidden text-xs px-2 gap-2 md:flex">
+      <ul className="hidden text-xs px-2 gap-2 lg:flex">
         <li>
           <Link
             to="/"
@@ -49,7 +49,7 @@ const Header = () => (
         </li>
       </ul>
 
-      <ul className="hidden gap-2 text-sm  pt-6 sm:pt-0 sm:gap-4 sm:text-md md:flex">
+      <ul className="hidden gap-2 text-sm  pt-6 sm:pt-0 sm:gap-4 sm:text-md lg:flex">
         <li>
           {" "}
           <Link

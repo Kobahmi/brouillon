@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Syndication = () => {
   return (
-    <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300 ">
+    <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <img
