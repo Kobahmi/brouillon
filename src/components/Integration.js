@@ -13,7 +13,7 @@ const Integration = () => {
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
           <StaticImage
-            className="object-cover "
+            className="object-cover h-auto w-auto"
             src="../images/Images.jpg"
             alt="travail"
           />

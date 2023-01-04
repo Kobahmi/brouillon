@@ -3,6 +3,7 @@ import Divider from "../components/Divider";
 import Dividerleft from "../components/Dividerleft";
 import Dividerlefttwo from "../components/Dividerlefttwo";
 import Dividerright from "../components/Dividerright";
+import Dividerrightthree from "../components/Dividerrightthree";
 import Dividerrighttwo from "../components/Dividerrighttwo";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero";
@@ -29,6 +30,7 @@ const IndexPage = () => {
       <Integre />
       <Dividerrighttwo />
       <Syndication />
+      <Dividerrightthree />
     </Layout>
   );
 };

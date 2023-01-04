@@ -23,7 +23,11 @@ const Hero = () => {
             DEMANDER UNE DEMO
           </Link>
         </div>
-        <img className="z-0 md:ml-[-18rem]" src={Image} alt="stock" />
+        <img
+          className="z-0 md:ml-[-18rem] h-auto w-auto"
+          src={Image}
+          alt="stock"
+        />
       </div>
     </section>
   );
