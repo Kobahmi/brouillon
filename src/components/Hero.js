@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../images/Group.webp";
+import Image from "../images/Layer1.svg";
 
 const Hero = () => {
   return (
     <section className="bg-neutral-800 min-h-[680px] h-screen">
-      <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-16 md:pt-0 md:flex-row">
+      <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-16 md:pt-0 md:flex-row md:items-center">
         <div className="flex flex-col justify-center items-center text-center md:items-start md:text-start">
           <h1 className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
             <span className="text-lime-300">DES SITES WEBS</span>
@@ -23,11 +23,7 @@ const Hero = () => {
             DEMANDER UNE DEMO
           </Link>
         </div>
-        <img
-          className="z-0 md:ml-[-20rem] w-full h-full object-cover"
-          src={Image}
-          alt="stock"
-        />
+        <img className="z-0 md:ml-[-18rem]" src={Image} alt="stock" />
       </div>
     </section>
   );
