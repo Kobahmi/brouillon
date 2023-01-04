@@ -19,7 +19,7 @@ const Integre = () => {
         <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           POUR VOUS ET VOS CLIENTS
         </p>
-        <img src={Logo} className="py-6" alt="logo" />
+        <img src={Logo} className="py-6 w-full h-full" alt="logo" />
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           Vous ne trouvez pas votre CRM? Ecrivez-nous et nous vous contacterons!
         </p>

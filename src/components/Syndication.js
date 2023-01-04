@@ -7,12 +7,14 @@ const Syndication = () => {
     <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img
-            className="object-cover h-full w-full"
-            src={Image}
-            loading="lazy"
-            alt="travail"
-          />
+          <div>
+            <img
+              className="object-cover h-full w-full"
+              src={Image}
+              loading="lazy"
+              alt="travail"
+            />
+          </div>
 
           <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
             <h2 className="flex flex-col">

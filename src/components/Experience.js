@@ -34,7 +34,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover " src={Image1} alt="travail" />
+          <div>
+            <img
+              className="object-cover h-full w-full"
+              src={Image1}
+              alt="travail"
+            />
+          </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -48,8 +54,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover xl:order-2" src={Image2} alt="travail" />
-
+          <div className="xl:order-2">
+            <img
+              className="object-cover h-full w-full "
+              src={Image2}
+              alt="travail"
+            />
+          </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               PLATEFORME (CMS)FACILE A UTILISER
@@ -63,7 +74,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover " src={Image1} alt="travail" />
+          <div>
+            <img
+              className="object-cover w-full h-full"
+              src={Image1}
+              alt="travail"
+            />
+          </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -77,8 +94,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover xl:order-2" src={Image2} alt="travail" />
-
+          <div className="xl:order-2">
+            <img
+              className="object-cover h-full w-full"
+              src={Image2}
+              alt="travail"
+            />
+          </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
@@ -88,7 +110,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover " src={Image1} alt="travail" />
+          <div>
+            <img
+              className="object-cover h-full w-full"
+              src={Image1}
+              alt="travail"
+            />
+          </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -99,7 +127,13 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <img className="object-cover xl:order-2" src={Image2} alt="travail" />
+          <div className="xl:order-2">
+            <img
+              className="object-cover w-full h-full"
+              src={Image2}
+              alt="travail"
+            />
+          </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
