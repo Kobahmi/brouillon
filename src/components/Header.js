@@ -18,6 +18,7 @@ const Header = () => {
 
             <div className="lg:hidden">
               <button
+                aria-label="menu"
                 id="commence"
                 className="p-2 text-gray-700 rounded-md outline-none "
                 onClick={() => setNavbar(!navbar)}

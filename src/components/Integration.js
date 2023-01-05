@@ -46,7 +46,7 @@ const Integration = () => {
               <li>Mazda</li>
               <li>Subaru</li>
               <li>Mitsubishi</li>
-              <li>Infinity</li>
+              <li>Infiniti</li>
             </ul>
 
             <p className=" text-white">
