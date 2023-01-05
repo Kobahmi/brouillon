@@ -22,9 +22,6 @@ const Hero = () => {
           </p>
 
           <Link
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
             to="/"
             className="my-6 group relative py-2 px-4 overflow-hidden rounded-full bg-white text-lg shadow"
           >
@@ -33,21 +30,13 @@ const Hero = () => {
               DEMANDER UNE DEMO
             </span>
           </Link>
-          <Link
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-            to="/"
-          >
+          <Link to="/">
             <span className="border-2 px-4 py-3 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black mr-6">
               DEMANDER UNE DEMO
             </span>
           </Link>
 
           <Link
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-delay="500"
             to="/"
             className="relative flex items-center justify-center text-center mt-6 px-4 py-3 transition-all duration-500
             before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-zinc-400 before:transition-all
