@@ -15,15 +15,12 @@ const Automatisation = () => {
             LEADSTREAM
           </span>
         </h1>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="flex flex-col gap-10 items-center p-10 md:flex-row"
-        >
-          <div>
+        <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
+          <div data-aos="fade-up" data-aos-duration="1000">
             <img
               className="object-cover h-full w-full"
               src={Image1}
+              loading="lazy"
               alt="travail"
             />
           </div>
@@ -34,7 +31,7 @@ const Automatisation = () => {
                 NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER
               </span>
             </h2>
-            <p data-aos-duration="1000" className="max-w-lg">
+            <p className="max-w-lg">
               Nos services de marketing seront offers en partenariat avec
               l'agence Leadstream.
             </p>
