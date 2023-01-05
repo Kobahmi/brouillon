@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../images/illustration-flowing-conversation.webp";
+import Image1 from "../images/illustration-flowing-conversation.svg";
 import { Link } from "gatsby";
 
 const Automatisation = () => {
@@ -19,7 +19,7 @@ const Automatisation = () => {
           <img
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="object-cover h-[256px] w-[360px] sm:h-[488px] sm:w-[685px]"
+            className="object-cover h-full w-full"
             src={Image1}
             alt="travail"
             loading="lazy"

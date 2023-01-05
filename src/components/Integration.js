@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/illustration-flowing-conversation.webp";
+import Image from "../images/illustration-flowing-conversation.svg";
 import { Link } from "gatsby";
 
 const Integration = () => {
@@ -19,7 +19,7 @@ const Integration = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
-              className="object-cover h-[256px] w-[360px] sm:h-[488px] sm:w-[685px]"
+              className="object-cover w-full h-full"
               src={Image}
               alt="travail"
               loading="lazy"
