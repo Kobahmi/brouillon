@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import Icon1 from "../images/Icons.svg";
 import Icon2 from "../images/Icons2.svg";
-import Icon3 from "../images/Icons3.svg";
+import Icon3 from "../images/Icons3.webp";
 import Icon4 from "../images/Icons4.svg";
-import Icon5 from "../images/Icons5.svg";
+import Icon5 from "../images/Icons5.webp";
 
 const Produits = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../images/illustration-flowing-conversation.svg";
+import Image1 from "../images/illustration-flowing-conversation.webp";
 import { Link } from "gatsby";
 
 const Automatisation = () => {

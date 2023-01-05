@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/illustration-flowing-conversation.svg";
+import Image from "../images/illustration-flowing-conversation.webp";
 import { Link } from "gatsby";
 
 const Integration = () => {

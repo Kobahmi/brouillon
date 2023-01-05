@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Image1 from "../images/Layer1.svg";
+import Image1 from "../images/Layer1.webp";
 import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
@@ -44,7 +44,7 @@ const Experience = () => {
           </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DES SITES WEBS ULTRA RAPIDES
             </h2>
             <p>
@@ -64,7 +64,7 @@ const Experience = () => {
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               PLATEFORME (CMS)FACILE A UTILISER
             </h2>
             <p>
@@ -86,7 +86,7 @@ const Experience = () => {
           </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DEMANDES WEB DE QUALITE (LEADS)
             </h2>
             <p>
@@ -106,7 +106,7 @@ const Experience = () => {
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
             </h2>
             <p>Pour facilite la navigation.</p>
@@ -124,7 +124,7 @@ const Experience = () => {
           </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS
             </h2>
             <p>Des manifacturiers.</p>
@@ -142,7 +142,7 @@ const Experience = () => {
           </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               OPTIMISATION SEO
             </h2>
             <p>
