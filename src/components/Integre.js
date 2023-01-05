@@ -14,7 +14,12 @@ const Integre = () => {
             INTEGRE AVEC VOS OUTILS
           </span>
         </h1>
-        <p className="text-white max-w-xl mx-auto text-center">
+        <p
+          data-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          className="text-white max-w-xl mx-auto text-center"
+        >
           Notre plateforme se connecte aux differents API et sources de donnees
           que vous avez en place. DMS, CRM, Evaluateur, Syndication, etc.
         </p>

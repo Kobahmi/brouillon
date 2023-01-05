@@ -15,7 +15,7 @@ const Integration = () => {
           </span>
         </h1>
         <div
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-duration="1000"
           className="flex flex-col gap-10 items-center p-10 md:flex-row"
         >
@@ -26,7 +26,7 @@ const Integration = () => {
           />
 
           <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
-            <h2 className="flex flex-col">
+            <h2 data-aos="fade-in" className="flex flex-col">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 INTEGRATION
               </span>
@@ -34,11 +34,19 @@ const Integration = () => {
                 AVEC LES MEILLEURES PLATEFORMES
               </span>
             </h2>
-            <p className=" text-white">
+            <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              className=" text-white"
+            >
               Notre portfolio inclus deja plusieurs marques de vehicules neufs:
             </p>
 
-            <ul className="list-disc text-white font-bold ml-6">
+            <ul
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              className="list-disc text-white font-bold ml-6"
+            >
               <li>Hyundai</li>
               <li>Kia</li>
               <li>Nissan</li>
@@ -48,7 +56,11 @@ const Integration = () => {
               <li>Infinity</li>
             </ul>
 
-            <p className=" text-white">
+            <p
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              className=" text-white"
+            >
               Et plusieurs autres marques en developpement.
             </p>
 
