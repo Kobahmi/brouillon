@@ -2,75 +2,113 @@ import { Link } from "gatsby";
 import * as React from "react";
 import Image1 from "../images/Logo.svg";
 import Menu from "../images/menu.svg";
+import { useState } from "react";
 
-const Header = () => (
-  <section className="absolute w-full z-30 text-white">
-    <nav className="flex justify-between items-center max-w-[1200px]  mx-auto p-6">
-      <Link to="/">
-        <img className="h-auto w-[10rem]" src={Image1} alt="logo" />
-      </Link>
+const Header = () => {
+  const [navbar, setNavbar] = useState(false);
 
-      <button className="icon-toggle lg:hidden">
-        <img className="w-6 " src={Menu} alt="menu" />
-      </button>
+  return (
+    <nav className="w-full bg-neutral-800 ">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
+            <Link to="/">
+              {" "}
+              <img className="h-auto w-[10rem]" src={Image1} alt="logo" />
+            </Link>
 
-      <ul className="hidden text-sm px-2 gap-2 lg:flex">
-        <li>
-          <Link
-            to="/"
-            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            <div className="lg:hidden">
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none "
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            PRODUITS
-          </Link>
-        </li>
-        <li>
+            <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
+              <li className="text-white hover:text-indigo-200">
+                <Link to="/">PRODUITS</Link>
+              </li>
+              <li className="text-white hover:text-indigo-200">
+                <Link to="/">DEMO</Link>
+              </li>
+              <li className="text-white hover:text-indigo-200">
+                <Link to="/">SUPPORT</Link>
+              </li>
+              <li className="text-white hover:text-indigo-200">
+                <Link to="/">CONTACT</Link>
+              </li>
+              <li className="text-white w-full hover:text-indigo-200">
+                <Link
+                  to="/"
+                  className="duration-100 ease-in font-bold w-full px-4 py-2 text-white  rounded-full  hover:bg-gray-600 lg:hidden"
+                >
+                  CONNEXION
+                </Link>
+              </li>
+              <li className="text-white hover:text-indigo-200">
+                <Link
+                  to="/"
+                  className="px-4 py-2 text-gray-800 bg-white rounded-full shadow hover:bg-gray-100 lg:hidden"
+                >
+                  COMMENCER
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="hidden space-x-2 lg:inline-block">
           <Link
             to="/"
-            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-          >
-            DEMO
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/"
-            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-          >
-            SUPPORT
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/"
-            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-          >
-            CONTACT
-          </Link>
-        </li>
-      </ul>
-
-      <ul className="hidden gap-2 text-sm  pt-6 sm:pt-0 sm:gap-4 sm:text-md lg:flex">
-        <li>
-          {" "}
-          <Link
-            to="/"
-            className="rounded-full font-bold px-6 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="duration-100 ease-in font-bold px-4 py-2 text-white rounded-full  hover:bg-gray-600"
           >
             CONNEXION
           </Link>
-        </li>
-        <li>
-          {" "}
-          <Link
-            to="/"
-            className="text-black bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
-          >
-            COMMENCER
+          <Link to="/">
+            <span className="border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black mr-6">
+              COMMENCER
+            </span>
           </Link>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
-  </section>
-);
+  );
+};
 
 export default Header;
