@@ -18,11 +18,12 @@ const Automatisation = () => {
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
           <div>
             <img
-              data-aos="fade-up"
+              data-aos="fade-in"
               data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
+              loading="lazy"
             />
           </div>
 

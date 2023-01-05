@@ -8,7 +8,7 @@ import Dividerlefttwo from "../components/Dividerlefttwo";
 import Dividerright from "../components/Dividerright";
 import Dividerrightthree from "../components/Dividerrightthree";
 import Dividerrighttwo from "../components/Dividerrighttwo";
-
+import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Integration from "../components/Integration";
@@ -18,10 +18,6 @@ import Produits from "../components/Produits";
 import Rapide from "../components/Rapide";
 import Seo from "../components/seo";
 import Syndication from "../components/Syndication";
-import loadable from "@loadable/component";
-const Experience = loadable(() => import("../components/Experience"), {
-  fallback: <div>Loading...</div>,
-});
 
 const IndexPage = () => {
   return (

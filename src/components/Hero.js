@@ -13,10 +13,17 @@ const Hero = () => {
               DE CONCESSIONAIRES
             </span>
           </h1>
-          <p className="text-white z-20">
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className="text-white z-20"
+          >
             Concus pour generer des leads de qualite
           </p>
           <Link
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
             to="/"
             className=" text-black z-20  mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in lg:mr-auto"
           >
@@ -25,8 +32,6 @@ const Hero = () => {
         </div>
         <div className="z-0 mx-auto lg:ml-[-18rem]">
           <img
-            data-aos="fade-in"
-            data-aos-duration="1000"
             className="object-cover h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
             src={Image}
             alt="stock"
