@@ -7,6 +7,7 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   useEffect(() => {
     AOS.init();
+    AOS.refresh();
   }, []);
 
   return (
