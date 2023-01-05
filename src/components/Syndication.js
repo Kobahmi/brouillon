@@ -11,7 +11,6 @@ const Syndication = () => {
             <img
               className="h-[500px] w-[300px] md:h-[700px] md:w-[500px]"
               src={Image1}
-              loading="lazy"
               alt="travail"
             />
           </div>
