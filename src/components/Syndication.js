@@ -9,7 +9,7 @@ const Syndication = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
             <StaticImage
-              className="object-cover h-full w-full"
+              className="object-cover h-[500px] w-[300px] md:h-[700px] md:w-[500px]"
               src="../images/Mockup.webp"
               loading="lazy"
               alt="travail"
