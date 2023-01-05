@@ -15,14 +15,16 @@ const Integration = () => {
           </span>
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <img
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            className="object-cover h-full w-full"
-            src={Image}
-            alt="travail"
-            loading="lazy"
-          />
+          <div>
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              className="object-cover h-full w-full"
+              src={Image}
+              alt="travail"
+              loading="lazy"
+            />
+          </div>
 
           <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
             <h2 className="flex flex-col">
