@@ -21,6 +21,7 @@ const Automatisation = () => {
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
+              loading="lazy"
             />
           </div>
 
