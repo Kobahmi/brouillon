@@ -23,9 +23,8 @@ const Rapide = () => {
             POUR DES CONCESSIONAIRES AUTOMOBILES DU QUEBEC
           </p>
           <p
-            data-aos="fade-in"
+            data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="500"
             className="text-white text-sm max-w-[30rem] py-10"
           >
             A small team of people driven by performance and excellence. Lorem
@@ -35,7 +34,11 @@ const Rapide = () => {
             massa, varius a, semper congue, euismod non, mi.
           </p>
 
-          <div className="rounded-xl bg-gray-600 h-[1px] max-w-[30rem] w-full "></div>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className="rounded-xl bg-gray-600 h-[1px] max-w-[30rem] w-full "
+          ></div>
 
           <Link
             to="/"

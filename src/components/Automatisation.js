@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import Image1 from "../images/illustration-flowing-conversation.svg";
 import { Link } from "gatsby";
 
 const Automatisation = () => {
@@ -17,26 +17,26 @@ const Automatisation = () => {
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
-            <StaticImage
+            <img
               className="object-cover h-full w-full"
-              src="../images/Images.jpg"
+              src={Image1}
               alt="travail"
             />
           </div>
 
           <div className="flex flex-col gap-4 pl-10 py-6">
-            <h2 data-aos="fade-in" className="flex flex-col">
+            <h2 data-aos="fade-up" className="flex flex-col">
               <span className="max-w-lg text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER
               </span>
             </h2>
-            <p data-aos="fade-in" data-aos-duration="1000" className="max-w-lg">
+            <p data-aos="fade-up" data-aos-duration="1000" className="max-w-lg">
               Nos services de marketing seront offers en partenariat avec
               l'agence Leadstream.
             </p>
 
             <ul
-              data-aos="fade-in"
+              data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
               className="list-disc  font-bold ml-6"

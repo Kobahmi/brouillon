@@ -17,7 +17,7 @@ const Syndication = () => {
           </div>
 
           <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
-            <h2 data-aos="fade-in" className="flex flex-col">
+            <h2 data-aos="fade-up" className="flex flex-col">
               <span className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 INTEGRATION
               </span>
@@ -25,14 +25,13 @@ const Syndication = () => {
                 SYNDICATION
               </span>
             </h2>
-            <p data-aos="fade-in" data-aos-duration="1000">
+            <p data-aos="fade-up" data-aos-duration="1000">
               Notre portfolio inclus deja plusieurs marques de vehicules neufs:
             </p>
 
             <ul
-              data-aos="fade-in"
+              data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="500"
               className="list-disc ml-6"
             >
               <li>
@@ -49,7 +48,7 @@ const Syndication = () => {
               </li>
             </ul>
 
-            <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
+            <p data-aos="fade-up" data-aos-duration="1000">
               Vous voulez ajouter une Syndication? <br />
               Ecrivez-nous et nous vous contacterons!
             </p>

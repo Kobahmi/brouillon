@@ -15,9 +15,8 @@ const Integre = () => {
           </span>
         </h1>
         <p
-          data-aos="fade-in"
+          data-aos="fade-up"
           data-aos-duration="1000"
-          data-aos-delay="500"
           className="text-white max-w-xl mx-auto text-center"
         >
           Notre plateforme se connecte aux differents API et sources de donnees

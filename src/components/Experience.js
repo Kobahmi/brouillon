@@ -23,7 +23,6 @@ const Experience = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="500"
             className=" text-sm max-w-[30rem] py-10 "
           >
             A small team of people driven by performance and excellence. Lorem
@@ -36,7 +35,7 @@ const Experience = () => {
           <div
             data-aos="fade-in"
             data-aos-duration="1000"
-            data-aos-delay="1000"
+            data-aos-delay="500"
             className="rounded-xl bg-gray-300 h-[2px] max-w-[30rem] w-full "
           ></div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import Image from "../images/illustration-flowing-conversation.svg";
 import { Link } from "gatsby";
 
 const Integration = () => {
@@ -19,9 +19,9 @@ const Integration = () => {
           data-aos-duration="1000"
           className="flex flex-col gap-10 items-center p-10 md:flex-row"
         >
-          <StaticImage
-            className="object-cover h-auto w-auto"
-            src="../images/Images.jpg"
+          <img
+            className="object-cover h-full w-full"
+            src={Image}
             alt="travail"
           />
 
