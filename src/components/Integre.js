@@ -6,19 +6,12 @@ const Integre = () => {
   return (
     <section className="bg-black p-4">
       <div className="flex flex-col gap-6 max-w-[1200px] mx-auto">
-        <h1
-          data-aos="fade-up"
-          className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
-        >
+        <h1 className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
             INTEGRE AVEC VOS OUTILS
           </span>
         </h1>
-        <p
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          className="text-white max-w-xl mx-auto text-center"
-        >
+        <p className="text-white max-w-xl mx-auto text-center">
           Notre plateforme se connecte aux differents API et sources de donnees
           que vous avez en place. DMS, CRM, Evaluateur, Syndication, etc.
         </p>
@@ -26,6 +19,8 @@ const Integre = () => {
           POUR VOUS ET VOS CLIENTS
         </p>
         <img
+          data-aos="fade-in"
+          data-aos-duration="1000"
           src={Logo}
           className="py-6 w-full h-full"
           loading="lazy"

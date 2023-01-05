@@ -20,7 +20,6 @@ const Automatisation = () => {
             <img
               className="object-cover h-full w-full"
               src={Image1}
-              loading="lazy"
               alt="travail"
             />
           </div>
