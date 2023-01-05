@@ -20,14 +20,44 @@ const Hero = () => {
           >
             Concus pour generer des leads de qualite
           </p>
+
           <Link
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="500"
             to="/"
-            className=" text-black z-20  mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in lg:mr-auto"
+            className="my-6 group relative py-2 px-4 overflow-hidden rounded-full bg-white text-lg shadow"
           >
-            DEMANDER UNE DEMO
+            <div className="absolute inset-0 h-0 bg-lime-300 transition-all duration-[250ms] ease-out group-hover:h-full"></div>
+            <span className="relative font-bold text-lime-700 group-hover:text-black">
+              DEMANDER UNE DEMO
+            </span>
+          </Link>
+          <Link
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            to="/"
+          >
+            <span className="border-2 px-4 py-3 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black mr-6">
+              DEMANDER UNE DEMO
+            </span>
+          </Link>
+
+          <Link
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            to="/"
+            className="relative flex items-center justify-center text-center mt-6 px-4 py-3 transition-all duration-500
+            before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-zinc-400 before:transition-all
+            before:duration-300 before:opacity-10 before:hover:opacity-0 before:hover:scale-50
+            after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-0 after:transition-all after:duration-300
+            after:border after:border-lime-300 after:scale-125 after:hover:opacity-100 after:hover:scale-100"
+          >
+            <span className="relative font-bold text-lime-300 uppercase">
+              DEMANDER UNE DEMO
+            </span>
           </Link>
         </div>
         <div className="z-0 mx-auto lg:ml-[-18rem]">
