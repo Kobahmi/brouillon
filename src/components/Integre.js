@@ -15,7 +15,7 @@ const Integre = () => {
           </span>
         </h1>
         <p
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-duration="1000"
           className="text-white max-w-xl mx-auto text-center"
         >

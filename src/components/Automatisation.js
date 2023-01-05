@@ -15,8 +15,12 @@ const Automatisation = () => {
             LEADSTREAM
           </span>
         </h1>
-        <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <div data-aos="fade-up" data-aos-duration="1000">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex flex-col gap-10 items-center p-10 md:flex-row"
+        >
+          <div>
             <img
               className="object-cover h-full w-full"
               src={Image1}
@@ -25,22 +29,17 @@ const Automatisation = () => {
           </div>
 
           <div className="flex flex-col gap-4 pl-10 py-6">
-            <h2 data-aos="fade-up" className="flex flex-col">
+            <h2 className="flex flex-col">
               <span className="max-w-lg text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER
               </span>
             </h2>
-            <p data-aos="fade-up" data-aos-duration="1000" className="max-w-lg">
+            <p data-aos-duration="1000" className="max-w-lg">
               Nos services de marketing seront offers en partenariat avec
               l'agence Leadstream.
             </p>
 
-            <ul
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-              className="list-disc  font-bold ml-6"
-            >
+            <ul className="list-disc  font-bold ml-6">
               <li>Campagne Facebook et Google Ads</li>
               <li>Referencement et redaction de contenus</li>
               <li>Conseils et strategies de marketing</li>
