@@ -6,12 +6,19 @@ const Integration = () => {
   return (
     <section className="bg-black py-6">
       <div className="flex flex-col max-w-[1200px] mx-auto">
-        <h1 className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+        <h1
+          data-aos="fade-up"
+          className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+        >
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
             INTEGRATION
           </span>
         </h1>
-        <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex flex-col gap-10 items-center p-10 md:flex-row"
+        >
           <StaticImage
             className="object-cover h-auto w-auto"
             src="../images/Images.jpg"

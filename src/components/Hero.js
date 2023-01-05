@@ -14,7 +14,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-white z-20">
-            Concus pour generer des leads de qualites
+            Concus pour generer des leads de qualite
           </p>
           <Link
             to="/"
@@ -24,7 +24,13 @@ const Hero = () => {
           </Link>
         </div>
         <div className="z-0  md:ml-[-18rem]">
-          <img className="h-full w-full" src={Image} alt="stock" />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="h-full w-full"
+            src={Image}
+            alt="stock"
+          />
         </div>
       </div>
     </section>

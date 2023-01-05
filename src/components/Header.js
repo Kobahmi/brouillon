@@ -14,11 +14,11 @@ const Header = () => (
         <img className="w-6 " src={Menu} alt="menu" />
       </button>
 
-      <ul className="hidden text-xs px-2 gap-2 lg:flex">
+      <ul className="hidden text-sm px-2 gap-2 lg:flex">
         <li>
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
             PRODUITS
           </Link>
@@ -26,7 +26,7 @@ const Header = () => (
         <li>
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
             DEMO
           </Link>
@@ -34,7 +34,7 @@ const Header = () => (
         <li>
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
             SUPPORT
           </Link>
@@ -42,7 +42,7 @@ const Header = () => (
         <li>
           <Link
             to="/"
-            className="rounded px-1 py-1 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
+            className="rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
           >
             CONTACT
           </Link>

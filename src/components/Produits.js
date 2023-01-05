@@ -10,13 +10,21 @@ const Produits = () => {
   return (
     <section className="bg-neutral-900">
       <div className="flex flex-col px-6 py-6 max-w-[1200px] mx-auto">
-        <h1 className="flex pb-10 text-center text-lime-300 z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+        <h1
+          data-aos="fade-up"
+          className="flex pb-10 text-center text-lime-300 z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+        >
           NOS PRODUITS
         </h1>
 
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img src={Icon1} alt="icon1" />
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              src={Icon1}
+              alt="icon1"
+            />
             <h2 className="font-bold py-3">
               SITES WEB DE CONCESSIONAIRES AUTOS
             </h2>
@@ -24,7 +32,12 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img src={Icon2} alt="icon2" />
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              src={Icon2}
+              alt="icon2"
+            />
             <h2 className="font-bold py-3">MODULE D'ACHAT EN LIGNE COMPLET</h2>
             <p className="text-sm">
               Incluant les accessoires, garanties, assurances et depots
@@ -32,7 +45,12 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img src={Icon3} alt="icon3" />
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              src={Icon3}
+              alt="icon3"
+            />
             <h2 className="font-bold py-3">
               GESTIONNAIRE D'INVENTAIRE D'OCCASIONS
             </h2>
@@ -43,7 +61,12 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img src={Icon4} alt="icon4" />
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              src={Icon4}
+              alt="icon4"
+            />
             <h2 className="font-bold py-3">
               MODULE DE PUBLICATION AUTOMATISEE
             </h2>
@@ -54,7 +77,12 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img src={Icon5} alt="icon5" />
+            <img
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              src={Icon5}
+              alt="icon5"
+            />
             <h2 className="font-bold py-3">SITES WEB D'OCCASIONS</h2>
             <p className="text-sm">
               De style marketplace reunissant l'inventaire de plusieurs

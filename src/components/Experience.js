@@ -9,13 +9,23 @@ const Experience = () => {
     <section className="bg-white py-6">
       <div className="flex flex-col items-center ">
         <div className="flex flex-col justify-center items-center text-center px-6">
-          <h1 className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+          <h1
+            data-aos="fade-up"
+            className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+          >
             <span className="bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
               UNE EXPERIENCE OPTIMISEE
             </span>
           </h1>
-          <p className=" pt-2">POUR VOUS ET VOS CLIENTS</p>
-          <p className=" text-sm max-w-[30rem] py-10 ">
+          <p data-aos="fade-up" data-aos-duration="1000" className=" pt-2">
+            POUR VOUS ET VOS CLIENTS
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            className=" text-sm max-w-[30rem] py-10 "
+          >
             A small team of people driven by performance and excellence. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
             Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
@@ -23,7 +33,12 @@ const Experience = () => {
             massa, varius a, semper congue, euismod non, mi.
           </p>
 
-          <div className="rounded-xl bg-gray-300 h-[2px] max-w-[30rem] w-full "></div>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            className="rounded-xl bg-gray-300 h-[2px] max-w-[30rem] w-full "
+          ></div>
 
           <Link
             to="/"
@@ -36,6 +51,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
+              data-aos="fade-up"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
@@ -56,6 +72,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
+              data-aos="fade-up"
               className="object-cover h-full w-full "
               src={Image2}
               alt="travail"
@@ -76,6 +93,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
+              data-aos="fade-up"
               className="object-cover w-full h-full"
               src={Image1}
               alt="travail"
@@ -96,6 +114,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
+              data-aos="fade-up"
               className="object-cover h-full w-full"
               src={Image2}
               alt="travail"
@@ -112,6 +131,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
+              data-aos="fade-up"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
@@ -129,6 +149,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
+              data-aos="fade-up"
               className="object-cover w-full h-full"
               src={Image2}
               alt="travail"
