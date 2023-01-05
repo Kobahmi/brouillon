@@ -15,10 +15,12 @@ const Integration = () => {
           </span>
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <div className="w-full h-full">
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            className="w-full h-full"
+          >
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image}
               alt="travail"
