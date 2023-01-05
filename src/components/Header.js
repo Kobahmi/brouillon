@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import Image1 from "../images/Logo.svg";
-import Menu from "../images/menu.svg";
 import { useState } from "react";
 
 const Header = () => {
@@ -19,6 +18,7 @@ const Header = () => {
 
             <div className="lg:hidden">
               <button
+                id="commence"
                 className="p-2 text-gray-700 rounded-md outline-none "
                 onClick={() => setNavbar(!navbar)}
               >
