@@ -4,7 +4,7 @@ import Image from "../images/Layer1.webp";
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-800 min-h-[680px] md:h-screen">
+    <section className="bg-neutral-800 min-h-[680px] lg:h-screen">
       <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-16 lg:pt-0 lg:flex-row lg:items-center">
         <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-start">
           <h1 className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
@@ -27,7 +27,7 @@ const Hero = () => {
           <img
             data-aos="fade-left"
             data-aos-duration="1000"
-            className="object-cover h-[440px] w-[430px] md:w-[730px] md:h-[740px] lg:h-full lg:w-full"
+            className="object-cover h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
             src={Image}
             alt="stock"
           />

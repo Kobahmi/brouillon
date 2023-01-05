@@ -19,7 +19,7 @@ const Integration = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
-              className="object-cover h-[200px] w-[360px] sm:h-[400px] sm:w-[560px]"
+              className="object-cover h-[256px] w-[360px] sm:h-[488px] sm:w-[685px]"
               src={Image}
               alt="travail"
               loading="lazy"
