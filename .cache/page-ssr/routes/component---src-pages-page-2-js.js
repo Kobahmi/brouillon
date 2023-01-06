@@ -651,45 +651,82 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("section", {
-  className: "absolute w-full z-30 text-white"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
-  className: "flex justify-between items-center max-w-[1200px]  mx-auto p-6"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-  className: "h-auto w-[10rem]",
-  src: _images_Logo_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
-  alt: "logo"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
-  className: "icon-toggle lg:hidden"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-  className: "w-6 ",
-  src: _images_menu_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
-  alt: "menu"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
-  className: "hidden text-sm px-2 gap-2 lg:flex"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-}, "PRODUITS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-}, "DEMO")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-}, "SUPPORT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "rounded px-2 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-}, "CONTACT"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
-  className: "hidden gap-2 text-sm  pt-6 sm:pt-0 sm:gap-4 sm:text-md lg:flex"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "rounded-full font-bold px-6 py-2 hover:bg-slate-200 hover:bg-opacity-10 duration-100 ease-in"
-}, "CONNEXION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-  to: "/",
-  className: "text-black bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
-}, "COMMENCER")))));
+
+const Header = () => {
+  const {
+    0: navbar,
+    1: setNavbar
+  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
+    className: "w-full bg-neutral-800 lg:absolute"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "flex items-center justify-between py-3 lg:py-5 lg:block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+    className: "h-auto w-[10rem]",
+    src: _images_Logo_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
+    alt: "logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "lg:hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
+    "aria-label": "menu",
+    id: "commence",
+    className: "p-2 text-gray-700 rounded-md outline-none ",
+    onClick: () => setNavbar(!navbar)
+  }, navbar ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
+    className: "text-white font-bold"
+  }, "X") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+    className: "w-6 h-6",
+    src: _images_menu_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    alt: "menu"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: `flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${navbar ? "block" : "hidden"}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "flex flex-col gap-6 items-center justify-center lg:flex-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+    className: "items-center justify-center text-center space-y-8 border-b-2 border-neutral-600 pb-10 lg:pb-0 lg:border-b-0 lg:flex lg:space-x-6 lg:space-y-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, "PRODUITS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, "DEMO")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, "SUPPORT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, "CONTACT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200 lg:hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
+    className: "border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black"
+  }, "CONNEXION"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+    className: "text-white hover:text-indigo-200 lg:hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
+    className: "border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black"
+  }, "COMMENCER"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "hidden space-x-2 lg:inline-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/",
+    className: "duration-100 ease-in font-bold px-4 py-2 text-white rounded-full  hover:bg-gray-600"
+  }, "CONNEXION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
+    className: "border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black "
+  }, "COMMENCER")))));
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
 /***/ }),
@@ -1707,7 +1744,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Default Starter","description":"Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.","author":"@gatsbyjs"}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Brouillon","description":"SEO Testing","author":"@gatsbyjs"}}}}');
 
 /***/ })
 

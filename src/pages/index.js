@@ -8,7 +8,8 @@ import Dividerright from "../components/Dividerright";
 import Dividerrightthree from "../components/Dividerrightthree";
 import Dividerrighttwo from "../components/Dividerrighttwo";
 import Experience from "../components/Experience";
-
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Integration from "../components/Integration";
 import Integre from "../components/Integre";
@@ -20,12 +21,6 @@ import Syndication from "../components/Syndication";
 import loadable from "@loadable/component";
 
 const Automatisation = loadable(() => import("../components/Automatisation"), {
-  fallback: <div>Loading...</div>,
-});
-const Contact = loadable(() => import("../components/Contact"), {
-  fallback: <div>Loading...</div>,
-});
-const Footer = loadable(() => import("../components/Footer"), {
   fallback: <div>Loading...</div>,
 });
 
