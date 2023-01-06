@@ -125,27 +125,43 @@ const Header = () => {
             <div className="flex flex-col gap-6 items-center justify-center lg:flex-row">
               <ul className="items-center justify-center text-center space-y-8 border-b-2 border-neutral-600 pb-10 lg:pb-0 lg:border-b-0 lg:flex lg:space-x-6 lg:space-y-0">
                 <li className="text-white hover:text-indigo-200">
-                  <Link to="/">PRODUITS</Link>
-                </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link to="/">DEMO</Link>
-                </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link to="/">SUPPORT</Link>
-                </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link to="/">CONTACT</Link>
-                </li>
-                <li className="text-white hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className="border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black">
+                    <span className="link link-underline link-underline-black text-white pb-1">
+                      PRODUITS
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                  <Link to="/">
+                    <span className="link link-underline link-underline-black text-white pb-1">
+                      DEMO
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                  <Link to="/">
+                    <span className="link link-underline link-underline-black text-white pb-1">
+                      SUPPORT
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                  <Link to="/">
+                    <span className="link link-underline link-underline-black text-white pb-1">
+                      CONTACT
+                    </span>
+                  </Link>
+                </li>
+                <li className="text-white  hover:text-indigo-200 lg:hidden">
+                  <Link to="/">
+                    <span className="border-2  px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
                       CONNEXION
                     </span>
                   </Link>
                 </li>
                 <li className="text-white hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className="border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black">
+                    <span className="border-2 px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
                       COMMENCER
                     </span>
                   </Link>
@@ -162,7 +178,7 @@ const Header = () => {
             CONNEXION
           </Link>
           <Link to="/">
-            <span className="border-2 px-4 py-2 border-lime-300 rounded-full font-bold text-lime-300 transition duration-300 ease-in-out hover:bg-lime-300 hover:text-black ">
+            <span className="border-2 px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
               COMMENCER
             </span>
           </Link>
