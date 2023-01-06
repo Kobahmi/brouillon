@@ -48,6 +48,25 @@ const Hero = () => {
               DEMANDER UNE DEMO
             </span>
           </Link>
+
+          <Link
+            to="/"
+            className="mb-6 relative flex items-center justify-center text-center mt-6 px-4 py-3 transition-all duration-500
+            before:absolute before:top-0 before:left-0 before:w-full before:h-full  before:transition-all
+            before:duration-300 before:opacity-10 before:hover:opacity-0 before:hover:scale-50
+            after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-0 after:transition-all after:duration-300
+            after:border after:border-lime-300 after:scale-125 after:hover:opacity-100 after:hover:scale-100"
+          >
+            <span className="relative font-bold text-lime-300 uppercase">
+              DEMANDER UNE DEMO
+            </span>
+          </Link>
+
+          <Link to="/">
+            <span className="border-2 px-4 py-3 border-lime-300 rounded-full font-bold text-black transition duration-300 ease-in-out bg-lime-300 hover:bg-neutral-800 hover:text-lime-300 mr-6">
+              DEMANDER UNE DEMO
+            </span>
+          </Link>
         </div>
         <div className="z-0 mx-auto lg:ml-[-18rem]">
           <img
