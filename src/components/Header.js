@@ -124,30 +124,42 @@ const Header = () => {
           >
             <div className="flex flex-col gap-6 items-center justify-center lg:flex-row">
               <ul className="w-full items-center justify-center text-center space-y-8 border-b-2 border-neutral-600 pb-10 lg:pb-0 lg:border-b-0 lg:flex lg:space-x-6 lg:space-y-0">
-                <li>
-                  <Link to="/">
-                    <span className="link link-underline link-underline-black text-white pb-1">
+                <li className="flex justify-center">
+                  <Link
+                    className="btn group flex items-center bg-transparent tracking-widest text-white"
+                    to="/"
+                  >
+                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       PRODUITS
                     </span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <span className="link link-underline link-underline-black text-white pb-1">
+                <li className="flex justify-center">
+                  <Link
+                    className="btn group flex items-center bg-transparent tracking-widest text-white"
+                    to="/"
+                  >
+                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       DEMO
                     </span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <span className="link link-underline link-underline-black text-white pb-1">
+                <li className="flex justify-center">
+                  <Link
+                    className="btn group flex items-center bg-transparent tracking-widest text-white"
+                    to="/"
+                  >
+                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       SUPPORT
                     </span>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/">
-                    <span className="link link-underline link-underline-black text-white pb-1">
+                <li className="flex justify-center">
+                  <Link
+                    className="btn group flex items-center bg-transparent tracking-widest text-white"
+                    to="/"
+                  >
+                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       CONTACT
                     </span>
                   </Link>

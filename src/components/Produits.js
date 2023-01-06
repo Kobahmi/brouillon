@@ -35,6 +35,7 @@ const Produits = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
+              data-aos-delay="50"
               src={Icon2}
               alt="icon2"
             />
@@ -48,6 +49,7 @@ const Produits = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
+              data-aos-delay="100"
               src={Icon3}
               alt="icon3"
             />
@@ -64,6 +66,7 @@ const Produits = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
+              data-aos-delay="150"
               src={Icon4}
               alt="icon4"
             />
@@ -80,6 +83,7 @@ const Produits = () => {
             <img
               data-aos="fade-in"
               data-aos-duration="1000"
+              data-aos-delay="200"
               src={Icon5}
               alt="icon5"
             />
@@ -91,11 +95,10 @@ const Produits = () => {
             </p>
           </li>
         </ul>
-        <Link
-          to="/"
-          className="text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
-        >
-          DEMANDER UNE DEMO
+        <Link className="mt-10 mx-auto" to="/">
+          <span className=" border-2 px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+            DEMANDER UNE DEMO
+          </span>
         </Link>
       </div>
     </section>
