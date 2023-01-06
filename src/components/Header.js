@@ -108,7 +108,7 @@ const Header = () => {
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
-                  <p className="text-white font-bold">X</p>
+                  <p className="text-white text-xl mr-1 font-bold">X</p>
                 ) : (
                   <img className="w-6 h-6" src={Menu} alt="menu" />
                 )}
@@ -123,29 +123,29 @@ const Header = () => {
             }`}
           >
             <div className="flex flex-col gap-6 items-center justify-center lg:flex-row">
-              <ul className="items-center justify-center text-center space-y-8 border-b-2 border-neutral-600 pb-10 lg:pb-0 lg:border-b-0 lg:flex lg:space-x-6 lg:space-y-0">
-                <li className="text-white hover:text-indigo-200">
+              <ul className="w-full items-center justify-center text-center space-y-8 border-b-2 border-neutral-600 pb-10 lg:pb-0 lg:border-b-0 lg:flex lg:space-x-6 lg:space-y-0">
+                <li>
                   <Link to="/">
                     <span className="link link-underline link-underline-black text-white pb-1">
                       PRODUITS
                     </span>
                   </Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
+                <li>
                   <Link to="/">
                     <span className="link link-underline link-underline-black text-white pb-1">
                       DEMO
                     </span>
                   </Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
+                <li>
                   <Link to="/">
                     <span className="link link-underline link-underline-black text-white pb-1">
                       SUPPORT
                     </span>
                   </Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
+                <li>
                   <Link to="/">
                     <span className="link link-underline link-underline-black text-white pb-1">
                       CONTACT
@@ -154,14 +154,14 @@ const Header = () => {
                 </li>
                 <li className="text-white  hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className="border-2  px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
+                    <span className=" border-2 px-12 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
                       CONNEXION
                     </span>
                   </Link>
                 </li>
                 <li className="text-white hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className="border-2 px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
+                    <span className="border-2 px-11 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
                       COMMENCER
                     </span>
                   </Link>
