@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
         <div className="z-0 mx-auto lg:ml-[-18rem]">
           <img
-            className=" h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
+            className="object-cover h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
             src={Image}
             alt="stock"
           />
