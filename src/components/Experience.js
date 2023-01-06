@@ -37,6 +37,7 @@ const Experience = () => {
           <div>
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
@@ -58,6 +59,7 @@ const Experience = () => {
           <div className="xl:order-2">
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover h-full w-full "
               src={Image2}
               alt="travail"
@@ -79,6 +81,7 @@ const Experience = () => {
           <div>
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image1}
               alt="travail"
@@ -100,6 +103,7 @@ const Experience = () => {
           <div className="xl:order-2">
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image2}
               alt="travail"
@@ -117,6 +121,7 @@ const Experience = () => {
           <div>
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
@@ -135,6 +140,7 @@ const Experience = () => {
           <div className="xl:order-2">
             <img
               data-aos="fade-up"
+              data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image2}
               alt="travail"
