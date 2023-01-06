@@ -3,6 +3,12 @@ import * as React from "react";
 import Image1 from "../images/Logo.svg";
 import Menu from "../images/menu.svg";
 import { useState } from "react";
+import Letter1 from "../images/Vector.svg";
+import Letter2 from "../images/Vector2.svg";
+import Letter3 from "../images/Vector3.svg";
+import Letter4 from "../images/Vector4.svg";
+import Letter5 from "../images/Vector5.svg";
+import Letter6 from "../images/Vector6.svg";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -12,9 +18,86 @@ const Header = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
-            <Link to="/">
-              {" "}
-              <img className="h-auto w-[10rem]" src={Image1} alt="logo" />
+            <Link to="/" className="flex gap-[1px]">
+              <img
+                data-aos="flip-left"
+                data-aos-duration="500"
+                className="h-[1.5rem] w-[1.5rem]"
+                src={Letter1}
+                alt="Letter A"
+              />
+              <img
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-easing="ease-in"
+                className="h-[1.5rem] w-[1.5rem] "
+                src={Letter2}
+                alt="Letter U"
+              />
+              <img
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                data-aos-easing="ease-in"
+                className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
+                src={Letter3}
+                alt="Letter T"
+              />
+              <img
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-delay="400"
+                data-aos-easing="ease-in"
+                className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
+                src={Letter5}
+                alt="Letter O"
+              />
+              <img
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out-back"
+                className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
+                src={Letter4}
+                alt="Letter R"
+              />
+              <img
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out-back"
+                className="h-[1.5rem] w-[1.5rem] ml-[-0.4rem]"
+                src={Letter5}
+                alt="Letter O"
+              />
+              <img
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out-back"
+                className="h-[1.5rem] w-[1.5rem]"
+                src={Letter5}
+                alt="Letter O"
+              />
+              <img
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out-back"
+                className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
+                src={Letter3}
+                alt="Letter T"
+              />
+              <div className="flex justify-start items-end ml-[-0.2rem]">
+                <img
+                  data-aos="fade-in"
+                  data-aos-delay="1350"
+                  data-aos-duration="1500"
+                  className="h-[0.7rem] w-[0.7rem] "
+                  src={Letter6}
+                  alt="Rights"
+                />
+              </div>
             </Link>
 
             <div className="lg:hidden">
