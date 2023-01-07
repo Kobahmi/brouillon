@@ -36,7 +36,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
@@ -58,7 +58,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1000"
               className="object-cover h-full w-full "
               src={Image2}
@@ -80,7 +80,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image1}
@@ -102,7 +102,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image2}
@@ -120,7 +120,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div>
             <img
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
@@ -139,7 +139,7 @@ const Experience = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div className="xl:order-2">
             <img
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image2}

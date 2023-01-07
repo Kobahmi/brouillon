@@ -14,7 +14,7 @@ const Integration = () => {
             INTEGRATION
           </span>
         </h1>
-        <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div>
             <img
               data-aos="fade-in"
@@ -27,7 +27,7 @@ const Integration = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
+          <div className="flex flex-col gap-4 py-6 md:pl-10 md:border-gray-700 md:border-solid md:border-l-2">
             <h2 className="flex flex-col">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 INTEGRATION
