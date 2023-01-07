@@ -48,7 +48,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DES SITES WEBS ULTRA RAPIDES
             </h2>
-            <p data-aos="fade-up">
+            <p>
               Avec l'utilisation des dernieres technologies pour offrir des
               sites web ultra rapides.
             </p>
@@ -69,7 +69,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               PLATEFORME (CMS)FACILE A UTILISER
             </h2>
-            <p data-aos="fade-up">
+            <p>
               Pour l'integration de contenus personnalises sur le site Web
               (article de blogue, landing pages, promotions du mois, textes SEO
               et plus).
@@ -92,7 +92,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DEMANDES WEB DE QUALITE (LEADS)
             </h2>
-            <p data-aos="fade-up">
+            <p>
               Offrant un taux de conversion plus eleve et un cout d'acquisition
               plus bas.
             </p>
@@ -113,7 +113,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
             </h2>
-            <p data-aos="fade-up">Pour facilite la navigation.</p>
+            <p>Pour facilite la navigation.</p>
           </div>
         </div>
 
@@ -132,7 +132,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS
             </h2>
-            <p data-aos="fade-up">Des manifacturiers.</p>
+            <p>Des manifacturiers.</p>
           </div>
         </div>
 
@@ -151,7 +151,7 @@ const Experience = () => {
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               OPTIMISATION SEO
             </h2>
-            <p data-aos="fade-up">
+            <p>
               Incluant la gestion de la taille des images, des balises, des
               donnees structurees, des sitemaps, etc.
             </p>
