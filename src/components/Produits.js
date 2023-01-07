@@ -20,8 +20,8 @@ const Produits = () => {
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-mirror="true"
               src={Icon1}
               alt="icon1"
             />
@@ -33,8 +33,8 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-mirror="true"
               data-aos-delay="50"
               src={Icon2}
               alt="icon2"
@@ -47,8 +47,8 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-mirror="true"
               data-aos-delay="100"
               src={Icon3}
               alt="icon3"
@@ -64,8 +64,8 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-mirror="true"
               data-aos-delay="150"
               src={Icon4}
               alt="icon4"
@@ -81,8 +81,8 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-mirror="true"
               data-aos-delay="200"
               src={Icon5}
               alt="icon5"
@@ -96,7 +96,7 @@ const Produits = () => {
           </li>
         </ul>
         <Link className="mt-10 mx-auto" to="/">
-          <span className=" border-2 px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+          <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
             DEMANDER UNE DEMO
           </span>
         </Link>

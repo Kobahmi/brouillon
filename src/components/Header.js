@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import Image1 from "../images/Logo.svg";
+
 import Menu from "../images/menu.svg";
 import { useState } from "react";
 import Letter1 from "../images/Vector.svg";
@@ -190,7 +190,7 @@ const Header = () => {
             CONNEXION
           </Link>
           <Link to="/">
-            <span className="border-2 px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
+            <span className="border-[1px] px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
               COMMENCER
             </span>
           </Link>

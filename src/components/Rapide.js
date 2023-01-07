@@ -26,7 +26,7 @@ const Rapide = () => {
           <div className="rounded-xl bg-gray-600 h-[1px] max-w-[30rem] w-full "></div>
 
           <Link className="mt-10" to="/">
-            <span className=" border-2 px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+            <span className=" border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
               DEMANDER UNE DEMO
             </span>
           </Link>

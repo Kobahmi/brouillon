@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
 
           <Link className="mt-10" to="/">
-            <span className="  px-4 py-3 border-white border-2 rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+            <span className="  px-4 py-3 border-white border-[1px] rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
               DEMANDER UNE DEMO
             </span>
           </Link>
