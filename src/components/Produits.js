@@ -12,9 +12,11 @@ const Produits = () => {
       <div className="flex flex-col px-6 py-6 max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
-          className="flex pb-10 text-center text-lime-300 z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+          className="text-center py-16 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
         >
-          NOS PRODUITS
+          <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
+            PRODUITS
+          </span>
         </h1>
 
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
