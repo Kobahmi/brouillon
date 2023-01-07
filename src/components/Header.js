@@ -108,9 +108,9 @@ const Header = () => {
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
-                  <p className="text-white text-xl mr-1 font-bold">X</p>
+                  <p className="text-white text-xl mr-[5px] font-bold">X</p>
                 ) : (
-                  <img className="w-6 h-6" src={Menu} alt="menu" />
+                  <img className="w-7 h-7" src={Menu} alt="menu" />
                 )}
               </button>
             </div>
