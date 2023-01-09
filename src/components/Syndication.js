@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image1 from "../images/car-christmas-transport-svgrepo-com.svg";
+import Image1 from "../images/Mockup.webp";
 
 const Syndication = () => {
   return (
@@ -9,7 +9,7 @@ const Syndication = () => {
         <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
             <img
-              className="h-[500px] w-[300px] md:h-[700px] md:w-[500px]"
+              className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
             />

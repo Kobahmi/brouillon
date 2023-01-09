@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../images/illustration-flowing-conversation.svg";
+import Image1 from "../images/office.webp";
 import { Link } from "gatsby";
 
 const Automatisation = () => {
@@ -16,10 +16,9 @@ const Automatisation = () => {
           </span>
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
-          <div>
+          <div data-aos="fade-in" data-aos-duration="1000" className="relative">
+            <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"

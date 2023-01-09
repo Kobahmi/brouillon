@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Integration = () => {
   return (
-    <section className="bg-black py-6">
+    <section className="bg-black relative -z-20 py-6">
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
@@ -22,6 +22,7 @@ const Integration = () => {
             className="relative w-full h-full "
           >
             <div className="absolute h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
+            <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <img
               className="object-cover w-full h-full rounded-tr-[10rem] rounded-bl-[10rem]"
               src={Image}
