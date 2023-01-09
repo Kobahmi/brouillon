@@ -8,7 +8,7 @@ const Integration = () => {
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
-          className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+          className="text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
         >
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
             INTEGRATION
@@ -19,7 +19,7 @@ const Integration = () => {
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-mirror="true"
-            className="relative w-full h-full "
+            className="relative"
           >
             <div className="absolute h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>

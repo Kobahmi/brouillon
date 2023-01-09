@@ -6,7 +6,7 @@ const Syndication = () => {
   return (
     <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
       <div className="flex flex-col max-w-[1200px] mx-auto">
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
             <img
               className="object-cover h-full w-full"

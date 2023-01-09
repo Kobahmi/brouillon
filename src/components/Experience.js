@@ -9,7 +9,7 @@ const Experience = () => {
     <section className="bg-white py-6 ">
       <div className="flex flex-col items-center ">
         <div className="flex flex-col justify-center items-center text-center px-6">
-          <h1 className="flex flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+          <h1 className="flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
             <span className="bg-clip-text  text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
               UNE EXPERIENCE OPTIMISEE
             </span>

@@ -7,7 +7,7 @@ const Rapide = () => {
       <div className="flex justify-center items-center  h-full">
         <div className="flex flex-col justify-center items-center px-6 text-center lg:text-start lg:flex-row lg:justify-between">
           <div>
-            <h1 className="flex flex-col z-20 max-w-xl text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+            <h1 className="flex flex-col z-20 max-w-xl text-2xl font-bold md:text-5xl lg:text-6xl">
               <span className="text-lime-300">DES APPLICATIONS WEBS</span>
               <span className="bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
                 ULTRA RAPIDES

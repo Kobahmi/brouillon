@@ -8,7 +8,7 @@ const Integre = () => {
       <div className="flex flex-col gap-6 max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
-          className="text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+          className="text-center py-6 text-2xl font-bold md:text-5xl lg:text-6xl"
         >
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
             INTEGRE AVEC VOS OUTILS
