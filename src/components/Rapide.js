@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 const Rapide = () => {
   return (
-    <section className="bg-neutral-900  min-h-[500px]">
+    <section className="bg-neutral-900  ">
       <div className="flex justify-center items-center  h-full">
         <div className="flex flex-col justify-center items-center px-6 text-center lg:text-start lg:flex-row lg:justify-between">
           <div>
