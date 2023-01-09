@@ -15,12 +15,7 @@ const Integration = () => {
           </span>
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            className="relative"
-          >
+          <div data-aos="fade-in" data-aos-duration="1000" className="relative">
             <div className="absolute h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <img
