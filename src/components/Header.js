@@ -184,10 +184,12 @@ const Header = () => {
         </div>
         <div className="hidden space-x-2 lg:inline-block">
           <Link
+            className="btn group  bg-transparent tracking-widest text-white"
             to="/"
-            className="duration-100 ease-in font-bold px-4 py-2 text-white rounded-full  hover:bg-gray-600"
           >
-            CONNEXION
+            <span className="relative font-bold pb-[2px] text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+              CONNEXION
+            </span>
           </Link>
           <Link to="/">
             <span className="border-[1px] px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
