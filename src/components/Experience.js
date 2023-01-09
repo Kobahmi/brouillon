@@ -6,11 +6,11 @@ import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
   return (
-    <section className="bg-white py-6">
+    <section className="bg-white py-6 ">
       <div className="flex flex-col items-center ">
         <div className="flex flex-col justify-center items-center text-center px-6">
-          <h1 className="flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
-            <span className="bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
+          <h1 className="flex flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl">
+            <span className="bg-clip-text  text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
               UNE EXPERIENCE OPTIMISEE
             </span>
           </h1>

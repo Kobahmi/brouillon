@@ -17,7 +17,7 @@ const Rapide = () => {
               POUR DES CONCESSIONAIRES AUTOMOBILES DU QUEBEC
             </p>
           </div>
-          <div className="hidden rounded-xl bg-gray-600 w-[1px] h-[30rem] mx-10 lg:block"></div>
+          <div className="hidden rounded-xl bg-gray-600 w-[1px] h-[21rem] mx-10 lg:block"></div>
           <div>
             <p className="text-white text-sm max-w-lg py-10">
               A small team of people driven by performance and excellence. Lorem
