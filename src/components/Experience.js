@@ -18,7 +18,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="bg-white py-6 ">
+    <section className="bg-white pt-6 pb-[8.5rem]">
       <div className="flex flex-col items-center ">
         <div className="flex flex-col justify-center items-center text-center px-6">
           <h1 className="flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
@@ -39,7 +39,7 @@ const Experience = () => {
 
           <Link
             to="/"
-            className="text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
+            className="text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
           >
             COMMENCER
           </Link>

@@ -4,7 +4,7 @@ import Logo from "../images/Logo2.webp";
 
 const Integre = () => {
   return (
-    <section className="bg-black p-4">
+    <section className="bg-black p-4 relative z-30">
       <div className="flex flex-col gap-6 max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
