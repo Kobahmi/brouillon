@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/Images.webp";
+import Image from "../images/Images2.webp";
 import { Link } from "gatsby";
 
 const Integration = () => {
@@ -15,12 +15,15 @@ const Integration = () => {
           </span>
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            className="relative w-full h-full "
+          >
+            <div className="absolute h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             <img
-              data-aos="fade-in"
-              data-aos-duration="1000"
-              data-aos-mirror="true"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full rounded-tr-[10rem] rounded-bl-[10rem]"
               src={Image}
               alt="travail"
               loading="lazy"
