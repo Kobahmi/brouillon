@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Integration = () => {
   return (
-    <section className="bg-black relative -z-20 py-6">
+    <section className="bg-black relative z-0 py-6">
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"

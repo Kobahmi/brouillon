@@ -45,7 +45,7 @@ const Experience = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div>
             <img
               data-aos="fade-right"
@@ -67,8 +67,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <div className="xl:order-2">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
+          <div className="lg:order-2">
             <img
               data-aos="fade-left"
               data-aos-duration="1000"
@@ -77,7 +77,7 @@ const Experience = () => {
               alt="travail"
             />
           </div>
-          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
+          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               PLATEFORME (CMS)FACILE A UTILISER
             </h2>
@@ -89,7 +89,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div>
             <img
               data-aos="fade-right"
@@ -111,8 +111,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <div className="xl:order-2">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
+          <div className="lg:order-2">
             <img
               data-aos="fade-left"
               data-aos-duration="1000"
@@ -121,7 +121,7 @@ const Experience = () => {
               alt="travail"
             />
           </div>
-          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
+          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
             </h2>
@@ -129,7 +129,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div>
             <img
               data-aos="fade-right"
@@ -148,8 +148,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 items-center p-10 xl:flex-row">
-          <div className="xl:order-2">
+        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
+          <div className="lg:order-2">
             <img
               data-aos="fade-left"
               data-aos-duration="1000"
@@ -159,7 +159,7 @@ const Experience = () => {
             />
           </div>
 
-          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
+          <div className="animate flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               OPTIMISATION SEO
             </h2>
