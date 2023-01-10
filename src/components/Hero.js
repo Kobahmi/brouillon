@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../images/Layer1.webp";
+import Image from "../images/Layer1v2.webp";
 
 const Hero = () => {
   return (
@@ -13,16 +13,12 @@ const Hero = () => {
               DE CONCESSIONAIRES
             </span>
           </h1>
-          <p
-            data-aos="fade-in"
-            data-aos-duration="1000"
-            className="text-white z-20"
-          >
+          <p className="text-white z-20">
             Concus pour generer des leads de qualite
           </p>
 
           <Link className="mt-10" to="/">
-            <span className="  px-4 py-3 border-white border-[1px] rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+            <span className="px-4 py-3 border-white border-[1px] rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
               DEMANDER UNE DEMO
             </span>
           </Link>
