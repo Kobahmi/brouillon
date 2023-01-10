@@ -1,22 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import Rellax from "rellax";
-import { useEffect } from "react";
 import Image1 from "../images/Layer1.webp";
 import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
-  useEffect(() => {
-    new Rellax(".animate", {
-      speed: -2,
-      center: true,
-      wrapper: null,
-      round: true,
-      vertical: true,
-      horizontal: false,
-    });
-  }, []);
-
   return (
     <section className="bg-white pt-6 pb-[8.5rem]">
       <div className="flex flex-col items-center ">
