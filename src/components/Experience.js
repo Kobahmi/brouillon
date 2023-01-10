@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image1 from "../images/Layer1.webp";
+import Image1 from "../images/Layer1v2.webp";
 import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
@@ -33,13 +33,12 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <img
-              data-aos="fade-right"
-              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
+              loading="lazy"
             />
           </div>
 
@@ -55,13 +54,16 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div className="lg:order-2">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="lg:order-2"
+          >
             <img
-              data-aos="fade-left"
-              data-aos-duration="1000"
               className="object-cover h-full w-full "
               src={Image2}
               alt="travail"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
@@ -77,13 +79,12 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <img
-              data-aos="fade-right"
-              data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image1}
               alt="travail"
+              loading="lazy"
             />
           </div>
 
@@ -99,13 +100,16 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div className="lg:order-2">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="lg:order-2"
+          >
             <img
-              data-aos="fade-left"
-              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image2}
               alt="travail"
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
@@ -117,13 +121,12 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <img
-              data-aos="fade-right"
-              data-aos-duration="1000"
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
+              loading="lazy"
             />
           </div>
 
@@ -136,13 +139,16 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div className="lg:order-2">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="lg:order-2"
+          >
             <img
-              data-aos="fade-left"
-              data-aos-duration="1000"
               className="object-cover w-full h-full"
               src={Image2}
               alt="travail"
+              loading="lazy"
             />
           </div>
 
