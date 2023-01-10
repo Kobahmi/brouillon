@@ -65,16 +65,6 @@ const Experience = () => {
               sites web ultra rapides.
             </p>
           </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              DES SITES WEBS ULTRA RAPIDES
-            </h2>
-            <p>
-              Avec l'utilisation des dernieres technologies pour offrir des
-              sites web ultra rapides.
-            </p>
-          </div>
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
@@ -97,17 +87,6 @@ const Experience = () => {
               et plus).
             </p>
           </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              PLATEFORME (CMS)FACILE A UTILISER
-            </h2>
-            <p>
-              Pour l'integration de contenus personnalises sur le site Web
-              (article de blogue, landing pages, promotions du mois, textes SEO
-              et plus).
-            </p>
-          </div>
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
@@ -122,16 +101,6 @@ const Experience = () => {
           </div>
 
           <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              DEMANDES WEB DE QUALITE (LEADS)
-            </h2>
-            <p>
-              Offrant un taux de conversion plus eleve et un cout d'acquisition
-              plus bas.
-            </p>
-          </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DEMANDES WEB DE QUALITE (LEADS)
             </h2>
@@ -158,13 +127,6 @@ const Experience = () => {
             </h2>
             <p>Pour facilite la navigation.</p>
           </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
-            </h2>
-            <p>Pour facilite la navigation.</p>
-          </div>
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
@@ -184,13 +146,6 @@ const Experience = () => {
             </h2>
             <p>Des manifacturiers.</p>
           </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS
-            </h2>
-            <p>Des manifacturiers.</p>
-          </div>
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
@@ -205,16 +160,6 @@ const Experience = () => {
           </div>
 
           <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex">
-            <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              OPTIMISATION SEO
-            </h2>
-            <p>
-              Incluant la gestion de la taille des images, des balises, des
-              donnees structurees, des sitemaps, etc.
-            </p>
-          </div>
-
-          <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               OPTIMISATION SEO
             </h2>

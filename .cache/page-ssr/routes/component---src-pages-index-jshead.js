@@ -1452,23 +1452,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/Layer1.webp */ "./src/images/Layer1.webp");
-/* harmony import */ var _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/Layer2.svg */ "./src/images/Layer2.svg");
+/* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rellax */ "./node_modules/rellax/rellax.js");
+/* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rellax__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/Layer1.webp */ "./src/images/Layer1.webp");
+/* harmony import */ var _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/Layer2.svg */ "./src/images/Layer2.svg");
+
+
 
 
 
 
 const Experience = () => {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    new (rellax__WEBPACK_IMPORTED_MODULE_2___default())(".animate", {
+      speed: -2,
+      center: true,
+      wrapper: null,
+      round: true,
+      vertical: true,
+      horizontal: false
+    });
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-white py-6"
+    className: "bg-white pt-6 pb-[8.5rem]"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col justify-center items-center text-center px-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
+    className: "bg-clip-text  text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "UNE EXPERIENCE OPTIMISEE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: " pt-2"
   }, "POUR VOUS ET VOS CLIENTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -1477,83 +1491,107 @@ const Experience = () => {
     className: "rounded-xl bg-gray-300 h-[2px] max-w-[30rem] w-full "
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
-    className: "text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
+    className: "text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
   }, "COMMENCER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-right",
     "data-aos-duration": "1000",
     className: "object-cover h-full w-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "DES SITES WEBS ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des dernieres technologies pour offrir des sites web ultra rapides.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "DES SITES WEBS ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des dernieres technologies pour offrir des sites web ultra rapides."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "xl:order-2"
+    className: "lg:order-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
     className: "object-cover h-full w-full ",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "PLATEFORME (CMS)FACILE A UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'integration de contenus personnalises sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "PLATEFORME (CMS)FACILE A UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'integration de contenus personnalises sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-right",
     "data-aos-duration": "1000",
     className: "object-cover w-full h-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "DEMANDES WEB DE QUALITE (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus eleve et un cout d'acquisition plus bas.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "DEMANDES WEB DE QUALITE (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus eleve et un cout d'acquisition plus bas."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "xl:order-2"
+    className: "lg:order-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
     className: "object-cover h-full w-full",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour facilite la navigation.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour facilite la navigation."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-right",
     "data-aos-duration": "1000",
     className: "object-cover h-full w-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "xl:order-2"
+    className: "lg:order-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
     className: "object-cover w-full h-full",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
     alt: "travail"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 xl:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
+    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structurees, des sitemaps, etc.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structurees, des sitemaps, etc.")))));
@@ -1624,7 +1662,7 @@ const Header = () => {
     1: setNavbar
   } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", {
-    className: "w-full bg-neutral-800 lg:absolute"
+    className: "w-full bg-neutral-800 z-40 lg:absolute"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "justify-between px-6 mx-auto lg:pt-[2px] lg:max-w-7xl lg:items-center lg:flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -1764,9 +1802,11 @@ const Header = () => {
   }, "COMMENCER"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "hidden space-x-2 lg:inline-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
-    to: "/",
-    className: "duration-100 ease-in font-bold px-4 py-2 text-white rounded-full  hover:bg-gray-600"
-  }, "CONNEXION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+    className: "btn group  bg-transparent tracking-widest text-white",
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
+    className: "relative font-bold pb-[2px] text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100"
+  }, "CONNEXION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
     className: "border-[1px] px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black "
@@ -1796,13 +1836,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const Hero = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-neutral-800 min-h-[580px] lg:min-h-[940px] "
+    className: "bg-neutral-800 min-h-[580px] md:min-h-[800px] lg:min-h-[940px] "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col justify-center items-center text-center lg:items-start lg:text-start"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "flex z-20 flex-col text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lime-300"
   }, "DES SITES WEBS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -1841,29 +1881,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_illustration_flowing_conversation_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/illustration-flowing-conversation.svg */ "./src/images/illustration-flowing-conversation.svg");
+/* harmony import */ var _images_Images2_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/Images2.webp */ "./src/images/Images2.webp");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 
 
 
 const Integration = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-black py-6"
+    className: "bg-black relative z-0 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     "data-aos": "fade-up",
-    className: "text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "INTEGRATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-in",
     "data-aos-duration": "1000",
-    "data-aos-mirror": "true",
-    className: "object-cover w-full h-full",
-    src: _images_illustration_flowing_conversation_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
+    className: "relative"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "object-cover w-full h-full rounded-tr-[10rem] rounded-bl-[10rem]",
+    src: _images_Images2_webp__WEBPACK_IMPORTED_MODULE_1__["default"],
     alt: "travail",
     loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -1911,12 +1956,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const Integre = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-black p-4"
+    className: "bg-black p-4 relative z-30"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-6 max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     "data-aos": "fade-up",
-    className: "text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "text-center py-6 text-2xl font-bold md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "INTEGRE AVEC VOS OUTILS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -1973,7 +2018,7 @@ const Produits = () => {
     className: "flex flex-col px-6 py-6 max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     "data-aos": "fade-up",
-    className: "text-center py-16 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "text-center py-16 text-2xl font-bold md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "PRODUITS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
@@ -2066,29 +2111,29 @@ __webpack_require__.r(__webpack_exports__);
 
 const Rapide = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-neutral-900 h-[50vh] min-h-[500px]"
+    className: "bg-neutral-900  "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex justify-center items-center  h-full"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col justify-center items-center text-center px-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "flex z-20 flex-col text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "flex flex-col justify-center items-center px-6 text-center lg:text-start lg:flex-row lg:justify-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: "flex flex-col z-20 max-w-xl text-2xl font-bold md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lime-300"
   }, "DES APPLICATIONS WEBS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "ULTRA RAPIDES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "text-white font-bold pt-2"
-  }, "POUR DES CONCESSIONAIRES AUTOMOBILES DU QUEBEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "text-white text-sm max-w-[30rem] py-10"
-  }, "A small team of people driven by performance and excellence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "rounded-xl bg-gray-600 h-[1px] max-w-[30rem] w-full "
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "text-white font-bold pt-2 lg:max-w-md"
+  }, "POUR DES CONCESSIONAIRES AUTOMOBILES DU QUEBEC")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "hidden rounded-xl bg-gray-600 w-[1px] h-[21rem] mx-10 lg:block"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "text-white text-sm max-w-lg py-10"
+  }, "A small team of people driven by performance and excellence. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "mt-10",
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: " border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
-  }, "DEMANDER UNE DEMO")))));
+  }, "DEMANDER UNE DEMO"))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Rapide);
 
@@ -2108,7 +2153,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _images_car_christmas_transport_svgrepo_com_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/car-christmas-transport-svgrepo-com.svg */ "./src/images/car-christmas-transport-svgrepo-com.svg");
+/* harmony import */ var _images_Mockup_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/Mockup.webp */ "./src/images/Mockup.webp");
 
 
 
@@ -2118,14 +2163,15 @@ const Syndication = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 xl:flex-row"
+    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-up",
     "data-aos-duration": "1000"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "h-[500px] w-[300px] md:h-[700px] md:w-[500px]",
-    src: _images_car_christmas_transport_svgrepo_com_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
-    alt: "travail"
+    className: "object-cover h-full w-full",
+    src: _images_Mockup_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -3278,6 +3324,508 @@ module.exports = throttle;
 
 /***/ }),
 
+/***/ "./node_modules/rellax/rellax.js":
+/*!***************************************!*\
+  !*** ./node_modules/rellax/rellax.js ***!
+  \***************************************/
+/***/ ((module, exports) => {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+// ------------------------------------------
+// Rellax.js
+// Buttery smooth parallax library
+// Copyright (c) 2016 Moe Amaya (@moeamaya)
+// MIT license
+//
+// Thanks to Paraxify.js and Jaime Cabllero
+// for parallax concepts
+// ------------------------------------------
+
+(function (root, factory) {
+  if (true) {
+    // AMD. Register as an anonymous module.
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+}(typeof window !== "undefined" ? window : global, function () {
+  var Rellax = function(el, options){
+    "use strict";
+
+    var self = Object.create(Rellax.prototype);
+
+    var posY = 0;
+    var screenY = 0;
+    var posX = 0;
+    var screenX = 0;
+    var blocks = [];
+    var pause = true;
+
+    // check what requestAnimationFrame to use, and if
+    // it's not supported, use the onscroll event
+    var loop = window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      window.oRequestAnimationFrame ||
+      function(callback){ return setTimeout(callback, 1000 / 60); };
+
+    // store the id for later use
+    var loopId = null;
+
+    // Test via a getter in the options object to see if the passive property is accessed
+    var supportsPassive = false;
+    try {
+      var opts = Object.defineProperty({}, 'passive', {
+        get: function() {
+          supportsPassive = true;
+        }
+      });
+      window.addEventListener("testPassive", null, opts);
+      window.removeEventListener("testPassive", null, opts);
+    } catch (e) {}
+
+    // check what cancelAnimation method to use
+    var clearLoop = window.cancelAnimationFrame || window.mozCancelAnimationFrame || clearTimeout;
+
+    // check which transform property to use
+    var transformProp = window.transformProp || (function(){
+        var testEl = document.createElement('div');
+        if (testEl.style.transform === null) {
+          var vendors = ['Webkit', 'Moz', 'ms'];
+          for (var vendor in vendors) {
+            if (testEl.style[ vendors[vendor] + 'Transform' ] !== undefined) {
+              return vendors[vendor] + 'Transform';
+            }
+          }
+        }
+        return 'transform';
+      })();
+
+    // Default Settings
+    self.options = {
+      speed: -2,
+	    verticalSpeed: null,
+	    horizontalSpeed: null,
+      breakpoints: [576, 768, 1201],
+      center: false,
+      wrapper: null,
+      relativeToWrapper: false,
+      round: true,
+      vertical: true,
+      horizontal: false,
+      verticalScrollAxis: "y",
+      horizontalScrollAxis: "x",
+      callback: function() {},
+    };
+
+    // User defined options (might have more in the future)
+    if (options){
+      Object.keys(options).forEach(function(key){
+        self.options[key] = options[key];
+      });
+    }
+
+    function validateCustomBreakpoints () {
+      if (self.options.breakpoints.length === 3 && Array.isArray(self.options.breakpoints)) {
+        var isAscending = true;
+        var isNumerical = true;
+        var lastVal;
+        self.options.breakpoints.forEach(function (i) {
+          if (typeof i !== 'number') isNumerical = false;
+          if (lastVal !== null) {
+            if (i < lastVal) isAscending = false;
+          }
+          lastVal = i;
+        });
+        if (isAscending && isNumerical) return;
+      }
+      // revert defaults if set incorrectly
+      self.options.breakpoints = [576, 768, 1201];
+      console.warn("Rellax: You must pass an array of 3 numbers in ascending order to the breakpoints option. Defaults reverted");
+    }
+
+    if (options && options.breakpoints) {
+      validateCustomBreakpoints();
+    }
+
+    // By default, rellax class
+    if (!el) {
+      el = '.rellax';
+    }
+
+    // check if el is a className or a node
+    var elements = typeof el === 'string' ? document.querySelectorAll(el) : [el];
+
+    // Now query selector
+    if (elements.length > 0) {
+      self.elems = elements;
+    }
+
+    // The elements don't exist
+    else {
+      console.warn("Rellax: The elements you're trying to select don't exist.");
+      return;
+    }
+
+    // Has a wrapper and it exists
+    if (self.options.wrapper) {
+      if (!self.options.wrapper.nodeType) {
+        var wrapper = document.querySelector(self.options.wrapper);
+
+        if (wrapper) {
+          self.options.wrapper = wrapper;
+        } else {
+          console.warn("Rellax: The wrapper you're trying to use doesn't exist.");
+          return;
+        }
+      }
+    }
+
+    // set a placeholder for the current breakpoint
+    var currentBreakpoint;
+
+    // helper to determine current breakpoint
+    var getCurrentBreakpoint = function (w) {
+      var bp = self.options.breakpoints;
+      if (w < bp[0]) return 'xs';
+      if (w >= bp[0] && w < bp[1]) return 'sm';
+      if (w >= bp[1] && w < bp[2]) return 'md';
+      return 'lg';
+    };
+
+    // Get and cache initial position of all elements
+    var cacheBlocks = function() {
+      for (var i = 0; i < self.elems.length; i++){
+        var block = createBlock(self.elems[i]);
+        blocks.push(block);
+      }
+    };
+
+
+    // Let's kick this script off
+    // Build array for cached element values
+    var init = function() {
+      for (var i = 0; i < blocks.length; i++){
+        self.elems[i].style.cssText = blocks[i].style;
+      }
+
+      blocks = [];
+
+      screenY = window.innerHeight;
+      screenX = window.innerWidth;
+      currentBreakpoint = getCurrentBreakpoint(screenX);
+
+      setPosition();
+
+      cacheBlocks();
+
+      animate();
+
+      // If paused, unpause and set listener for window resizing events
+      if (pause) {
+        window.addEventListener('resize', init);
+        pause = false;
+        // Start the loop
+        update();
+      }
+    };
+
+    // We want to cache the parallax blocks'
+    // values: base, top, height, speed
+    // el: is dom object, return: el cache values
+    var createBlock = function(el) {
+      var dataPercentage = el.getAttribute( 'data-rellax-percentage' );
+      var dataSpeed = el.getAttribute( 'data-rellax-speed' );
+      var dataXsSpeed = el.getAttribute( 'data-rellax-xs-speed' );
+      var dataMobileSpeed = el.getAttribute( 'data-rellax-mobile-speed' );
+      var dataTabletSpeed = el.getAttribute( 'data-rellax-tablet-speed' );
+      var dataDesktopSpeed = el.getAttribute( 'data-rellax-desktop-speed' );
+      var dataVerticalSpeed = el.getAttribute('data-rellax-vertical-speed');
+      var dataHorizontalSpeed = el.getAttribute('data-rellax-horizontal-speed');
+      var dataVericalScrollAxis = el.getAttribute('data-rellax-vertical-scroll-axis');
+      var dataHorizontalScrollAxis = el.getAttribute('data-rellax-horizontal-scroll-axis');
+      var dataZindex = el.getAttribute( 'data-rellax-zindex' ) || 0;
+      var dataMin = el.getAttribute( 'data-rellax-min' );
+      var dataMax = el.getAttribute( 'data-rellax-max' );
+      var dataMinX = el.getAttribute('data-rellax-min-x');
+      var dataMaxX = el.getAttribute('data-rellax-max-x');
+      var dataMinY = el.getAttribute('data-rellax-min-y');
+      var dataMaxY = el.getAttribute('data-rellax-max-y');
+      var mapBreakpoints;
+      var breakpoints = true;
+
+      if (!dataXsSpeed && !dataMobileSpeed && !dataTabletSpeed && !dataDesktopSpeed) {
+        breakpoints = false;
+      } else {
+        mapBreakpoints = {
+          'xs': dataXsSpeed,
+          'sm': dataMobileSpeed,
+          'md': dataTabletSpeed,
+          'lg': dataDesktopSpeed
+        };
+      }
+
+      // initializing at scrollY = 0 (top of browser), scrollX = 0 (left of browser)
+      // ensures elements are positioned based on HTML layout.
+      //
+      // If the element has the percentage attribute, the posY and posX needs to be
+      // the current scroll position's value, so that the elements are still positioned based on HTML layout
+      var wrapperPosY = self.options.wrapper ? self.options.wrapper.scrollTop : (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
+      // If the option relativeToWrapper is true, use the wrappers offset to top, subtracted from the current page scroll.
+      if (self.options.relativeToWrapper) {
+        var scrollPosY = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
+        wrapperPosY = scrollPosY - self.options.wrapper.offsetTop;
+      }
+      var posY = self.options.vertical ? ( dataPercentage || self.options.center ? wrapperPosY : 0 ) : 0;
+      var posX = self.options.horizontal ? ( dataPercentage || self.options.center ? self.options.wrapper ? self.options.wrapper.scrollLeft : (window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft) : 0 ) : 0;
+
+      var blockTop = posY + el.getBoundingClientRect().top;
+      var blockHeight = el.clientHeight || el.offsetHeight || el.scrollHeight;
+
+      var blockLeft = posX + el.getBoundingClientRect().left;
+      var blockWidth = el.clientWidth || el.offsetWidth || el.scrollWidth;
+
+      // apparently parallax equation everyone uses
+      var percentageY = dataPercentage ? dataPercentage : (posY - blockTop + screenY) / (blockHeight + screenY);
+      var percentageX = dataPercentage ? dataPercentage : (posX - blockLeft + screenX) / (blockWidth + screenX);
+      if(self.options.center){ percentageX = 0.5; percentageY = 0.5; }
+
+      // Optional individual block speed as data attr, otherwise global speed
+      var speed = (breakpoints && mapBreakpoints[currentBreakpoint] !== null) ? Number(mapBreakpoints[currentBreakpoint]) : (dataSpeed ? dataSpeed : self.options.speed);
+      var verticalSpeed = dataVerticalSpeed ? dataVerticalSpeed : self.options.verticalSpeed;
+      var horizontalSpeed = dataHorizontalSpeed ? dataHorizontalSpeed : self.options.horizontalSpeed;
+
+      // Optional individual block movement axis direction as data attr, otherwise gobal movement direction
+      var verticalScrollAxis = dataVericalScrollAxis ? dataVericalScrollAxis : self.options.verticalScrollAxis;
+      var horizontalScrollAxis = dataHorizontalScrollAxis ? dataHorizontalScrollAxis : self.options.horizontalScrollAxis;
+
+      var bases = updatePosition(percentageX, percentageY, speed, verticalSpeed, horizontalSpeed);
+
+      // ~~Store non-translate3d transforms~~
+      // Store inline styles and extract transforms
+      var style = el.style.cssText;
+      var transform = '';
+
+      // Check if there's an inline styled transform
+      var searchResult = /transform\s*:/i.exec(style);
+      if (searchResult) {
+        // Get the index of the transform
+        var index = searchResult.index;
+
+        // Trim the style to the transform point and get the following semi-colon index
+        var trimmedStyle = style.slice(index);
+        var delimiter = trimmedStyle.indexOf(';');
+
+        // Remove "transform" string and save the attribute
+        if (delimiter) {
+          transform = " " + trimmedStyle.slice(11, delimiter).replace(/\s/g,'');
+        } else {
+          transform = " " + trimmedStyle.slice(11).replace(/\s/g,'');
+        }
+      }
+
+      return {
+        baseX: bases.x,
+        baseY: bases.y,
+        top: blockTop,
+        left: blockLeft,
+        height: blockHeight,
+        width: blockWidth,
+        speed: speed,
+        verticalSpeed: verticalSpeed,
+        horizontalSpeed: horizontalSpeed,
+        verticalScrollAxis: verticalScrollAxis,
+        horizontalScrollAxis: horizontalScrollAxis,
+        style: style,
+        transform: transform,
+        zindex: dataZindex,
+        min: dataMin,
+        max: dataMax,
+        minX: dataMinX,
+        maxX: dataMaxX,
+        minY: dataMinY,
+        maxY: dataMaxY
+      };
+    };
+
+    // set scroll position (posY, posX)
+    // side effect method is not ideal, but okay for now
+    // returns true if the scroll changed, false if nothing happened
+    var setPosition = function() {
+      var oldY = posY;
+      var oldX = posX;
+
+      posY = self.options.wrapper ? self.options.wrapper.scrollTop : (document.documentElement || document.body.parentNode || document.body).scrollTop || window.pageYOffset;
+      posX = self.options.wrapper ? self.options.wrapper.scrollLeft : (document.documentElement || document.body.parentNode || document.body).scrollLeft || window.pageXOffset;
+      // If option relativeToWrapper is true, use relative wrapper value instead.
+      if (self.options.relativeToWrapper) {
+        var scrollPosY = (document.documentElement || document.body.parentNode || document.body).scrollTop || window.pageYOffset;
+        posY = scrollPosY - self.options.wrapper.offsetTop;
+      }
+
+
+      if (oldY != posY && self.options.vertical) {
+        // scroll changed, return true
+        return true;
+      }
+
+      if (oldX != posX && self.options.horizontal) {
+        // scroll changed, return true
+        return true;
+      }
+
+      // scroll did not change
+      return false;
+    };
+
+    // Ahh a pure function, gets new transform value
+    // based on scrollPosition and speed
+    // Allow for decimal pixel values
+    var updatePosition = function(percentageX, percentageY, speed, verticalSpeed, horizontalSpeed) {
+      var result = {};
+      var valueX = ((horizontalSpeed ? horizontalSpeed : speed) * (100 * (1 - percentageX)));
+      var valueY = ((verticalSpeed ? verticalSpeed : speed) * (100 * (1 - percentageY)));
+
+      result.x = self.options.round ? Math.round(valueX) : Math.round(valueX * 100) / 100;
+      result.y = self.options.round ? Math.round(valueY) : Math.round(valueY * 100) / 100;
+
+      return result;
+    };
+
+    // Remove event listeners and loop again
+    var deferredUpdate = function() {
+      window.removeEventListener('resize', deferredUpdate);
+      window.removeEventListener('orientationchange', deferredUpdate);
+      (self.options.wrapper ? self.options.wrapper : window).removeEventListener('scroll', deferredUpdate);
+      (self.options.wrapper ? self.options.wrapper : document).removeEventListener('touchmove', deferredUpdate);
+
+      // loop again
+      loopId = loop(update);
+    };
+
+    // Loop
+    var update = function() {
+      if (setPosition() && pause === false) {
+        animate();
+
+        // loop again
+        loopId = loop(update);
+      } else {
+        loopId = null;
+
+        // Don't animate until we get a position updating event
+        window.addEventListener('resize', deferredUpdate);
+        window.addEventListener('orientationchange', deferredUpdate);
+        (self.options.wrapper ? self.options.wrapper : window).addEventListener('scroll', deferredUpdate, supportsPassive ? { passive: true } : false);
+        (self.options.wrapper ? self.options.wrapper : document).addEventListener('touchmove', deferredUpdate, supportsPassive ? { passive: true } : false);
+      }
+    };
+
+    // Transform3d on parallax element
+    var animate = function() {
+      var positions;
+      for (var i = 0; i < self.elems.length; i++){
+        // Determine relevant movement directions
+        var verticalScrollAxis = blocks[i].verticalScrollAxis.toLowerCase();
+        var horizontalScrollAxis = blocks[i].horizontalScrollAxis.toLowerCase();
+        var verticalScrollX = verticalScrollAxis.indexOf("x") != -1 ? posY : 0;
+        var verticalScrollY = verticalScrollAxis.indexOf("y") != -1 ? posY : 0;
+        var horizontalScrollX = horizontalScrollAxis.indexOf("x") != -1 ? posX : 0;
+        var horizontalScrollY = horizontalScrollAxis.indexOf("y") != -1 ? posX : 0;
+
+        var percentageY = ((verticalScrollY + horizontalScrollY - blocks[i].top + screenY) / (blocks[i].height + screenY));
+        var percentageX = ((verticalScrollX + horizontalScrollX - blocks[i].left + screenX) / (blocks[i].width + screenX));
+
+        // Subtracting initialize value, so element stays in same spot as HTML
+        positions = updatePosition(percentageX, percentageY, blocks[i].speed, blocks[i].verticalSpeed, blocks[i].horizontalSpeed);
+        var positionY = positions.y - blocks[i].baseY;
+        var positionX = positions.x - blocks[i].baseX;
+
+        // The next two "if" blocks go like this:
+        // Check if a limit is defined (first "min", then "max");
+        // Check if we need to change the Y or the X
+        // (Currently working only if just one of the axes is enabled)
+        // Then, check if the new position is inside the allowed limit
+        // If so, use new position. If not, set position to limit.
+
+        // Check if a min limit is defined
+        if (blocks[i].min !== null) {
+          if (self.options.vertical && !self.options.horizontal) {
+            positionY = positionY <= blocks[i].min ? blocks[i].min : positionY;
+          }
+          if (self.options.horizontal && !self.options.vertical) {
+            positionX = positionX <= blocks[i].min ? blocks[i].min : positionX;
+          }
+        }
+
+        // Check if directional min limits are defined
+        if (blocks[i].minY != null) {
+            positionY = positionY <= blocks[i].minY ? blocks[i].minY : positionY;
+        }
+        if (blocks[i].minX != null) {
+            positionX = positionX <= blocks[i].minX ? blocks[i].minX : positionX;
+        }
+
+        // Check if a max limit is defined
+        if (blocks[i].max !== null) {
+          if (self.options.vertical && !self.options.horizontal) {
+            positionY = positionY >= blocks[i].max ? blocks[i].max : positionY;
+          }
+          if (self.options.horizontal && !self.options.vertical) {
+            positionX = positionX >= blocks[i].max ? blocks[i].max : positionX;
+          }
+        }
+
+        // Check if directional max limits are defined
+        if (blocks[i].maxY != null) {
+            positionY = positionY >= blocks[i].maxY ? blocks[i].maxY : positionY;
+        }
+        if (blocks[i].maxX != null) {
+            positionX = positionX >= blocks[i].maxX ? blocks[i].maxX : positionX;
+        }
+
+        var zindex = blocks[i].zindex;
+
+        // Move that element
+        // (Set the new translation and append initial inline transforms.)
+        var translate = 'translate3d(' + (self.options.horizontal ? positionX : '0') + 'px,' + (self.options.vertical ? positionY : '0') + 'px,' + zindex + 'px) ' + blocks[i].transform;
+        self.elems[i].style[transformProp] = translate;
+      }
+      self.options.callback(positions);
+    };
+
+    self.destroy = function() {
+      for (var i = 0; i < self.elems.length; i++){
+        self.elems[i].style.cssText = blocks[i].style;
+      }
+
+      // Remove resize event listener if not pause, and pause
+      if (!pause) {
+        window.removeEventListener('resize', init);
+        pause = true;
+      }
+
+      // Clear the animation loop to prevent possible memory leak
+      clearLoop(loopId);
+      loopId = null;
+    };
+
+    // Init
+    init();
+
+    // Allow to recalculate the initial values whenever we want
+    self.refresh = init;
+
+    return self;
+  };
+  return Rellax;
+}));
+
+
+/***/ }),
+
 /***/ "./src/images/Icons-min.svg":
 /*!**********************************!*\
   !*** ./src/images/Icons-min.svg ***!
@@ -3353,6 +3901,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/images/Images2.webp":
+/*!*********************************!*\
+  !*** ./src/images/Images2.webp ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/Images2-2f0617deb9a26fbd80c93189b3ecd9d4.webp");
+
+/***/ }),
+
 /***/ "./src/images/Layer1.webp":
 /*!********************************!*\
   !*** ./src/images/Layer1.webp ***!
@@ -3410,6 +3973,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/webp;base64,UklGRogPAABXRUJQVlA4THsPAAAvcMQOEB9hIG2b+De97Tcx//OvsG0bNLR2TD9AgOSEAwgEAGBBPIABARwA4AAUDMDjXzjgHw+Mtm2FjSSJbmbESJ5wEtIYJJBFGP7/Jy3efQ+Fy07HxOoV0X9akG3VraOF7yMaObNBcDgcQHJ+1V9z+m/1PqV//Zf6GU7/90bxP//7HzRxOfW/ajBrKSX9EuG02EPEpbKn9wo9LV+5lPK1jo+Yp9Pn5Jaw+UfM0PnTLcu6vrPYUkowzUylvF1olwtNyyMO6x83RyeSofTO4qt6NTQ2mlDeL8y1lB9LplIl10KfyhvGtfxgojypWvKzpnpMkN8rbPnRRNlU1y0rPI3YQT+9V2w/nKiOtAuvJTGIVB8dlX2r0IWSt3me7c8jSl3EZ9lc6+nUm8WpFKbr+olEDSQgPcrCSrNW7xaWcFPq5xLVzaTqooNmBcbvbSO+AejPZcul5NWfvk/Y2W9fJW/r1Dct0/Th6+trDRZZjf6EEqfY3JVwHnd/glJOdT7vecBS5TPn/WHLQ04tZ1Hpp0x1/LzzoKs+S7LfL2yzbbljHZVUcNp8D1juOoygml7QXHgKc4gZOz1LEpOW4yqq7CApG4frctTq/3GYcmFSMo8gTLjbiUmOwqbVYKRf5lrSRCzNMJcyPhJtU+/RKH0/jdjbY+gnvyweOX+nTzbpnUoA9GKJjvMnn067KJDO2PHsdyH7JakUUYh4zTuQn3txTHc3khNoIECvFuT+pwe9FEFy3y/s9iGsYzlO52GYQh3qBcQ6pUwyBZF+peI14/m4x0M8GzaRWfhBHcO0AettaVmyyeywbc8QQanwKRJRBeUHN7EElriAcplErcOuoEMa6YWtc5k0Asg3fO6XHx70tYiSewBhluOjnk1iIsAjBbkHNlWZQoi//vBjrfGxkJ6F0rXDm4Lk9IlzNlsp43HwTixLX6DFMruBzh1zxsrItpgyvzAqn3Chpf1ZpR6ENNevr62+KYHIezxNy1qFPP2Z8X992L62NbiTFD2Fe27CJBllGJqRqZcGWLe74PWeyyaAm/t8kbhNbLPz3yZsEKzPu0Ah4+5+GYIgNPwBkL3jWkbeDOWbeXSUugA8Z83EWN4i9a2U/jAELwS4pCXALUsjY34z32Vhyvi6ELYdNg6RBqAvCiOeKE55WpneQoL2ME7KO7aSOKs0m4uR46i07ukyFSk38wDCNDan9Isxj54gMChJU0RftniRVVkeH3UmpxGvDjcSL+GDNJjJ2inW4SZCcjBpRNIsfq5S3jXVEi6EudLs6/xEFlXJsaA5zKKv6K2dgiiIdzNSZlhWH6+D825ZGEfT8nzw/YKvzJEX+LcsJokDG2blO6/KDMqz6aSYTLioZ4vJArgrbdI3Clu4aMiV7ULybgs5UDsdKfCLGpiUOpElu+nHR3WxWtTM7OOSfOHLEQekeFaEKG+EgYOmFV5DwsAMMA1LlyuLRTSmTlAcaWDWNg011NwKEPjJr4OhvqrYJPUcTqJVGrxIhiOJhxkmSSXLs1lmIWBMqp8uS2lIw6MIA+IGUZYHGcNezyiSL1us0EJZjP5c1nX1Zwb96Xcxlrvr3FYN05uheY4XLbinS/4jv6Az9BeTPoAyHgq0aSMEHYrEdlneny1XzY1PE6b4V0ovMS2RYZJYJXlbSxqTBaqQW9DyskWUvAiLPMFni84txAcQ5gF3cZvAT7HWdgTJDw1x9RchCIfLev6ATLlE71wsySKmnIN3fquG+kjf7FxIJZlmGtYXiPw86tMwBaOO4NYfC8jIAoGHRv6YzNWqfrWYYl8oWpm2RiVTNTP2KKcNtDsndo24Gd9vGaRYCQm4XU8XW5rS3jTP3yvsBiJtDTfQAvDd/xnhuPnvhrlUhC+ho2MVR1nyRbOz965E0uhtSvpIcK8bhM60lxiHZnzdAR+PY8GHajMsqGdW0NVFyqUeBL5OsOHJ2xwxrFlKYY4bKf9EpdpqD1+msVKWFMLGRlJPBbDFmBsGKTlGLBnD+G/d82Vp4/wAwgZoE4ZW+OY4EshXr5DR9O04GMIby1jjUJPXWy3GwCz0xTWhT5pXssiChYxx2tSxDNXLH49nwYeAgWKykEQmWRNspff6mnB7CtRcVCpG5E7W68k6j2B+xoEMBq7YOyAVeaCXmCEN3JKMkbRz3D1epH5cHqtCCEAyiyngPc+XrQ33AMJG2Lz1kfR7iyfUVSdgK3hupi+eacj9zoqbqiah7RvsmWJo4ZT5NduGW3go9ZXE3FaQAhw11ZfQHgUjykHgIVHes8T9tzs9pbZ7XsK2gnR+JVsqTnzUwWOs1KBQAzTz1xiTOurjwoxoJgKNc9ZjER9cfkpkWcHiwydMbmN5AGEetkZ1AExbXggOm8y6QQ/NrNzwJcUqdzMXD3e7mMA4ZQ1UeV9EX1e5K62rsjrClU0QOql1MFOlQkSXuSURKINO0qsUC9Cpyknb+h/7SphYJ0npDAlSg5KocWJzs2EEK4Ju0FqhDjZSl0BmQDsQM4Fg6/iMKW2EBxC2PAD78TqegTCtGLYpT0XfYc1j3isvIzDI0UHio5zx3aPkZ9rDUfU46lCMq8UDBOssBgljG0THzbxKAmpBIm9mExa0FtzLp0dCHCOKuWoGqZoFBRFgNgdBIZwxBr3n5RAPEPZPoHpHqKaQhfgFJV0zlY6tmHZfHsRHTHgjtYkxsjkwI/GcRC7M8ZBx1CHkrz1l0g5lJOH6kCwZ3Z2qTFPAXP6rZC0Cx13UpnrpbiqBLcOy4bVG1ioIsmlgJqAfxQ4sR8wCBotPmfSk/tDvVoKSunp44YXERFMupibceBO2kDeppgjUVKTYLBy02S327Rc0yk/pUGKg46hm2HRRCNxeZf9hkxTHxBwG7sbIcu5A0q+ERI2QTJkGk2gs8mQkcP7ZKukqaN5ghZIU0wIxeOnP380p5khO5G2g/xighzuJT7GUNfLGJUhWOJ9APdH96XPyX0UKXcL8TdOO5uC3gQ0Pt9Oh5FFBuHU+WXDIS4ojVXoByNy2vO0VMcgwj8J6OKmVRLiq54xvnEx/BGF4QY9gjLRvExbiyPof5K96dM4gHkJNlBR4ohw9hWqD1Bb8sIowKzUmx1OZieVw6DgqHYpTEujS5rF+C18cUdD0ZwBSl/7yCN9B34pgLcyTZmijXditXVjCF8wpkf/khKx3uppeMAbR4k3S7jvoUw62J8MpET35O3ps+44dJDuodzwGEl44gAHYtpuWAObUA21zXPjT8THtDgLWpfzlsTzwtxns3nrS9+HJLcwHCdPtymlTiRJXqJQzBqtMdAAo2Kuk4k1IoGwbr2gnSA6bXEeE5EzsPUzrLc3JHtqkHNy7YQ9Cp4NAGoOEU90QaCZGQc/muF0hF8WiYiOv8/DDAE95iMOgobsnjWuhewxhsOEMIv9J81BjMPMRpxG0tkna6DJlEZzilUqCdb29WpNWTXjJYrM+HfkspVDXS9vv93laq1I7BjUcBNT4AYHzeR0QdjOCwXuy1TL9hXTlArr8GpG5OhNUlnEVwBeeXDs+6ca3DXWt47qenrCJ3oZy4fDbRrD85zmjU7NbpPO3CkNXDLVvztsSYapmKghxR+q+6hyFVbhGYghN9RcVzVpZdvmP2ghcm8gf2Bekle2YN+lNNo21CDYT8qjxSFSsDrEs0D77wl9xOhQAs/mpk6AGjGCQ/0JYCB71T5BE7ZJ0/Y/AcWhe/4Mq7iIpCOG4chWt/4FLlJ7wrU2FsR9+dcG5XdjYKAxaw1Hw04owqbKRAnSlp2GNc4oUUxxbubsdxxm/uBtARglCn86Gzs1J7xjtjnnNDPmPOgoVWxG4YZ7DogAEONQ0QXEfzopQ/iVCLA+OwJkMWUQTUdggNVEG2TP/BpBN3q463uoyF7xj6MHk85O+l/JFPLF1pDDPIfQ0R3hhYLuUcEqVfRFN4g9Uuk4S18YlS1GRmRDSaVZ3cuJGi5ZlQpjop6XfuWrBri3SEMIxB21ChE4dR5eOgNsNjzGJ2b7c5+qQvDjyfaQqRG2vkaFxD9ck6NeYuhPbuPI33ol4FOLZcigDFtGzVjDhZY7YfTNP+mkRXsafY4XNUmFMisytYU11DTseM63kSrNw/6s+8y9bPhBDCYzabmeJnnWjdMZKUgIsw/0VqyiP6CHmxJFMw0ENK1Zytws1PD6xaarKPiWcj2HXgVjuKjxTQgmgt7uKKpw+7QIqk39PsEsZdx2BdafnRJ7dobm1m3COt9tzVJP49EqeFpEZW6Z9wWjJHZQXbB0d7qCpfwtehru1jmWasOPu4pyqXAMVZ86TdywaGM9n/Tysi4A8PIIwYSglL9PpdPpcMnK0kkRzr4ToVPVY9avnbPVFIdQIq6Cjt8UYygidpL7ywAxSclkBq7ou3VohWHioucfxHfNXd90/beL0H1EcrwRk2VJYllwQbA++OufDXdeAo6Wr7bXS5jwtGfq3QNWyrOzMzSDOpmWt5Lb4NSPJeCMHI//jWT+A78wam9gdL8wKhMlCKXwsRcqs5euie+AFd6ksJ5qhKeVRUYjhTbWq00rN6aIs7R9PqXb7upxORHm+KF+s0RV+WJwJFew9TEemdVyhJ/2+PfGz4/YnsnRZsqpfEC096k6Dc9MgpKTGeZ8Ls3OMG+Tp5/lM8yZDFYdvEdaNrHKhds4UisjVvYqlGzFoDfugmUjBO7esJd+1cqghVV3X114EhMo6bnt/BsR0tbo1Z1s7TENFF+059BXsQ8wFn5DpjaMhTpEYZaPUJkWhacRcebld22w0bYNWagU5GAvsn/intuinEFOK86SbhVm5sMHHLaVtnjqlWqSlyo2FuRtg4hT3dyW88HvquXx6UhCd1fizEvTTPM/TAAR3RGoMFxylcXOcPbV73f34UMm55wHh6D1MZZ+Q6W2jYdVER5XJgxSmwVxpyEeqEYy5utQWZr3IJpm5vfH8nSTfx4+JUoM/E4r4EzK9bYhfF8Uqs0k2YtOziDNk6FONoNJ2kbdkgzQmArpXAdi5u76boEdCDA2fkOlNg+mzduMClpcKokszY3tiT+c9+T9bhVFdgFq5W6pg00qfKICzyQVFRDBTdO8mEw2+t31CpneKztaJm1XSdo4pbXWUQqRscCFWixq8xcP5KWyVUUobeth5T2R3deBiF3sZxGGR6uYIsoCHi1vigyKaL48zLcL3ki3AkGDTJ2T6JfKvmFkKcvAbOmp61u8RGh8JAZfE3n6L0DTjzm61SL9EYO9q2nbWn18iHBiHHrT6HYKttpP9rvm3dtrZ/sL51wT/p0i6N4p///vvFgUA");
+
+/***/ }),
+
+/***/ "./src/images/Mockup.webp":
+/*!********************************!*\
+  !*** ./src/images/Mockup.webp ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/Mockup-b14ad5c51656f19c0acb5bf264e0bdc3.webp");
 
 /***/ }),
 
@@ -3500,36 +4078,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgOCA4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMC44Nzk3NjEgNC4yMzk5OUMwLjg3OTc2MSAyLjIwOTk5IDIuMzY5NzUgMC43OTk5ODggNC4xOTk3NSAwLjc5OTk4OEM2LjAyOTc1IDAuNzk5OTg4IDcuNDk5NzYgMi4yMDk5OSA3LjQ5OTc2IDQuMjM5OTlDNy40OTk3NiA2LjI2OTk5IDYuMDA5NzUgNy42Nzk5OSA0LjE5OTc1IDcuNjc5OTlDMi4zODk3NSA3LjY3OTk5IDAuODc5NzYxIDYuMjY5OTkgMC44Nzk3NjEgNC4yMzk5OVpNNi43Mzk3NiA0LjIzOTk5QzYuNzM5NzYgMi42MTk5OSA1LjY0OTc2IDEuNDc5OTkgNC4xODk3NiAxLjQ3OTk5QzIuNzI5NzYgMS40Nzk5OSAxLjYyOTc2IDIuNjA5OTkgMS42Mjk3NiA0LjIzOTk5QzEuNjI5NzYgNS44Njk5OSAyLjcyOTc2IDYuOTc5OTkgNC4xODk3NiA2Ljk3OTk5QzUuNjQ5NzYgNi45Nzk5OSA2LjczOTc2IDUuODc5OTkgNi43Mzk3NiA0LjIzOTk5Wk0yLjg4OTc2IDIuNDU5OTlINC4yNjk3NkM1LjAxOTc2IDIuNDU5OTkgNS42NDk3NSAyLjc2OTk5IDUuNjQ5NzUgMy41ODk5OUM1LjY0OTc1IDMuOTk5OTkgNS40MDk3NiA0LjM4OTk5IDQuOTk5NzYgNC41Mzk5OUw1Ljc3OTc1IDUuOTQ5OTlINC45MTk3NUw0LjMzOTc1IDQuNzc5OTlIMy42Nzk3NVY1Ljk0OTk5SDIuODg5NzZWMi40NTk5OVpNNC4wOTk3NiA0LjE4OTk5QzQuNTM5NzYgNC4xODk5OSA0Ljc4OTc1IDMuOTc5OTkgNC43ODk3NSAzLjYyOTk5QzQuNzg5NzUgMy4zMTk5OSA0LjU5OTc2IDMuMDg5OTkgNC4xMjk3NiAzLjA4OTk5SDMuNjc5NzVWNC4xODk5OUg0LjA5OTc2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
-
-/***/ }),
-
-/***/ "./src/images/car-christmas-transport-svgrepo-com.svg":
-/*!************************************************************!*\
-  !*** ./src/images/car-christmas-transport-svgrepo-com.svg ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PgoNPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KDTxnIGlkPSJmbGF0Ij4KDTxwYXRoIGQ9Ik05LDUxSDNWNDUuMDY0QTQsNCwwLDAsMSw1Ljk1OSw0MS4yTDE0LjEyNywzOUg1N2E0LDQsMCwwLDEsNCw0djhINTUiIHN0eWxlPSJmaWxsOiNkZDRhNDMiLz4KDTxwYXRoIGQ9Ik0zLjE1Nyw0NkEyLjA5LDIuMDksMCwwLDAsMyw0Ni43NlY1MUg2MVY0NloiIHN0eWxlPSJmaWxsOiNkMTNlMzciLz4KDTxwYXRoIGQ9Ik01NCwzOUgxNC4xMjdsOC44LTEwLjU2MUE0LDQsMCwwLDEsMjYsMjdINDMuODU5YTQsNCwwLDAsMSwzLjMyOCwxLjc4MVoiIHN0eWxlPSJmaWxsOiM4N2NlZDkiLz4KDTxyZWN0IGhlaWdodD0iMTIiIHN0eWxlPSJmaWxsOiM1ZWIzZDEiIHdpZHRoPSIyIiB4PSIzNCIgeT0iMjciLz4KDTxjaXJjbGUgY3g9IjE0IiBjeT0iNTEiIHI9IjUiIHN0eWxlPSJmaWxsOiM1NzU3NTUiLz4KDTxjaXJjbGUgY3g9IjUwIiBjeT0iNTEiIHI9IjUiIHN0eWxlPSJmaWxsOiM1NzU3NTUiLz4KDTxjaXJjbGUgY3g9IjE0IiBjeT0iNTEiIHI9IjIiIHN0eWxlPSJmaWxsOiNlYmViZTgiLz4KDTxjaXJjbGUgY3g9IjUwIiBjeT0iNTEiIHI9IjIiIHN0eWxlPSJmaWxsOiNlYmViZTgiLz4KDTxwb2x5Z29uIHBvaW50cz0iNTIgOCA0MCAxMyA0MCA5IDI4IDE0IDI4IDEwIDE2IDE1LjA1MyAxNiAxMiAzIDE4IDE2IDI0IDE2IDIwLjk0NyAyOCAyNiAyOCAyMiA0MCAyNyA0MCAyMyA1MiAyOCA1MiA4IiBzdHlsZT0iZmlsbDojN2VhODJkIi8+Cg08cmVjdCBoZWlnaHQ9IjQiIHN0eWxlPSJmaWxsOiNhNjViMmQiIHdpZHRoPSI5IiB4PSI1MiIgeT0iMTYiLz4KDTxwYXRoIGQ9Ik0yNywyOGEuOTcyLjk3MiwwLDAsMS0uMTg1LS4wMTcsMSwxLDAsMCwxLS44LTEuMTY3bDMtMTZhMSwxLDAsMSwxLDEuOTY2LjM2OGwtMywxNkExLDEsMCwwLDEsMjcsMjhaIiBzdHlsZT0iZmlsbDojN2E0MzIxIi8+Cg08cGF0aCBkPSJNNDUsMjhhMSwxLDAsMCwxLS45ODItLjgxNmwtMy0xNmExLDEsMCwwLDEsMS45NjYtLjM2OGwzLDE2YTEsMSwwLDAsMS0uOCwxLjE2N0EuOTcyLjk3MiwwLDAsMSw0NSwyOFoiIHN0eWxlPSJmaWxsOiM3YTQzMjEiLz4KDTxyZWN0IGhlaWdodD0iMiIgc3R5bGU9ImZpbGw6I2ViZWJlOCIgd2lkdGg9IjQiIHg9IjI4IiB5PSI0MiIvPgoNPHJlY3QgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojZWJlYmU4IiB3aWR0aD0iNCIgeD0iNDQiIHk9IjQyIi8+Cg08cmVjdCBoZWlnaHQ9IjIiIHN0eWxlPSJmaWxsOiNhN2UxZWIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMy45NzMgMzEuMzY2KSByb3RhdGUoLTUwLjE5MSkiIHdpZHRoPSIxLjU2MiIgeD0iMjUuNzE5IiB5PSIyOS42Ii8+Cg08cmVjdCBoZWlnaHQ9IjIiIHN0eWxlPSJmaWxsOiNhN2UxZWIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy44MTcgMzAuMzU2KSByb3RhdGUoLTUwLjE5MSkiIHdpZHRoPSI0LjY4NiIgeD0iMjEuMTU3IiB5PSIzMy4yIi8+Cg08cmVjdCBoZWlnaHQ9IjEyIiBzdHlsZT0iZmlsbDojZDEzZTM3IiB3aWR0aD0iMiIgeD0iMzQiIHk9IjM5Ii8+Cg08L2c+Cg08L3N2Zz4=");
-
-/***/ }),
-
-/***/ "./src/images/illustration-flowing-conversation.svg":
-/*!**********************************************************!*\
-  !*** ./src/images/illustration-flowing-conversation.svg ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/illustration-flowing-conversation-447b9b47aef8c266f047e609cbf11004.svg");
 
 /***/ }),
 

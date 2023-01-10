@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_illustration_flowing_conversation_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/illustration-flowing-conversation.svg */ "./src/images/illustration-flowing-conversation.svg");
+/* harmony import */ var _images_office_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/office.webp */ "./src/images/office.webp");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 
 
@@ -27,16 +27,20 @@ const Automatisation = () => {
     className: "flex flex-col max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     "data-aos": "fade-up",
-    className: "text-center py-6 text-xl font-bold sm:text-2xl md:text-5xl lg:text-6xl"
+    className: "text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
-  }, "AUTOMATISATION DES STRATEGIES MARKETING/PARTENAIRE MARKETING LEADSTREAM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "AUTOMATISATION DES STRATEGIES MARKETING/ PARTENAIRE MARKETING LEADSTREAM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 md:flex-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-in",
     "data-aos-duration": "1000",
+    className: "relative"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover h-full w-full",
-    src: _images_illustration_flowing_conversation_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
+    src: _images_office_webp__WEBPACK_IMPORTED_MODULE_1__["default"],
     alt: "travail",
     loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -55,6 +59,20 @@ const Automatisation = () => {
   }, "COMMENCER")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Automatisation);
+
+/***/ }),
+
+/***/ "./src/images/office.webp":
+/*!********************************!*\
+  !*** ./src/images/office.webp ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/office-d608b15951089be37b84bb388ceeeccf.webp");
 
 /***/ })
 
