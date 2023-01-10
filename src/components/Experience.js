@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
 import Rellax from "rellax";
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
 import Image1 from "../images/Layer1.webp";
 import Image2 from "../images/Layer2.svg";
 
 const Experience = () => {
-  const rellaxRef = useRef();
-
   useEffect(() => {
-    new Rellax(rellaxRef.current, {
+    new Rellax(".animate", {
       speed: -2,
       center: true,
       wrapper: null,
@@ -58,10 +56,7 @@ const Experience = () => {
             />
           </div>
 
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DES SITES WEBS ULTRA RAPIDES
             </h2>
@@ -92,10 +87,7 @@ const Experience = () => {
               alt="travail"
             />
           </div>
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               PLATEFORME (CMS)FACILE A UTILISER
             </h2>
@@ -129,10 +121,7 @@ const Experience = () => {
             />
           </div>
 
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               DEMANDES WEB DE QUALITE (LEADS)
             </h2>
@@ -163,10 +152,7 @@ const Experience = () => {
               alt="travail"
             />
           </div>
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
             </h2>
@@ -192,10 +178,7 @@ const Experience = () => {
             />
           </div>
 
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS
             </h2>
@@ -221,10 +204,7 @@ const Experience = () => {
             />
           </div>
 
-          <div
-            ref={rellaxRef}
-            className="hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-          >
+          <div className="animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
               OPTIMISATION SEO
             </h2>
