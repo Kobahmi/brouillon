@@ -18,11 +18,7 @@ import Produits from "../components/Produits";
 import Rapide from "../components/Rapide";
 import Seo from "../components/seo";
 import Syndication from "../components/Syndication";
-import loadable from "@loadable/component";
-
-const Automatisation = loadable(() => import("../components/Automatisation"), {
-  fallback: <div>Loading...</div>,
-});
+import Automatisation from "../components/Automatisation";
 
 const IndexPage = () => {
   return (
