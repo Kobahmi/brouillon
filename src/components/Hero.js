@@ -4,7 +4,7 @@ import Image from "../images/Layer1v2.webp";
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-800 min-h-[580px] md:min-h-[800px] lg:min-h-[940px] ">
+    <section className="bg-neutral-800 min-h-[580px] md:min-h-[830px] lg:min-h-[940px] ">
       <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center">
         <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-start">
           <h1 className="flex z-20 flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
@@ -24,9 +24,9 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="z-0 mx-auto lg:ml-[-18rem]">
+        <div className="z-0 mx-auto lg:ml-[-18rem] mt-[1rem]">
           <img
-            className="object-scale-down h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
+            className="object-cover h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
             src={Image}
             alt="stock"
           />
