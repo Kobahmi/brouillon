@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../images/Layer1v2.webp";
+import Image from "../images/Images-min.svg";
 
 const Hero = () => {
   return (
@@ -25,11 +25,7 @@ const Hero = () => {
         </div>
 
         <div className="z-0 mx-auto lg:ml-[-18rem] mt-[1rem]">
-          <img
-            className="object-cover h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]"
-            src={Image}
-            alt="stock"
-          />
+          <img className="object-cover h-full w-full" src={Image} alt="stock" />
         </div>
       </div>
     </section>
