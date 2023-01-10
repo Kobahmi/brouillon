@@ -7,7 +7,12 @@ const Contact = () => {
     <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6">
       <div className="max-w-[1200px] mx-auto">
         <Link to="/">
-          <img className="h-auto w-[16rem] pb-10" src={Image1} alt="logo" />
+          <img
+            className="h-auto w-[16rem] pb-10"
+            src={Image1}
+            loading="lazy"
+            alt="logo"
+          />
         </Link>
         <ul className="text-black grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-400 border-solid border-l-2 px-6 py-4">
