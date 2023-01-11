@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="z-0 pb-10 mx-auto lg:ml-[-18rem] mt-[1rem] lg:pb-0">
+        <div className="pb-10 mt-[1rem] lg:ml-[-18rem] lg:pb-0">
           <img className="object-cover h-full w-full" src={Image} alt="stock" />
         </div>
       </div>
