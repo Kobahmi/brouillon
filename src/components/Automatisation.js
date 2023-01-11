@@ -25,7 +25,7 @@ const Automatisation = () => {
               <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>{" "}
             </div>
             <StaticImage
-              src="../images/office.webp"
+              src="../images/bureau.webp"
               alt="travail"
               placeholder="white"
             />

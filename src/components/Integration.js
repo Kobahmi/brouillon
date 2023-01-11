@@ -18,15 +18,15 @@ const Integration = () => {
           <div data-aos="fade-in" data-aos-duration="1000" className="relative">
             <div
               data-aos="fade-in"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               data-aos-delay="500"
             >
               <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             </div>
-            <div className="absolute z-40 h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] opacity-20 bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
+
             <StaticImage
               className="rounded-tr-[10rem] rounded-bl-[10rem]"
-              src="../images/Images2.webp"
+              src="../images/auto.webp"
               alt="travail"
               placeholder="black"
             />
