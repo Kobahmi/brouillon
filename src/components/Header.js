@@ -4,11 +4,11 @@ import * as React from "react";
 import Menu from "../images/menu.svg";
 import { useState } from "react";
 import Letter1 from "../images/Vector.svg";
-import Letter2 from "../images/Vector2.svg";
-import Letter3 from "../images/Vector3.svg";
+import Letter2 from "../images/Vector1b.svg";
+import Letter3 from "../images/Vector2b.svg";
 import Letter4 from "../images/Vector4.svg";
-import Letter5 from "../images/Vector5.svg";
-import Letter6 from "../images/Vector6.svg";
+import Letter5 from "../images/Vector3b.svg";
+import Letter6 from "../images/Vector6b.svg";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
