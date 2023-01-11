@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
 import * as React from "react";
-
 import Menu from "../images/menu.svg";
 import { useState } from "react";
 import Letter1 from "../images/Vector.svg";
