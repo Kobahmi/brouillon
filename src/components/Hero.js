@@ -4,7 +4,7 @@ import Image from "../images/Images-min.svg";
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-800 min-h-[580px] md:min-h-[830px] lg:min-h-[940px] ">
+    <section className="bg-neutral-800 min-h-[580px] md:min-h-[700px] lg:min-h-[800px] ">
       <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center">
         <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-start">
           <h1 className="flex z-20 flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="z-0 mx-auto lg:ml-[-18rem] mt-[1rem]">
+        <div className="z-0 pb-10 mx-auto lg:ml-[-18rem] mt-[1rem] lg:pb-0">
           <img className="object-cover h-full w-full" src={Image} alt="stock" />
         </div>
       </div>
