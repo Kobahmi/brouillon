@@ -2,597 +2,6 @@ exports.id = "component---src-pages-index-jshead";
 exports.ids = ["component---src-pages-index-jshead"];
 exports.modules = {
 
-/***/ "./node_modules/@loadable/component/dist/loadable.esm.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@loadable/component/dist/loadable.esm.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": () => (/* binding */ __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "lazy": () => (/* binding */ lazy$2),
-/* harmony export */   "loadableReady": () => (/* binding */ loadableReady)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-/* eslint-disable import/prefer-default-export */
-function invariant(condition, message) {
-  if (condition) return;
-  var error = new Error("loadable: " + message);
-  error.framesToPop = 1;
-  error.name = 'Invariant Violation';
-  throw error;
-}
-function warn(message) {
-  // eslint-disable-next-line no-console
-  console.warn("loadable: " + message);
-}
-
-var Context = /*#__PURE__*/
-react__WEBPACK_IMPORTED_MODULE_0___default().createContext();
-
-var LOADABLE_REQUIRED_CHUNKS_KEY = '__LOADABLE_REQUIRED_CHUNKS__';
-function getRequiredChunkKey(namespace) {
-  return "" + namespace + LOADABLE_REQUIRED_CHUNKS_KEY;
-}
-
-var sharedInternals = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  getRequiredChunkKey: getRequiredChunkKey,
-  invariant: invariant,
-  Context: Context
-});
-
-var LOADABLE_SHARED = {
-  initialChunks: {}
-};
-
-var STATUS_PENDING = 'PENDING';
-var STATUS_RESOLVED = 'RESOLVED';
-var STATUS_REJECTED = 'REJECTED';
-
-function resolveConstructor(ctor) {
-  if (typeof ctor === 'function') {
-    return {
-      requireAsync: ctor,
-      resolve: function resolve() {
-        return undefined;
-      },
-      chunkName: function chunkName() {
-        return undefined;
-      }
-    };
-  }
-
-  return ctor;
-}
-
-var withChunkExtractor = function withChunkExtractor(Component) {
-  var LoadableWithChunkExtractor = function LoadableWithChunkExtractor(props) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Context.Consumer, null, function (extractor) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({
-        __chunkExtractor: extractor
-      }, props));
-    });
-  };
-
-  if (Component.displayName) {
-    LoadableWithChunkExtractor.displayName = Component.displayName + "WithChunkExtractor";
-  }
-
-  return LoadableWithChunkExtractor;
-};
-
-var identity = function identity(v) {
-  return v;
-};
-
-function createLoadable(_ref) {
-  var _ref$defaultResolveCo = _ref.defaultResolveComponent,
-      defaultResolveComponent = _ref$defaultResolveCo === void 0 ? identity : _ref$defaultResolveCo,
-      _render = _ref.render,
-      onLoad = _ref.onLoad;
-
-  function loadable(loadableConstructor, options) {
-    if (options === void 0) {
-      options = {};
-    }
-
-    var ctor = resolveConstructor(loadableConstructor);
-    var cache = {};
-    /**
-     * Cachekey represents the component to be loaded
-     * if key changes - component has to be reloaded
-     * @param props
-     * @returns {null|Component}
-     */
-
-    function _getCacheKey(props) {
-      if (options.cacheKey) {
-        return options.cacheKey(props);
-      }
-
-      if (ctor.resolve) {
-        return ctor.resolve(props);
-      }
-
-      return 'static';
-    }
-    /**
-     * Resolves loaded `module` to a specific `Component
-     * @param module
-     * @param props
-     * @param Loadable
-     * @returns Component
-     */
-
-
-    function resolve(module, props, Loadable) {
-      var Component = options.resolveComponent ? options.resolveComponent(module, props) : defaultResolveComponent(module);
-
-      if (options.resolveComponent && !(0,react_is__WEBPACK_IMPORTED_MODULE_5__.isValidElementType)(Component)) {
-        throw new Error("resolveComponent returned something that is not a React component!");
-      }
-
-      hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(Loadable, Component, {
-        preload: true
-      });
-      return Component;
-    }
-
-    var cachedLoad = function cachedLoad(props) {
-      var cacheKey = _getCacheKey(props);
-
-      var promise = cache[cacheKey];
-
-      if (!promise || promise.status === STATUS_REJECTED) {
-        promise = ctor.requireAsync(props);
-        promise.status = STATUS_PENDING;
-        cache[cacheKey] = promise;
-        promise.then(function () {
-          promise.status = STATUS_RESOLVED;
-        }, function (error) {
-          console.error('loadable-components: failed to asynchronously load component', {
-            fileName: ctor.resolve(props),
-            chunkName: ctor.chunkName(props),
-            error: error ? error.message : error
-          });
-          promise.status = STATUS_REJECTED;
-        });
-      }
-
-      return promise;
-    };
-
-    var InnerLoadable =
-    /*#__PURE__*/
-    function (_React$Component) {
-      (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_4__["default"])(InnerLoadable, _React$Component);
-
-      InnerLoadable.getDerivedStateFromProps = function getDerivedStateFromProps(props, state) {
-        var cacheKey = _getCacheKey(props);
-
-        return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, {
-          cacheKey: cacheKey,
-          // change of a key triggers loading state automatically
-          loading: state.loading || state.cacheKey !== cacheKey
-        });
-      };
-
-      function InnerLoadable(props) {
-        var _this;
-
-        _this = _React$Component.call(this, props) || this;
-        _this.state = {
-          result: null,
-          error: null,
-          loading: true,
-          cacheKey: _getCacheKey(props)
-        };
-        invariant(!props.__chunkExtractor || ctor.requireSync, 'SSR requires `@loadable/babel-plugin`, please install it'); // Server-side
-
-        if (props.__chunkExtractor) {
-          // This module has been marked with no SSR
-          if (options.ssr === false) {
-            return (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__["default"])(_this);
-          } // We run load function, we assume that it won't fail and that it
-          // triggers a synchronous loading of the module
-
-
-          ctor.requireAsync(props)["catch"](function () {
-            return null;
-          }); // So we can require now the module synchronously
-
-          _this.loadSync();
-
-          props.__chunkExtractor.addChunk(ctor.chunkName(props));
-
-          return (0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__["default"])(_this);
-        } // Client-side with `isReady` method present (SSR probably)
-        // If module is already loaded, we use a synchronous loading
-        // Only perform this synchronous loading if the component has not
-        // been marked with no SSR, else we risk hydration mismatches
-
-
-        if (options.ssr !== false && ( // is ready - was loaded in this session
-        ctor.isReady && ctor.isReady(props) || // is ready - was loaded during SSR process
-        ctor.chunkName && LOADABLE_SHARED.initialChunks[ctor.chunkName(props)])) {
-          _this.loadSync();
-        }
-
-        return _this;
-      }
-
-      var _proto = InnerLoadable.prototype;
-
-      _proto.componentDidMount = function componentDidMount() {
-        this.mounted = true; // retrieve loading promise from a global cache
-
-        var cachedPromise = this.getCache(); // if promise exists, but rejected - clear cache
-
-        if (cachedPromise && cachedPromise.status === STATUS_REJECTED) {
-          this.setCache();
-        } // component might be resolved synchronously in the constructor
-
-
-        if (this.state.loading) {
-          this.loadAsync();
-        }
-      };
-
-      _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
-        // Component has to be reloaded on cacheKey change
-        if (prevState.cacheKey !== this.state.cacheKey) {
-          this.loadAsync();
-        }
-      };
-
-      _proto.componentWillUnmount = function componentWillUnmount() {
-        this.mounted = false;
-      };
-
-      _proto.safeSetState = function safeSetState(nextState, callback) {
-        if (this.mounted) {
-          this.setState(nextState, callback);
-        }
-      }
-      /**
-       * returns a cache key for the current props
-       * @returns {Component|string}
-       */
-      ;
-
-      _proto.getCacheKey = function getCacheKey() {
-        return _getCacheKey(this.props);
-      }
-      /**
-       * access the persistent cache
-       */
-      ;
-
-      _proto.getCache = function getCache() {
-        return cache[this.getCacheKey()];
-      }
-      /**
-       * sets the cache value. If called without value sets it as undefined
-       */
-      ;
-
-      _proto.setCache = function setCache(value) {
-        if (value === void 0) {
-          value = undefined;
-        }
-
-        cache[this.getCacheKey()] = value;
-      };
-
-      _proto.triggerOnLoad = function triggerOnLoad() {
-        var _this2 = this;
-
-        if (onLoad) {
-          setTimeout(function () {
-            onLoad(_this2.state.result, _this2.props);
-          });
-        }
-      }
-      /**
-       * Synchronously loads component
-       * target module is expected to already exists in the module cache
-       * or be capable to resolve synchronously (webpack target=node)
-       */
-      ;
-
-      _proto.loadSync = function loadSync() {
-        // load sync is expecting component to be in the "loading" state already
-        // sounds weird, but loading=true is the initial state of InnerLoadable
-        if (!this.state.loading) return;
-
-        try {
-          var loadedModule = ctor.requireSync(this.props);
-          var result = resolve(loadedModule, this.props, Loadable);
-          this.state.result = result;
-          this.state.loading = false;
-        } catch (error) {
-          console.error('loadable-components: failed to synchronously load component, which expected to be available', {
-            fileName: ctor.resolve(this.props),
-            chunkName: ctor.chunkName(this.props),
-            error: error ? error.message : error
-          });
-          this.state.error = error;
-        }
-      }
-      /**
-       * Asynchronously loads a component.
-       */
-      ;
-
-      _proto.loadAsync = function loadAsync() {
-        var _this3 = this;
-
-        var promise = this.resolveAsync();
-        promise.then(function (loadedModule) {
-          var result = resolve(loadedModule, _this3.props, Loadable);
-
-          _this3.safeSetState({
-            result: result,
-            loading: false
-          }, function () {
-            return _this3.triggerOnLoad();
-          });
-        })["catch"](function (error) {
-          return _this3.safeSetState({
-            error: error,
-            loading: false
-          });
-        });
-        return promise;
-      }
-      /**
-       * Asynchronously resolves(not loads) a component.
-       * Note - this function does not change the state
-       */
-      ;
-
-      _proto.resolveAsync = function resolveAsync() {
-        var _this$props = this.props,
-            __chunkExtractor = _this$props.__chunkExtractor,
-            forwardedRef = _this$props.forwardedRef,
-            props = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_this$props, ["__chunkExtractor", "forwardedRef"]);
-
-        return cachedLoad(props);
-      };
-
-      _proto.render = function render() {
-        var _this$props2 = this.props,
-            forwardedRef = _this$props2.forwardedRef,
-            propFallback = _this$props2.fallback,
-            __chunkExtractor = _this$props2.__chunkExtractor,
-            props = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_this$props2, ["forwardedRef", "fallback", "__chunkExtractor"]);
-
-        var _this$state = this.state,
-            error = _this$state.error,
-            loading = _this$state.loading,
-            result = _this$state.result;
-
-        if (options.suspense) {
-          var cachedPromise = this.getCache() || this.loadAsync();
-
-          if (cachedPromise.status === STATUS_PENDING) {
-            throw this.loadAsync();
-          }
-        }
-
-        if (error) {
-          throw error;
-        }
-
-        var fallback = propFallback || options.fallback || null;
-
-        if (loading) {
-          return fallback;
-        }
-
-        return _render({
-          fallback: fallback,
-          result: result,
-          options: options,
-          props: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
-            ref: forwardedRef
-          })
-        });
-      };
-
-      return InnerLoadable;
-    }((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
-
-    var EnhancedInnerLoadable = withChunkExtractor(InnerLoadable);
-    var Loadable = react__WEBPACK_IMPORTED_MODULE_0___default().forwardRef(function (props, ref) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(EnhancedInnerLoadable, Object.assign({
-        forwardedRef: ref
-      }, props));
-    });
-    Loadable.displayName = 'Loadable'; // In future, preload could use `<link rel="preload">`
-
-    Loadable.preload = function (props) {
-      Loadable.load(props);
-    };
-
-    Loadable.load = function (props) {
-      return cachedLoad(props);
-    };
-
-    return Loadable;
-  }
-
-  function lazy(ctor, options) {
-    return loadable(ctor, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, options, {
-      suspense: true
-    }));
-  }
-
-  return {
-    loadable: loadable,
-    lazy: lazy
-  };
-}
-
-function defaultResolveComponent(loadedModule) {
-  // eslint-disable-next-line no-underscore-dangle
-  return loadedModule.__esModule ? loadedModule["default"] : loadedModule["default"] || loadedModule;
-}
-
-/* eslint-disable no-use-before-define, react/no-multi-comp */
-
-var _createLoadable =
-/*#__PURE__*/
-createLoadable({
-  defaultResolveComponent: defaultResolveComponent,
-  render: function render(_ref) {
-    var Component = _ref.result,
-        props = _ref.props;
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, props);
-  }
-}),
-    loadable = _createLoadable.loadable,
-    lazy = _createLoadable.lazy;
-
-/* eslint-disable no-use-before-define, react/no-multi-comp */
-
-var _createLoadable$1 =
-/*#__PURE__*/
-createLoadable({
-  onLoad: function onLoad(result, props) {
-    if (result && props.forwardedRef) {
-      if (typeof props.forwardedRef === 'function') {
-        props.forwardedRef(result);
-      } else {
-        props.forwardedRef.current = result;
-      }
-    }
-  },
-  render: function render(_ref) {
-    var result = _ref.result,
-        props = _ref.props;
-
-    if (props.children) {
-      return props.children(result);
-    }
-
-    return null;
-  }
-}),
-    loadable$1 = _createLoadable$1.loadable,
-    lazy$1 = _createLoadable$1.lazy;
-
-/* eslint-disable no-underscore-dangle, camelcase */
-var BROWSER = typeof window !== 'undefined';
-function loadableReady(done, _temp) {
-  if (done === void 0) {
-    done = function done() {};
-  }
-
-  var _ref = _temp === void 0 ? {} : _temp,
-      _ref$namespace = _ref.namespace,
-      namespace = _ref$namespace === void 0 ? '' : _ref$namespace,
-      _ref$chunkLoadingGlob = _ref.chunkLoadingGlobal,
-      chunkLoadingGlobal = _ref$chunkLoadingGlob === void 0 ? '__LOADABLE_LOADED_CHUNKS__' : _ref$chunkLoadingGlob;
-
-  if (!BROWSER) {
-    warn('`loadableReady()` must be called in browser only');
-    done();
-    return Promise.resolve();
-  }
-
-  var requiredChunks = null;
-
-  if (BROWSER) {
-    var id = getRequiredChunkKey(namespace);
-    var dataElement = document.getElementById(id);
-
-    if (dataElement) {
-      requiredChunks = JSON.parse(dataElement.textContent);
-      var extElement = document.getElementById(id + "_ext");
-
-      if (extElement) {
-        var _JSON$parse = JSON.parse(extElement.textContent),
-            namedChunks = _JSON$parse.namedChunks;
-
-        namedChunks.forEach(function (chunkName) {
-          LOADABLE_SHARED.initialChunks[chunkName] = true;
-        });
-      } else {
-        // version mismatch
-        throw new Error('loadable-component: @loadable/server does not match @loadable/component');
-      }
-    }
-  }
-
-  if (!requiredChunks) {
-    warn('`loadableReady()` requires state, please use `getScriptTags` or `getScriptElements` server-side');
-    done();
-    return Promise.resolve();
-  }
-
-  var resolved = false;
-  return new Promise(function (resolve) {
-    window[chunkLoadingGlobal] = window[chunkLoadingGlobal] || [];
-    var loadedChunks = window[chunkLoadingGlobal];
-    var originalPush = loadedChunks.push.bind(loadedChunks);
-
-    function checkReadyState() {
-      if (requiredChunks.every(function (chunk) {
-        return loadedChunks.some(function (_ref2) {
-          var chunks = _ref2[0];
-          return chunks.indexOf(chunk) > -1;
-        });
-      })) {
-        if (!resolved) {
-          resolved = true;
-          resolve();
-        }
-      }
-    }
-
-    loadedChunks.push = function () {
-      originalPush.apply(void 0, arguments);
-      checkReadyState();
-    };
-
-    checkReadyState();
-  }).then(done);
-}
-
-/* eslint-disable no-underscore-dangle */
-var loadable$2 = loadable;
-loadable$2.lib = loadable$1;
-var lazy$2 = lazy;
-lazy$2.lib = lazy$1;
-var __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = sharedInternals;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadable$2);
-
-
-
-/***/ }),
-
 /***/ "./node_modules/aos/dist/aos.esm.js":
 /*!******************************************!*\
   !*** ./node_modules/aos/dist/aos.esm.js ***!
@@ -1222,6 +631,66 @@ var aos = {
 
 /***/ }),
 
+/***/ "./src/components/Automatisation.js":
+/*!******************************************!*\
+  !*** ./src/components/Automatisation.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_office_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/office.webp */ "./src/images/office.webp");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+const Automatisation = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "py-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col max-w-[1200px] mx-auto"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    "data-aos": "fade-up",
+    className: "text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
+  }, "AUTOMATISATION DES STRATEGIES MARKETING/ PARTENAIRE MARKETING LEADSTREAM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col gap-10 items-center p-10 md:flex-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-aos": "fade-in",
+    "data-aos-duration": "1000",
+    className: "relative"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "object-cover h-full w-full",
+    src: _images_office_webp__WEBPACK_IMPORTED_MODULE_1__["default"],
+    alt: "travail",
+    loading: "lazy"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-col gap-4 pl-10 py-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "flex flex-col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "max-w-lg text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+  }, "NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "max-w-lg"
+  }, "Nos services de marketing seront offers en partenariat avec l'agence Leadstream."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "list-disc  font-bold ml-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Campagne Facebook et Google Ads"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Referencement et redaction de contenus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Conseils et strategies de marketing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/",
+    className: "text-black z-20 mr-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
+  }, "COMMENCER")))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Automatisation);
+
+/***/ }),
+
 /***/ "./src/components/Contact.js":
 /*!***********************************!*\
   !*** ./src/components/Contact.js ***!
@@ -1250,6 +719,7 @@ const Contact = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "h-auto w-[16rem] pb-10",
     src: _images_Logo_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
+    loading: "lazy",
     alt: "logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "text-black grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
@@ -1452,27 +922,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rellax */ "./node_modules/rellax/rellax.js");
-/* harmony import */ var rellax__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rellax__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/Layer1.webp */ "./src/images/Layer1.webp");
-/* harmony import */ var _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/Layer2.svg */ "./src/images/Layer2.svg");
-
-
+/* harmony import */ var _images_Layer1v2_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/Layer1v2.webp */ "./src/images/Layer1v2.webp");
+/* harmony import */ var _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/Layer2.svg */ "./src/images/Layer2.svg");
 
 
 
 
 const Experience = () => {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    new (rellax__WEBPACK_IMPORTED_MODULE_2___default())(".animate", {
-      speed: -2,
-      center: true,
-      wrapper: null,
-      round: true,
-      vertical: true,
-      horizontal: false
-    });
-  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "bg-white pt-6 pb-[8.5rem]"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -1494,104 +950,89 @@ const Experience = () => {
     className: "text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
   }, "COMMENCER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-right",
-    "data-aos-duration": "1000",
+    "data-aos-duration": "1000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover h-full w-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
-    alt: "travail"
+    src: _images_Layer1v2_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "DES SITES WEBS ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des dernieres technologies pour offrir des sites web ultra rapides.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "DES SITES WEBS ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des dernieres technologies pour offrir des sites web ultra rapides."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:order-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
+    className: "lg:order-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover h-full w-full ",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
-    alt: "travail"
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "PLATEFORME (CMS)FACILE A UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'integration de contenus personnalises sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus).")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "PLATEFORME (CMS)FACILE A UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'integration de contenus personnalises sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-right",
-    "data-aos-duration": "1000",
+    "data-aos-duration": "1000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover w-full h-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
-    alt: "travail"
+    src: _images_Layer1v2_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "DEMANDES WEB DE QUALITE (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus eleve et un cout d'acquisition plus bas.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "DEMANDES WEB DE QUALITE (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus eleve et un cout d'acquisition plus bas."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:order-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
+    className: "lg:order-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover h-full w-full",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
-    alt: "travail"
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour facilite la navigation.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour facilite la navigation."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-right",
-    "data-aos-duration": "1000",
+    "data-aos-duration": "1000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover h-full w-full",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_3__["default"],
-    alt: "travail"
+    src: _images_Layer1v2_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "lg:order-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     "data-aos": "fade-left",
     "data-aos-duration": "1000",
+    className: "lg:order-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "object-cover w-full h-full",
-    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
-    alt: "travail"
+    src: _images_Layer2_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    alt: "travail",
+    loading: "lazy"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "animate hidden flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structurees, des sitemaps, etc.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10 lg:hidden"
+    className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structurees, des sitemaps, etc.")))));
@@ -1830,13 +1271,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/Layer1.webp */ "./src/images/Layer1.webp");
+/* harmony import */ var _images_Images_min_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/Images-min.svg */ "./src/images/Images-min.svg");
 
 
 
 const Hero = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "bg-neutral-800 min-h-[580px] md:min-h-[800px] lg:min-h-[940px] "
+    className: "bg-neutral-800 min-h-[580px] md:min-h-[830px] lg:min-h-[940px] "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -1848,19 +1289,17 @@ const Hero = () => {
   }, "DES SITES WEBS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "DE CONCESSIONAIRES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    "data-aos": "fade-in",
-    "data-aos-duration": "1000",
     className: "text-white z-20"
   }, "Concus pour generer des leads de qualite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "mt-10",
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "  px-4 py-3 border-white border-[1px] rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
+    className: "px-4 py-3 border-white border-[1px] rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
   }, "DEMANDER UNE DEMO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "z-0 mx-auto lg:ml-[-18rem]"
+    className: "z-0 mx-auto lg:ml-[-18rem] mt-[1rem]"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: "object-scale-down h-[320px] w-[313px] md:w-[529px] md:h-[541px] lg:h-[789px] lg:w-[772px]",
-    src: _images_Layer1_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
+    className: "object-cover h-full w-full",
+    src: _images_Images_min_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
     alt: "stock"
   }))));
 };
@@ -1971,6 +1410,7 @@ const Integre = () => {
   }, "POUR VOUS ET VOS CLIENTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _images_Logo2_webp__WEBPACK_IMPORTED_MODULE_2__["default"],
     className: "py-6 w-full h-full",
+    loading: "lazy",
     alt: "logo"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center"
@@ -2330,7 +1770,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Rapide__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Rapide */ "./src/components/Rapide.js");
 /* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
 /* harmony import */ var _components_Syndication__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Syndication */ "./src/components/Syndication.js");
-/* harmony import */ var _loadable_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @loadable/component */ "./node_modules/@loadable/component/dist/loadable.esm.js");
+/* harmony import */ var _components_Automatisation__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Automatisation */ "./src/components/Automatisation.js");
 
 
 
@@ -2351,130 +1791,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Automatisation = (0,_loadable_component__WEBPACK_IMPORTED_MODULE_19__["default"])(() => __webpack_require__.e(/*! import() */ "src_components_Automatisation_js").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Automatisation */ "./src/components/Automatisation.js")), {
-  fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Loading...")
-});
 const IndexPage = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_14__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Divider__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Rapide__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Produits__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerleft__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Integration__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerright__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Experience__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerlefttwo__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Integre__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerrighttwo__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Syndication__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerrightthree__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Automatisation, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerleftthree__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_14__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Divider__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Rapide__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Produits__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerleft__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Integration__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerright__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Experience__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerlefttwo__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Integre__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerrighttwo__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Syndication__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerrightthree__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Automatisation__WEBPACK_IMPORTED_MODULE_19__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dividerleftthree__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null));
 };
 const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_17__["default"], {
   title: "Home"
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
-
-/***/ }),
-
-/***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var reactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-var REACT_STATICS = {
-  childContextTypes: true,
-  contextType: true,
-  contextTypes: true,
-  defaultProps: true,
-  displayName: true,
-  getDefaultProps: true,
-  getDerivedStateFromError: true,
-  getDerivedStateFromProps: true,
-  mixins: true,
-  propTypes: true,
-  type: true
-};
-var KNOWN_STATICS = {
-  name: true,
-  length: true,
-  prototype: true,
-  caller: true,
-  callee: true,
-  arguments: true,
-  arity: true
-};
-var FORWARD_REF_STATICS = {
-  '$$typeof': true,
-  render: true,
-  defaultProps: true,
-  displayName: true,
-  propTypes: true
-};
-var MEMO_STATICS = {
-  '$$typeof': true,
-  compare: true,
-  defaultProps: true,
-  displayName: true,
-  propTypes: true,
-  type: true
-};
-var TYPE_STATICS = {};
-TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
-TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
-
-function getStatics(component) {
-  // React v16.11 and below
-  if (reactIs.isMemo(component)) {
-    return MEMO_STATICS;
-  } // React v16.12 and above
-
-
-  return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
-}
-
-var defineProperty = Object.defineProperty;
-var getOwnPropertyNames = Object.getOwnPropertyNames;
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-var getPrototypeOf = Object.getPrototypeOf;
-var objectPrototype = Object.prototype;
-function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-  if (typeof sourceComponent !== 'string') {
-    // don't hoist over string (html) components
-    if (objectPrototype) {
-      var inheritedComponent = getPrototypeOf(sourceComponent);
-
-      if (inheritedComponent && inheritedComponent !== objectPrototype) {
-        hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-      }
-    }
-
-    var keys = getOwnPropertyNames(sourceComponent);
-
-    if (getOwnPropertySymbols) {
-      keys = keys.concat(getOwnPropertySymbols(sourceComponent));
-    }
-
-    var targetStatics = getStatics(targetComponent);
-    var sourceStatics = getStatics(sourceComponent);
-
-    for (var i = 0; i < keys.length; ++i) {
-      var key = keys[i];
-
-      if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
-        var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-
-        try {
-          // Avoid failures from read-only properties
-          defineProperty(targetComponent, key, descriptor);
-        } catch (e) {}
-      }
-    }
-  }
-
-  return targetComponent;
-}
-
-module.exports = hoistNonReactStatics;
-
 
 /***/ }),
 
@@ -3324,508 +2647,6 @@ module.exports = throttle;
 
 /***/ }),
 
-/***/ "./node_modules/rellax/rellax.js":
-/*!***************************************!*\
-  !*** ./node_modules/rellax/rellax.js ***!
-  \***************************************/
-/***/ ((module, exports) => {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-// ------------------------------------------
-// Rellax.js
-// Buttery smooth parallax library
-// Copyright (c) 2016 Moe Amaya (@moeamaya)
-// MIT license
-//
-// Thanks to Paraxify.js and Jaime Cabllero
-// for parallax concepts
-// ------------------------------------------
-
-(function (root, factory) {
-  if (true) {
-    // AMD. Register as an anonymous module.
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else {}
-}(typeof window !== "undefined" ? window : global, function () {
-  var Rellax = function(el, options){
-    "use strict";
-
-    var self = Object.create(Rellax.prototype);
-
-    var posY = 0;
-    var screenY = 0;
-    var posX = 0;
-    var screenX = 0;
-    var blocks = [];
-    var pause = true;
-
-    // check what requestAnimationFrame to use, and if
-    // it's not supported, use the onscroll event
-    var loop = window.requestAnimationFrame ||
-      window.webkitRequestAnimationFrame ||
-      window.mozRequestAnimationFrame ||
-      window.msRequestAnimationFrame ||
-      window.oRequestAnimationFrame ||
-      function(callback){ return setTimeout(callback, 1000 / 60); };
-
-    // store the id for later use
-    var loopId = null;
-
-    // Test via a getter in the options object to see if the passive property is accessed
-    var supportsPassive = false;
-    try {
-      var opts = Object.defineProperty({}, 'passive', {
-        get: function() {
-          supportsPassive = true;
-        }
-      });
-      window.addEventListener("testPassive", null, opts);
-      window.removeEventListener("testPassive", null, opts);
-    } catch (e) {}
-
-    // check what cancelAnimation method to use
-    var clearLoop = window.cancelAnimationFrame || window.mozCancelAnimationFrame || clearTimeout;
-
-    // check which transform property to use
-    var transformProp = window.transformProp || (function(){
-        var testEl = document.createElement('div');
-        if (testEl.style.transform === null) {
-          var vendors = ['Webkit', 'Moz', 'ms'];
-          for (var vendor in vendors) {
-            if (testEl.style[ vendors[vendor] + 'Transform' ] !== undefined) {
-              return vendors[vendor] + 'Transform';
-            }
-          }
-        }
-        return 'transform';
-      })();
-
-    // Default Settings
-    self.options = {
-      speed: -2,
-	    verticalSpeed: null,
-	    horizontalSpeed: null,
-      breakpoints: [576, 768, 1201],
-      center: false,
-      wrapper: null,
-      relativeToWrapper: false,
-      round: true,
-      vertical: true,
-      horizontal: false,
-      verticalScrollAxis: "y",
-      horizontalScrollAxis: "x",
-      callback: function() {},
-    };
-
-    // User defined options (might have more in the future)
-    if (options){
-      Object.keys(options).forEach(function(key){
-        self.options[key] = options[key];
-      });
-    }
-
-    function validateCustomBreakpoints () {
-      if (self.options.breakpoints.length === 3 && Array.isArray(self.options.breakpoints)) {
-        var isAscending = true;
-        var isNumerical = true;
-        var lastVal;
-        self.options.breakpoints.forEach(function (i) {
-          if (typeof i !== 'number') isNumerical = false;
-          if (lastVal !== null) {
-            if (i < lastVal) isAscending = false;
-          }
-          lastVal = i;
-        });
-        if (isAscending && isNumerical) return;
-      }
-      // revert defaults if set incorrectly
-      self.options.breakpoints = [576, 768, 1201];
-      console.warn("Rellax: You must pass an array of 3 numbers in ascending order to the breakpoints option. Defaults reverted");
-    }
-
-    if (options && options.breakpoints) {
-      validateCustomBreakpoints();
-    }
-
-    // By default, rellax class
-    if (!el) {
-      el = '.rellax';
-    }
-
-    // check if el is a className or a node
-    var elements = typeof el === 'string' ? document.querySelectorAll(el) : [el];
-
-    // Now query selector
-    if (elements.length > 0) {
-      self.elems = elements;
-    }
-
-    // The elements don't exist
-    else {
-      console.warn("Rellax: The elements you're trying to select don't exist.");
-      return;
-    }
-
-    // Has a wrapper and it exists
-    if (self.options.wrapper) {
-      if (!self.options.wrapper.nodeType) {
-        var wrapper = document.querySelector(self.options.wrapper);
-
-        if (wrapper) {
-          self.options.wrapper = wrapper;
-        } else {
-          console.warn("Rellax: The wrapper you're trying to use doesn't exist.");
-          return;
-        }
-      }
-    }
-
-    // set a placeholder for the current breakpoint
-    var currentBreakpoint;
-
-    // helper to determine current breakpoint
-    var getCurrentBreakpoint = function (w) {
-      var bp = self.options.breakpoints;
-      if (w < bp[0]) return 'xs';
-      if (w >= bp[0] && w < bp[1]) return 'sm';
-      if (w >= bp[1] && w < bp[2]) return 'md';
-      return 'lg';
-    };
-
-    // Get and cache initial position of all elements
-    var cacheBlocks = function() {
-      for (var i = 0; i < self.elems.length; i++){
-        var block = createBlock(self.elems[i]);
-        blocks.push(block);
-      }
-    };
-
-
-    // Let's kick this script off
-    // Build array for cached element values
-    var init = function() {
-      for (var i = 0; i < blocks.length; i++){
-        self.elems[i].style.cssText = blocks[i].style;
-      }
-
-      blocks = [];
-
-      screenY = window.innerHeight;
-      screenX = window.innerWidth;
-      currentBreakpoint = getCurrentBreakpoint(screenX);
-
-      setPosition();
-
-      cacheBlocks();
-
-      animate();
-
-      // If paused, unpause and set listener for window resizing events
-      if (pause) {
-        window.addEventListener('resize', init);
-        pause = false;
-        // Start the loop
-        update();
-      }
-    };
-
-    // We want to cache the parallax blocks'
-    // values: base, top, height, speed
-    // el: is dom object, return: el cache values
-    var createBlock = function(el) {
-      var dataPercentage = el.getAttribute( 'data-rellax-percentage' );
-      var dataSpeed = el.getAttribute( 'data-rellax-speed' );
-      var dataXsSpeed = el.getAttribute( 'data-rellax-xs-speed' );
-      var dataMobileSpeed = el.getAttribute( 'data-rellax-mobile-speed' );
-      var dataTabletSpeed = el.getAttribute( 'data-rellax-tablet-speed' );
-      var dataDesktopSpeed = el.getAttribute( 'data-rellax-desktop-speed' );
-      var dataVerticalSpeed = el.getAttribute('data-rellax-vertical-speed');
-      var dataHorizontalSpeed = el.getAttribute('data-rellax-horizontal-speed');
-      var dataVericalScrollAxis = el.getAttribute('data-rellax-vertical-scroll-axis');
-      var dataHorizontalScrollAxis = el.getAttribute('data-rellax-horizontal-scroll-axis');
-      var dataZindex = el.getAttribute( 'data-rellax-zindex' ) || 0;
-      var dataMin = el.getAttribute( 'data-rellax-min' );
-      var dataMax = el.getAttribute( 'data-rellax-max' );
-      var dataMinX = el.getAttribute('data-rellax-min-x');
-      var dataMaxX = el.getAttribute('data-rellax-max-x');
-      var dataMinY = el.getAttribute('data-rellax-min-y');
-      var dataMaxY = el.getAttribute('data-rellax-max-y');
-      var mapBreakpoints;
-      var breakpoints = true;
-
-      if (!dataXsSpeed && !dataMobileSpeed && !dataTabletSpeed && !dataDesktopSpeed) {
-        breakpoints = false;
-      } else {
-        mapBreakpoints = {
-          'xs': dataXsSpeed,
-          'sm': dataMobileSpeed,
-          'md': dataTabletSpeed,
-          'lg': dataDesktopSpeed
-        };
-      }
-
-      // initializing at scrollY = 0 (top of browser), scrollX = 0 (left of browser)
-      // ensures elements are positioned based on HTML layout.
-      //
-      // If the element has the percentage attribute, the posY and posX needs to be
-      // the current scroll position's value, so that the elements are still positioned based on HTML layout
-      var wrapperPosY = self.options.wrapper ? self.options.wrapper.scrollTop : (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
-      // If the option relativeToWrapper is true, use the wrappers offset to top, subtracted from the current page scroll.
-      if (self.options.relativeToWrapper) {
-        var scrollPosY = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop);
-        wrapperPosY = scrollPosY - self.options.wrapper.offsetTop;
-      }
-      var posY = self.options.vertical ? ( dataPercentage || self.options.center ? wrapperPosY : 0 ) : 0;
-      var posX = self.options.horizontal ? ( dataPercentage || self.options.center ? self.options.wrapper ? self.options.wrapper.scrollLeft : (window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft) : 0 ) : 0;
-
-      var blockTop = posY + el.getBoundingClientRect().top;
-      var blockHeight = el.clientHeight || el.offsetHeight || el.scrollHeight;
-
-      var blockLeft = posX + el.getBoundingClientRect().left;
-      var blockWidth = el.clientWidth || el.offsetWidth || el.scrollWidth;
-
-      // apparently parallax equation everyone uses
-      var percentageY = dataPercentage ? dataPercentage : (posY - blockTop + screenY) / (blockHeight + screenY);
-      var percentageX = dataPercentage ? dataPercentage : (posX - blockLeft + screenX) / (blockWidth + screenX);
-      if(self.options.center){ percentageX = 0.5; percentageY = 0.5; }
-
-      // Optional individual block speed as data attr, otherwise global speed
-      var speed = (breakpoints && mapBreakpoints[currentBreakpoint] !== null) ? Number(mapBreakpoints[currentBreakpoint]) : (dataSpeed ? dataSpeed : self.options.speed);
-      var verticalSpeed = dataVerticalSpeed ? dataVerticalSpeed : self.options.verticalSpeed;
-      var horizontalSpeed = dataHorizontalSpeed ? dataHorizontalSpeed : self.options.horizontalSpeed;
-
-      // Optional individual block movement axis direction as data attr, otherwise gobal movement direction
-      var verticalScrollAxis = dataVericalScrollAxis ? dataVericalScrollAxis : self.options.verticalScrollAxis;
-      var horizontalScrollAxis = dataHorizontalScrollAxis ? dataHorizontalScrollAxis : self.options.horizontalScrollAxis;
-
-      var bases = updatePosition(percentageX, percentageY, speed, verticalSpeed, horizontalSpeed);
-
-      // ~~Store non-translate3d transforms~~
-      // Store inline styles and extract transforms
-      var style = el.style.cssText;
-      var transform = '';
-
-      // Check if there's an inline styled transform
-      var searchResult = /transform\s*:/i.exec(style);
-      if (searchResult) {
-        // Get the index of the transform
-        var index = searchResult.index;
-
-        // Trim the style to the transform point and get the following semi-colon index
-        var trimmedStyle = style.slice(index);
-        var delimiter = trimmedStyle.indexOf(';');
-
-        // Remove "transform" string and save the attribute
-        if (delimiter) {
-          transform = " " + trimmedStyle.slice(11, delimiter).replace(/\s/g,'');
-        } else {
-          transform = " " + trimmedStyle.slice(11).replace(/\s/g,'');
-        }
-      }
-
-      return {
-        baseX: bases.x,
-        baseY: bases.y,
-        top: blockTop,
-        left: blockLeft,
-        height: blockHeight,
-        width: blockWidth,
-        speed: speed,
-        verticalSpeed: verticalSpeed,
-        horizontalSpeed: horizontalSpeed,
-        verticalScrollAxis: verticalScrollAxis,
-        horizontalScrollAxis: horizontalScrollAxis,
-        style: style,
-        transform: transform,
-        zindex: dataZindex,
-        min: dataMin,
-        max: dataMax,
-        minX: dataMinX,
-        maxX: dataMaxX,
-        minY: dataMinY,
-        maxY: dataMaxY
-      };
-    };
-
-    // set scroll position (posY, posX)
-    // side effect method is not ideal, but okay for now
-    // returns true if the scroll changed, false if nothing happened
-    var setPosition = function() {
-      var oldY = posY;
-      var oldX = posX;
-
-      posY = self.options.wrapper ? self.options.wrapper.scrollTop : (document.documentElement || document.body.parentNode || document.body).scrollTop || window.pageYOffset;
-      posX = self.options.wrapper ? self.options.wrapper.scrollLeft : (document.documentElement || document.body.parentNode || document.body).scrollLeft || window.pageXOffset;
-      // If option relativeToWrapper is true, use relative wrapper value instead.
-      if (self.options.relativeToWrapper) {
-        var scrollPosY = (document.documentElement || document.body.parentNode || document.body).scrollTop || window.pageYOffset;
-        posY = scrollPosY - self.options.wrapper.offsetTop;
-      }
-
-
-      if (oldY != posY && self.options.vertical) {
-        // scroll changed, return true
-        return true;
-      }
-
-      if (oldX != posX && self.options.horizontal) {
-        // scroll changed, return true
-        return true;
-      }
-
-      // scroll did not change
-      return false;
-    };
-
-    // Ahh a pure function, gets new transform value
-    // based on scrollPosition and speed
-    // Allow for decimal pixel values
-    var updatePosition = function(percentageX, percentageY, speed, verticalSpeed, horizontalSpeed) {
-      var result = {};
-      var valueX = ((horizontalSpeed ? horizontalSpeed : speed) * (100 * (1 - percentageX)));
-      var valueY = ((verticalSpeed ? verticalSpeed : speed) * (100 * (1 - percentageY)));
-
-      result.x = self.options.round ? Math.round(valueX) : Math.round(valueX * 100) / 100;
-      result.y = self.options.round ? Math.round(valueY) : Math.round(valueY * 100) / 100;
-
-      return result;
-    };
-
-    // Remove event listeners and loop again
-    var deferredUpdate = function() {
-      window.removeEventListener('resize', deferredUpdate);
-      window.removeEventListener('orientationchange', deferredUpdate);
-      (self.options.wrapper ? self.options.wrapper : window).removeEventListener('scroll', deferredUpdate);
-      (self.options.wrapper ? self.options.wrapper : document).removeEventListener('touchmove', deferredUpdate);
-
-      // loop again
-      loopId = loop(update);
-    };
-
-    // Loop
-    var update = function() {
-      if (setPosition() && pause === false) {
-        animate();
-
-        // loop again
-        loopId = loop(update);
-      } else {
-        loopId = null;
-
-        // Don't animate until we get a position updating event
-        window.addEventListener('resize', deferredUpdate);
-        window.addEventListener('orientationchange', deferredUpdate);
-        (self.options.wrapper ? self.options.wrapper : window).addEventListener('scroll', deferredUpdate, supportsPassive ? { passive: true } : false);
-        (self.options.wrapper ? self.options.wrapper : document).addEventListener('touchmove', deferredUpdate, supportsPassive ? { passive: true } : false);
-      }
-    };
-
-    // Transform3d on parallax element
-    var animate = function() {
-      var positions;
-      for (var i = 0; i < self.elems.length; i++){
-        // Determine relevant movement directions
-        var verticalScrollAxis = blocks[i].verticalScrollAxis.toLowerCase();
-        var horizontalScrollAxis = blocks[i].horizontalScrollAxis.toLowerCase();
-        var verticalScrollX = verticalScrollAxis.indexOf("x") != -1 ? posY : 0;
-        var verticalScrollY = verticalScrollAxis.indexOf("y") != -1 ? posY : 0;
-        var horizontalScrollX = horizontalScrollAxis.indexOf("x") != -1 ? posX : 0;
-        var horizontalScrollY = horizontalScrollAxis.indexOf("y") != -1 ? posX : 0;
-
-        var percentageY = ((verticalScrollY + horizontalScrollY - blocks[i].top + screenY) / (blocks[i].height + screenY));
-        var percentageX = ((verticalScrollX + horizontalScrollX - blocks[i].left + screenX) / (blocks[i].width + screenX));
-
-        // Subtracting initialize value, so element stays in same spot as HTML
-        positions = updatePosition(percentageX, percentageY, blocks[i].speed, blocks[i].verticalSpeed, blocks[i].horizontalSpeed);
-        var positionY = positions.y - blocks[i].baseY;
-        var positionX = positions.x - blocks[i].baseX;
-
-        // The next two "if" blocks go like this:
-        // Check if a limit is defined (first "min", then "max");
-        // Check if we need to change the Y or the X
-        // (Currently working only if just one of the axes is enabled)
-        // Then, check if the new position is inside the allowed limit
-        // If so, use new position. If not, set position to limit.
-
-        // Check if a min limit is defined
-        if (blocks[i].min !== null) {
-          if (self.options.vertical && !self.options.horizontal) {
-            positionY = positionY <= blocks[i].min ? blocks[i].min : positionY;
-          }
-          if (self.options.horizontal && !self.options.vertical) {
-            positionX = positionX <= blocks[i].min ? blocks[i].min : positionX;
-          }
-        }
-
-        // Check if directional min limits are defined
-        if (blocks[i].minY != null) {
-            positionY = positionY <= blocks[i].minY ? blocks[i].minY : positionY;
-        }
-        if (blocks[i].minX != null) {
-            positionX = positionX <= blocks[i].minX ? blocks[i].minX : positionX;
-        }
-
-        // Check if a max limit is defined
-        if (blocks[i].max !== null) {
-          if (self.options.vertical && !self.options.horizontal) {
-            positionY = positionY >= blocks[i].max ? blocks[i].max : positionY;
-          }
-          if (self.options.horizontal && !self.options.vertical) {
-            positionX = positionX >= blocks[i].max ? blocks[i].max : positionX;
-          }
-        }
-
-        // Check if directional max limits are defined
-        if (blocks[i].maxY != null) {
-            positionY = positionY >= blocks[i].maxY ? blocks[i].maxY : positionY;
-        }
-        if (blocks[i].maxX != null) {
-            positionX = positionX >= blocks[i].maxX ? blocks[i].maxX : positionX;
-        }
-
-        var zindex = blocks[i].zindex;
-
-        // Move that element
-        // (Set the new translation and append initial inline transforms.)
-        var translate = 'translate3d(' + (self.options.horizontal ? positionX : '0') + 'px,' + (self.options.vertical ? positionY : '0') + 'px,' + zindex + 'px) ' + blocks[i].transform;
-        self.elems[i].style[transformProp] = translate;
-      }
-      self.options.callback(positions);
-    };
-
-    self.destroy = function() {
-      for (var i = 0; i < self.elems.length; i++){
-        self.elems[i].style.cssText = blocks[i].style;
-      }
-
-      // Remove resize event listener if not pause, and pause
-      if (!pause) {
-        window.removeEventListener('resize', init);
-        pause = true;
-      }
-
-      // Clear the animation loop to prevent possible memory leak
-      clearLoop(loopId);
-      loopId = null;
-    };
-
-    // Init
-    init();
-
-    // Allow to recalculate the initial values whenever we want
-    self.refresh = init;
-
-    return self;
-  };
-  return Rellax;
-}));
-
-
-/***/ }),
-
 /***/ "./src/images/Icons-min.svg":
 /*!**********************************!*\
   !*** ./src/images/Icons-min.svg ***!
@@ -3901,6 +2722,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/images/Images-min.svg":
+/*!***********************************!*\
+  !*** ./src/images/Images-min.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/Images-min-a817da53d4c6380ececa74ecf5a00e39.svg");
+
+/***/ }),
+
 /***/ "./src/images/Images2.webp":
 /*!*********************************!*\
   !*** ./src/images/Images2.webp ***!
@@ -3916,10 +2752,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/images/Layer1.webp":
-/*!********************************!*\
-  !*** ./src/images/Layer1.webp ***!
-  \********************************/
+/***/ "./src/images/Layer1v2.webp":
+/*!**********************************!*\
+  !*** ./src/images/Layer1v2.webp ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3927,7 +2763,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/Layer1-76c4e850e8d01da95fda627646bfb3f0.webp");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/Layer1v2-34afff4a5aefea152ccd7f51cfb8b453.webp");
 
 /***/ }),
 
@@ -4096,119 +2932,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/images/office.webp":
+/*!********************************!*\
+  !*** ./src/images/office.webp ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _assertThisInitialized)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-  return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _extends)
-/* harmony export */ });
-function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  };
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _inheritsLoose)
-/* harmony export */ });
-/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  (0,_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _objectWithoutPropertiesLoose)
-/* harmony export */ });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
-/* harmony export */ });
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-  return _setPrototypeOf(o, p);
-}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/office-d608b15951089be37b84bb388ceeeccf.webp");
 
 /***/ }),
 

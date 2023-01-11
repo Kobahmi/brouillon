@@ -38,7 +38,6 @@ const Experience = () => {
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
-              loading="lazy"
             />
           </div>
 
@@ -63,7 +62,6 @@ const Experience = () => {
               className="object-cover h-full w-full "
               src={Image2}
               alt="travail"
-              loading="lazy"
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
@@ -84,7 +82,6 @@ const Experience = () => {
               className="object-cover w-full h-full"
               src={Image1}
               alt="travail"
-              loading="lazy"
             />
           </div>
 
@@ -109,7 +106,6 @@ const Experience = () => {
               className="object-cover h-full w-full"
               src={Image2}
               alt="travail"
-              loading="lazy"
             />
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
@@ -126,7 +122,6 @@ const Experience = () => {
               className="object-cover h-full w-full"
               src={Image1}
               alt="travail"
-              loading="lazy"
             />
           </div>
 
@@ -148,7 +143,6 @@ const Experience = () => {
               className="object-cover w-full h-full"
               src={Image2}
               alt="travail"
-              loading="lazy"
             />
           </div>
 
