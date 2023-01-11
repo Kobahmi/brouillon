@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Produits = () => {
   return (
     <section className="bg-neutral-900">
-      <div className="flex flex-col px-6 py-6 max-w-[1200px] mx-auto">
+      <div className="flex flex-col px-6 py-6 max-w-7xl mx-auto">
         <h1
           data-aos="fade-up"
           className="text-center py-16 text-2xl font-bold md:text-5xl lg:text-6xl"

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Integre = () => {
   return (
     <section className="bg-black p-4 relative z-30">
-      <div className="flex flex-col gap-6 max-w-[1200px] mx-auto">
+      <div className="flex flex-col items-center gap-6 max-w-7xl mx-auto">
         <h1
           data-aos="fade-up"
           className="text-center py-6 text-2xl font-bold md:text-5xl lg:text-6xl"

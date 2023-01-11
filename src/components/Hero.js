@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Hero = () => {
   return (
     <section className="bg-neutral-800 min-h-[580px] md:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px]">
-      <div className="flex flex-col h-full max-w-[1200px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center">
+      <div className="flex flex-col h-full max-w-[1280px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center">
         <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-start">
           <h1 className="flex z-20 flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
             <span className="text-lime-300">DES SITES WEBS</span>
