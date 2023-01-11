@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image from "../images/Images-min.svg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = () => {
   return (
@@ -25,7 +25,11 @@ const Hero = () => {
         </div>
 
         <div className="pb-10 mt-[1rem] lg:ml-[-18rem] lg:pb-0">
-          <img className="object-cover h-full w-full" src={Image} alt="stock" />
+          <StaticImage
+            src="../images/Images-min.svg"
+            alt="stock"
+            placeholder="rgb(31 41 55)"
+          />
         </div>
       </div>
     </section>

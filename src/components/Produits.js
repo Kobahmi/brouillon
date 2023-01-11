@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Icon1 from "../images/Icons-min.svg";
-import Icon2 from "../images/Icons2-min.svg";
-import Icon3 from "../images/Icons3-min.svg";
-import Icon4 from "../images/Icons4-min.svg";
-import Icon5 from "../images/Icons5-min.svg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Produits = () => {
   return (
@@ -21,12 +17,13 @@ const Produits = () => {
 
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img
-              data-aos="fade-left"
-              data-aos-mirror="true"
-              src={Icon1}
-              alt="icon1"
-            />
+            <div data-aos="fade-left" data-aos-mirror="true">
+              <StaticImage
+                src="../images/Icons-min.svg"
+                alt="icon1"
+                placeholder="rgb(23 23 23)"
+              />
+            </div>
             <h2 className="font-bold py-3">
               SITES WEB DE CONCESSIONAIRES AUTOS
             </h2>
@@ -34,13 +31,17 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img
+            <div
               data-aos="fade-left"
               data-aos-mirror="true"
               data-aos-delay="50"
-              src={Icon2}
-              alt="icon2"
-            />
+            >
+              <StaticImage
+                src="../images/Icons2-min.svg"
+                alt="icon2"
+                placeholder="rgb(23 23 23)"
+              />
+            </div>
             <h2 className="font-bold py-3">MODULE D'ACHAT EN LIGNE COMPLET</h2>
             <p className="text-sm">
               Incluant les accessoires, garanties, assurances et depots
@@ -48,13 +49,17 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img
+            <div
               data-aos="fade-left"
               data-aos-mirror="true"
               data-aos-delay="100"
-              src={Icon3}
-              alt="icon3"
-            />
+            >
+              <StaticImage
+                src="../images/Icons3-min.svg"
+                alt="icon3"
+                placeholder="rgb(23 23 23)"
+              />
+            </div>
             <h2 className="font-bold py-3">
               GESTIONNAIRE D'INVENTAIRE D'OCCASIONS
             </h2>
@@ -65,13 +70,17 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img
+            <div
               data-aos="fade-left"
               data-aos-mirror="true"
               data-aos-delay="150"
-              src={Icon4}
-              alt="icon4"
-            />
+            >
+              <StaticImage
+                src="../images/Icons4-min.svg"
+                alt="icon4"
+                placeholder="rgb(23 23 23)"
+              />
+            </div>
             <h2 className="font-bold py-3">
               MODULE DE PUBLICATION AUTOMATISEE
             </h2>
@@ -82,13 +91,17 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <img
+            <div
               data-aos="fade-left"
               data-aos-mirror="true"
               data-aos-delay="200"
-              src={Icon5}
-              alt="icon5"
-            />
+            >
+              <StaticImage
+                src="../images/Icons5-min.svg"
+                alt="icon5"
+                placeholder="rgb(23 23 23)"
+              />
+            </div>
             <h2 className="font-bold py-3">SITES WEB D'OCCASIONS</h2>
             <p className="text-sm">
               De style marketplace reunissant l'inventaire de plusieurs

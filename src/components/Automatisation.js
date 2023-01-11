@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "../images/office.webp";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Automatisation = () => {
   return (
@@ -17,12 +17,17 @@ const Automatisation = () => {
         </h1>
         <div className="flex flex-col gap-10 items-center p-10 md:flex-row">
           <div data-aos="fade-in" data-aos-duration="1000" className="relative">
-            <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
-            <img
-              className="object-cover h-full w-full"
-              src={Image1}
+            <div
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>{" "}
+            </div>
+            <StaticImage
+              src="../images/office.webp"
               alt="travail"
-              loading="lazy"
+              placeholder="white"
             />
           </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "../images/Logo2.webp";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Integre = () => {
   return (
@@ -21,12 +21,13 @@ const Integre = () => {
         <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           POUR VOUS ET VOS CLIENTS
         </p>
-        <img
-          src={Logo}
-          className="py-6 w-full h-full"
-          loading="lazy"
-          alt="logo"
-        />
+        <div className="py-6">
+          <StaticImage
+            src="../images/Logo2.webp"
+            alt="logo"
+            placeholder="black"
+          />
+        </div>
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           Vous ne trouvez pas votre CRM? Ecrivez-nous et nous vous contacterons!
         </p>

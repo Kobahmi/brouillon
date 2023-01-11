@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Image1 from "../images/Mockup.webp";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Syndication = () => {
   return (
@@ -8,11 +8,10 @@ const Syndication = () => {
       <div className="flex flex-col max-w-[1200px] mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
-            <img
-              className="object-cover h-full w-full"
-              src={Image1}
+            <StaticImage
+              src="../images/Mockup.webp"
               alt="travail"
-              loading="lazy"
+              placeholder="blurred"
             />
           </div>
 
