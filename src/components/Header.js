@@ -14,7 +14,7 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-neutral-800 z-40 lg:absolute">
+    <nav className="w-full bg-lime-300 bg-opacity-100 z-40 lg:absolute lg:bg-opacity-0">
       <div className="justify-between px-6 mx-auto lg:pt-[2px] lg:max-w-7xl lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
@@ -108,7 +108,9 @@ const Header = () => {
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
-                  <p className="text-white text-xl mr-[5px] font-bold">X</p>
+                  <p className="text-neutral-700 text-xl mr-[5px] font-bold">
+                    X
+                  </p>
                 ) : (
                   <img className="w-7 h-7" src={Menu} alt="menu" />
                 )}
@@ -129,7 +131,7 @@ const Header = () => {
                     className="btn group flex items-center bg-transparent tracking-widest text-white"
                     to="/"
                   >
-                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                    <span className="relative text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       PRODUITS
                     </span>
                   </Link>
@@ -139,7 +141,7 @@ const Header = () => {
                     className="btn group flex items-center bg-transparent tracking-widest text-white"
                     to="/"
                   >
-                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                    <span className="relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       DEMO
                     </span>
                   </Link>
@@ -149,7 +151,7 @@ const Header = () => {
                     className="btn group flex items-center bg-transparent tracking-widest text-white"
                     to="/"
                   >
-                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                    <span className="relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       SUPPORT
                     </span>
                   </Link>
@@ -159,21 +161,21 @@ const Header = () => {
                     className="btn group flex items-center bg-transparent tracking-widest text-white"
                     to="/"
                   >
-                    <span className="relative  text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                    <span className="relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       CONTACT
                     </span>
                   </Link>
                 </li>
                 <li className="text-white  hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className=" border-2 px-12 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
+                    <span className=" border-2 px-12 py-2 border-neutral-700 rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
                       CONNEXION
                     </span>
                   </Link>
                 </li>
                 <li className="text-white hover:text-indigo-200 lg:hidden">
                   <Link to="/">
-                    <span className="border-2 px-11 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
+                    <span className="border-2 px-11 py-2 border-neutral-700 rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
                       COMMENCER
                     </span>
                   </Link>
@@ -187,12 +189,12 @@ const Header = () => {
             className="btn group  bg-transparent tracking-widest text-white"
             to="/"
           >
-            <span className="relative font-bold pb-[2px] text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+            <span className="relative font-bold pb-[2px] text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
               CONNEXION
             </span>
           </Link>
           <Link to="/">
-            <span className="border-[1px] px-4 py-2 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
+            <span className="border-[1px] px-4 py-2 border-neutral-700 rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
               COMMENCER
             </span>
           </Link>
