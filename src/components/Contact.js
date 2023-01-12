@@ -14,7 +14,7 @@ const Contact = () => {
             alt="logo"
           />
         </Link>
-        <ul className="text-black grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="text-neutral-700 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-400 border-solid border-l-2 px-6 py-4">
             <div className="flex flex-col max-w-[25rem] gap-4 pl-10 py-6  md:pl-0 md:pr-10">
               <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">

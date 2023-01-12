@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Experience = () => {
   return (
     <section className="bg-white pt-6 pb-[8.5rem]">
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center text-neutral-700">
         <div className="flex flex-col justify-center items-center text-center px-6">
           <h1 className="flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
             <span className="pt-2 bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
@@ -21,13 +21,12 @@ const Experience = () => {
             massa, varius a, semper congue, euismod non, mi.
           </p>
 
-          <div className="rounded-xl bg-gray-300 h-[2px] max-w-[30rem] w-full "></div>
+          <div className="rounded-xl mb-8 bg-gray-300 h-[2px] max-w-[30rem] w-full "></div>
 
-          <Link
-            to="/"
-            className="text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in"
-          >
-            COMMENCER
+          <Link to="/">
+            <span className="border-[1px] px-4 py-2 border-neutral-700 rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
+              COMMENCER
+            </span>
           </Link>
         </div>
 

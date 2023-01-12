@@ -34,11 +34,10 @@ const Integre = () => {
 
         <div className="rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "></div>
 
-        <Link
-          to="/"
-          className="text-black z-20 mx-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
-        >
-          COMMENCER
+        <Link className="mt-8 mx-auto" to="/">
+          <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
+            COMMENCER
+          </span>
         </Link>
       </div>
     </section>

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Syndication = () => {
   return (
     <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
-      <div className="flex flex-col items-center max-w-7xl mx-auto">
+      <div className="flex flex-col text-neutral-700 items-center max-w-7xl mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
             <StaticImage
@@ -45,11 +45,10 @@ const Syndication = () => {
               Écrivez-nous et nous l'ajouterons!
             </p>
 
-            <Link
-              to="/"
-              className="text-black bg-white z-20 mr-auto mt-8 rounded-full px-6 py-2 brightness-100 hover:brightness-90 duration-100 ease-in "
-            >
-              DEMANDER UNE DÉMO
+            <Link className="mt-10" to="/">
+              <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white mr-6">
+                DEMANDER UNE DÉMO
+              </span>
             </Link>
           </div>
         </div>
