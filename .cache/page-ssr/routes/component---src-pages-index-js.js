@@ -1416,7 +1416,7 @@ const Automatisation = () => {
     className: "text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
-  }, "AUTOMATISATION DES STRATEGIES MARKETING/ PARTENAIRE MARKETING LEADSTREAM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "AUTOMATISATION DES STRAT\xC9GIES MARKETING/ PARTENAIRE MARKETING LEADSTREAM")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 md:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "relative"
@@ -1437,11 +1437,11 @@ const Automatisation = () => {
     className: "flex flex-col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "max-w-lg text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "NOS SITES WEB G\xC9N\xC8RENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "max-w-lg"
-  }, "Nos services de marketing seront offers en partenariat avec l'agence Leadstream."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  }, "Nos services de marketing seront offerts en partenariat avec l'agence Leadstream."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-disc  font-bold ml-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Campagne Facebook et Google Ads"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Referencement et redaction de contenus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Conseils et strategies de marketing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Campagne Facebook et Google Ads"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "R\xE9f\xE9rencement et r\xE9daction de contenus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Conseils et strat\xE9gies de marketing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
     className: "text-black z-20 mr-auto mt-8 bg-gradient-to-tr from-[#30F9FC] to-lime-300 rounded-full px-6 py-2 brightness-90 hover:brightness-100 duration-200 ease-in "
   }, "COMMENCER")))));
@@ -1488,7 +1488,7 @@ const Contact = () => {
     className: "flex flex-col max-w-[25rem] gap-4 pl-10 py-6  md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "LIENS RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Produits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Demo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Support"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "LIENS RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Produits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "D\xE9mo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Support"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "border-gray-400 border-solid border-l-2 px-6 py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4  pl-10 py-6  md:pl-0 md:pr-10"
@@ -1695,8 +1695,8 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "bg-clip-text  text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
-  }, "UNE EXPERIENCE OPTIMISEE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "pt-2 bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
+  }, "UNE EXP\xC9RIENCE OPTIMIS\xC9E")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: " pt-2"
   }, "POUR VOUS ET VOS CLIENTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: " text-sm max-w-[30rem] py-10 "
@@ -1719,7 +1719,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "DES SITES WEBS ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des dernieres technologies pour offrir des sites web ultra rapides."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "DES SITES WEB ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des derni\xE8res technologies pour offrir des sites web ultra rapides."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-left",
@@ -1734,7 +1734,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "PLATEFORME (CMS)FACILE A UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'integration de contenus personnalises sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "PLATEFORME (CMS)FACILE \xC0 UTILISER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour l'int\xE9gration de contenus personnalis\xE9s sur le site Web (article de blogue, landing pages, promotions du mois, textes SEO et plus)."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-right",
@@ -1748,7 +1748,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "DEMANDES WEB DE QUALITE (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus eleve et un cout d'acquisition plus bas."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "DEMANDES WEB DE QUALIT\xC9 (LEADS)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Offrant un taux de conversion plus \xE9lev\xE9 et un co\xFBt d'acquisition plus bas."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-left",
@@ -1763,7 +1763,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour facilite la navigation."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "CONCEPTION GRAPHIQUE ET EXP\xC9RIENCE EN LIGNE OPTIMALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Pour faciliter la navigation."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-right",
@@ -1777,7 +1777,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "MISES A JOUR AUTOMATIS\xC9E DES PROGRAMMES ET PROMOTIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Des manifacturiers."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-left",
@@ -1792,7 +1792,7 @@ const Experience = () => {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structurees, des sitemaps, etc.")))));
+  }, "OPTIMISATION SEO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Incluant la gestion de la taille des images, des balises, des donnees structur\xE9es, des sitemaps, etc.")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Experience);
 
@@ -1817,7 +1817,7 @@ const Footer = () => {
     className: "bg-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-white py-2 text-center"
-  }, "Tous droits reserves Autoroot Technologies Inc \xA9 2022"));
+  }, "Tous droits r\xE9serv\xE9s Autoroot Technologies Inc \xA9 2022"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -1971,7 +1971,7 @@ const Header = () => {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
     className: "relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100"
-  }, "DEMO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+  }, "D\xC9MO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
     className: "flex justify-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
     className: "btn group flex items-center bg-transparent tracking-widest text-white",
@@ -2043,16 +2043,16 @@ const Hero = () => {
     className: "flex flex-col z-20 text-neutral-700 text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: ""
-  }, "DES SITES WEBS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }, "DES SITES WEB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "whitespace-nowrap"
   }, "DE CONCESSIONAIRES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-neutral-700 text-lg z-20 pt-3"
-  }, "CONCUS POUR GENERER DES LEADS DE QUALITE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "CON\xC7US POUR G\xC9N\xC9R\xC9R DES LEADS DE QUALIT\xC9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "mt-10",
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white mr-6"
-  }, "DEMANDER UNE DEMO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "DEMANDER UNE D\xC9MO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "relative pb-10 mt-[1rem] lg:ml-[-18rem] lg:pb-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-up",
@@ -2102,7 +2102,7 @@ const Integration = () => {
     className: "text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
-  }, "INTEGRATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "INT\xC9GRATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "relative"
@@ -2124,20 +2124,20 @@ const Integration = () => {
     className: "flex flex-col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "INTEGRATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }, "INT\xC9GRATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "AVEC LES MEILLEURES PLATEFORMES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: " text-white"
-  }, "Notre portfolio inclus deja plusieurs marques de vehicules neufs:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  }, "Notre portfolio inclus d\xE9j\xE0 plusieurs marques de v\xE9hicules neufs:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-disc text-white font-bold ml-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Hyundai"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Kia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Nissan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Mazda"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Subaru"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Mitsubishi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Infiniti")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: " text-white"
-  }, "Et plusieurs autres marques en developpement."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Et plusieurs autres marques en d\xE9veloppement."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "mt-10",
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: " border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
-  }, "DEMANDER UNE DEMO"))))));
+  }, "DEMANDER UNE D\xC9MO"))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Integration);
 
@@ -2171,9 +2171,9 @@ const Integre = () => {
     className: "text-center py-6 text-2xl font-bold md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
-  }, "INTEGRE AVEC VOS OUTILS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "INT\xC9GR\xC9 AVEC VOS OUTILS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-white max-w-xl mx-auto text-center"
-  }, "Notre plateforme se connecte aux differents API et sources de donnees que vous avez en place. DMS, CRM, Evaluateur, Syndication, etc."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Notre plateforme se connecte aux differents API et sources de donn\xE9es que vous avez en place. DMS, CRM, \xC9valuateur, Syndication, etc."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center"
   }, "POUR VOUS ET VOS CLIENTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "py-6"
@@ -2184,7 +2184,7 @@ const Integre = () => {
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2874707961.json */ "./.cache/caches/gatsby-plugin-image/2874707961.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center"
-  }, "Vous ne trouvez pas votre CRM? Ecrivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Vous ne trouvez pas votre CRM? \xC9crivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
@@ -2252,7 +2252,7 @@ const Produits = () => {
     className: "font-bold py-3"
   }, "MODULE D'ACHAT EN LIGNE COMPLET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-sm"
-  }, "Incluant les accessoires, garanties, assurances et depots")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Incluant les accessoires, garanties, assurances et d\xE9pots")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "border-gray-700 border-solid border-l-2 px-6 py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-left",
@@ -2280,7 +2280,7 @@ const Produits = () => {
     className: "font-bold py-3"
   }, "MODULE DE PUBLICATION AUTOMATISEE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-sm"
-  }, "Sur Facebook (Carrousel et Marketplace) et Google (Merchant center) pour vehicules d'occasion.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Sur Facebook (Carrousel et Marketplace) et Google (Merchant center) pour v\xE9hicules d'occasion.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "border-gray-700 border-solid border-l-2 px-6 py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-left",
@@ -2294,12 +2294,12 @@ const Produits = () => {
     className: "font-bold py-3"
   }, "SITES WEB D'OCCASIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-sm"
-  }, "De style marketplace reunissant l'inventaire de plusieurs concessions dans un meme site. Strategie incontournable pour les groupes automobiles."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "De style marketplace r\xE9unissant l'inventaire de plusieurs concessions dans un m\xEAme site. Strat\xE9gie incontournable pour les groupes automobiles."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     className: "mt-10 mx-auto",
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
-  }, "DEMANDER UNE DEMO"))));
+  }, "DEMANDER UNE D\xC9MO"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Produits);
 
@@ -2332,11 +2332,11 @@ const Rapide = () => {
     className: "flex flex-col z-20 max-w-xl text-2xl font-bold md:text-5xl lg:text-6xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lime-300"
-  }, "DES APPLICATIONS WEBS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }, "DES APPLICATIONS WEB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bg-clip-text whitespace-nowrap text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300"
   }, "ULTRA RAPIDES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-white font-bold pt-2 lg:max-w-md"
-  }, "POUR DES CONCESSIONAIRES AUTOMOBILES DU QUEBEC")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "POUR DES CONCESSIONAIRES AUTOMOBILES DU QU\xC9BEC")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "hidden rounded-xl bg-gray-600 w-[1px] h-[21rem] mx-10 lg:block"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "text-white text-sm max-w-lg py-10"
@@ -2345,7 +2345,7 @@ const Rapide = () => {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: " border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6"
-  }, "DEMANDER UNE DEMO"))))));
+  }, "DEMANDER UNE D\xC9MO"))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Rapide);
 
@@ -2385,27 +2385,25 @@ const Syndication = () => {
     placeholder: "blurred",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/885640978.json */ "./.cache/caches/gatsby-plugin-image/885640978.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6"
+    className: "flex flex-col gap-4  pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "flex flex-col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "INTEGRATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }, "INT\xC9GRATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
-  }, "SYNDICATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Notre portfolio inclus deja plusieurs marques de vehicules neufs:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  }, "SYNDICATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-disc ml-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "font-bold"
   }, "Facebook"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "(Carroussel et Marketplace)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "font-bold"
-  }, "Canadian Black Book"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "(Evaluation de vehicule d'echange)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
-    className: "flex flex-col"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }, "Canadian Black Book"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "(\xC9valuation de vehicule d'echange)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "font-bold"
-  }, "DealerCorp"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "(gestionaire d'inventaire)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vous voulez ajouter une Syndication? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Ecrivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "DealerCorp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "(Gestionaire d'inventaire)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Vous voulez ajouter une Syndication? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\xC9crivez-nous et nous l'ajouterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
     className: "text-black bg-white z-20 mr-auto mt-8 rounded-full px-6 py-2 brightness-100 hover:brightness-90 duration-100 ease-in "
-  }, "DEMANDER UNE DEMO")))));
+  }, "DEMANDER UNE D\xC9MO")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Syndication);
 

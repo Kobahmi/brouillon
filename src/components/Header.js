@@ -141,7 +141,7 @@ const Header = () => {
                     to="/"
                   >
                     <span className="relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
-                      DEMO
+                      DÉMO
                     </span>
                   </Link>
                 </li>
