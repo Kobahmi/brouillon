@@ -138,7 +138,7 @@ const Header = () => {
                 <li className="flex justify-center">
                   <Link
                     className="btn group flex items-center bg-transparent tracking-widest text-white"
-                    to="/"
+                    to="/demo"
                   >
                     <span className="relative  text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
                       DÉMO
