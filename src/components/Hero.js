@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="whitespace-nowrap">DE CONCESSIONAIRES</span>
           </h1>
           <p className="text-neutral-700 text-lg z-20 pt-3">
-            CONÇUS POUR GÉNÉRÉR DES LEADS DE QUALITÉ
+            CONÇUS POUR GÉNÉRER DES LEADS DE QUALITÉ
           </p>
 
           <Link className="mt-10" to="/">
