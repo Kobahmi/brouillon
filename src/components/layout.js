@@ -6,7 +6,7 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   let AOS;
   useEffect(() => {
-    AOS = require("aos");
+    const AOS = require("aos");
     AOS.init();
   }, []);
 
