@@ -7,6 +7,10 @@ var plugins = [{
       plugin: require('/home/nobel/work/brouillon/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
     },{
+      name: 'gatsby-plugin-gatsby-cloud',
+      plugin: require('/home/nobel/work/brouillon/node_modules/gatsby-plugin-gatsby-cloud/gatsby-ssr.js'),
+      options: {"plugins":[],"headers":{"/fonts/*":["Cache-Control: public,max-age=31536000,s-maxage=31536000,immutable"],"/meta/*":["Cache-Control: public,max-age=31536000,s-maxage=31536000,immutable"],"**/*.woff":["Cache-Control: public,max-age=31536000,s-maxage=31536000,immutable"],"**/*.woff2":["Cache-Control: public,max-age=31536000,s-maxage=31536000,immutable"]},"allPageHeaders":["Strict-Transport-Security: max-age=31536000; includeSubDomains; preload"]},
+    },{
       name: 'default-site-plugin',
       plugin: require('/home/nobel/work/brouillon/gatsby-ssr.js'),
       options: {"plugins":[]},
