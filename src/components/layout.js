@@ -1,14 +1,20 @@
 import * as React from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Header from "./Header";
 
 const Layout = ({ children }) => {
+  let AOS;
   useEffect(() => {
+    AOS = require("aos");
     AOS.init();
-    AOS.refresh();
   }, []);
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
 
   return (
     <>

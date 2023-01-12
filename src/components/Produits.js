@@ -17,7 +17,7 @@ const Produits = () => {
 
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <div data-aos="fade-left" data-aos-mirror="true">
+            <div data-aos="fade-left">
               <StaticImage
                 src="../images/Icons-min.svg"
                 alt="icon1"
@@ -31,11 +31,7 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <div
-              data-aos="fade-left"
-              data-aos-mirror="true"
-              data-aos-delay="50"
-            >
+            <div data-aos="fade-left" data-aos-delay="50">
               <StaticImage
                 src="../images/Icons2-min.svg"
                 alt="icon2"
@@ -49,11 +45,7 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <div
-              data-aos="fade-left"
-              data-aos-mirror="true"
-              data-aos-delay="100"
-            >
+            <div data-aos="fade-left" data-aos-delay="100">
               <StaticImage
                 src="../images/Icons3-min.svg"
                 alt="icon3"
@@ -70,11 +62,7 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <div
-              data-aos="fade-left"
-              data-aos-mirror="true"
-              data-aos-delay="150"
-            >
+            <div data-aos="fade-left" data-aos-delay="150">
               <StaticImage
                 src="../images/Icons4-min.svg"
                 alt="icon4"
@@ -91,11 +79,7 @@ const Produits = () => {
           </li>
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
-            <div
-              data-aos="fade-left"
-              data-aos-mirror="true"
-              data-aos-delay="200"
-            >
+            <div data-aos="fade-left" data-aos-delay="200">
               <StaticImage
                 src="../images/Icons5-min.svg"
                 alt="icon5"
