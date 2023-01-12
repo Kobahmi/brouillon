@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className="bg-black">
       <p className="text-white py-2 text-center">
-        Tous droits reserves Autoroot Technologies Inc © 2022
+        Tous droits réservés Autoroot Technologies Inc © 2022
       </p>
     </section>
   );

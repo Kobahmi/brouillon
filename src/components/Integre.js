@@ -11,12 +11,12 @@ const Integre = () => {
           className="text-center py-6 text-2xl font-bold md:text-5xl lg:text-6xl"
         >
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
-            INTEGRE AVEC VOS OUTILS
+            INTÉGRÉ AVEC VOS OUTILS
           </span>
         </h1>
         <p className="text-white max-w-xl mx-auto text-center">
-          Notre plateforme se connecte aux differents API et sources de donnees
-          que vous avez en place. DMS, CRM, Evaluateur, Syndication, etc.
+          Notre plateforme se connecte aux differents API et sources de données
+          que vous avez en place. DMS, CRM, Évaluateur, Syndication, etc.
         </p>
         <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           POUR VOUS ET VOS CLIENTS
@@ -29,7 +29,7 @@ const Integre = () => {
           />
         </div>
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
-          Vous ne trouvez pas votre CRM? Ecrivez-nous et nous vous contacterons!
+          Vous ne trouvez pas votre CRM? Écrivez-nous et nous vous contacterons!
         </p>
 
         <div className="rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "></div>

@@ -11,7 +11,7 @@ const Automatisation = () => {
           className="text-center py-6 text-2xl font-bold  md:text-5xl lg:text-6xl"
         >
           <span className="bg-clip-text py-2 text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
-            AUTOMATISATION DES STRATEGIES MARKETING/ PARTENAIRE MARKETING
+            AUTOMATISATION DES STRATÉGIES MARKETING/ PARTENAIRE MARKETING
             LEADSTREAM
           </span>
         </h1>
@@ -34,18 +34,18 @@ const Automatisation = () => {
           <div className="flex flex-col gap-4 pl-10 py-6">
             <h2 className="flex flex-col">
               <span className="max-w-lg text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-                NOS SITES WEB GENERENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER
+                NOS SITES WEB GÉNÈRENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER
               </span>
             </h2>
             <p className="max-w-lg">
-              Nos services de marketing seront offers en partenariat avec
+              Nos services de marketing seront offerts en partenariat avec
               l'agence Leadstream.
             </p>
 
             <ul className="list-disc  font-bold ml-6">
               <li>Campagne Facebook et Google Ads</li>
-              <li>Referencement et redaction de contenus</li>
-              <li>Conseils et strategies de marketing</li>
+              <li>Référencement et rédaction de contenus</li>
+              <li>Conseils et stratégies de marketing</li>
             </ul>
 
             <Link

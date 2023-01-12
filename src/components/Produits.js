@@ -40,7 +40,7 @@ const Produits = () => {
             </div>
             <h2 className="font-bold py-3">MODULE D'ACHAT EN LIGNE COMPLET</h2>
             <p className="text-sm">
-              Incluant les accessoires, garanties, assurances et depots
+              Incluant les accessoires, garanties, assurances et dépots
             </p>
           </li>
 
@@ -74,7 +74,7 @@ const Produits = () => {
             </h2>
             <p className="text-sm">
               Sur Facebook (Carrousel et Marketplace) et Google (Merchant
-              center) pour vehicules d'occasion.
+              center) pour véhicules d'occasion.
             </p>
           </li>
 
@@ -88,15 +88,15 @@ const Produits = () => {
             </div>
             <h2 className="font-bold py-3">SITES WEB D'OCCASIONS</h2>
             <p className="text-sm">
-              De style marketplace reunissant l'inventaire de plusieurs
-              concessions dans un meme site. Strategie incontournable pour les
+              De style marketplace réunissant l'inventaire de plusieurs
+              concessions dans un même site. Stratégie incontournable pour les
               groupes automobiles.
             </p>
           </li>
         </ul>
         <Link className="mt-10 mx-auto" to="/">
           <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
-            DEMANDER UNE DEMO
+            DEMANDER UNE DÉMO
           </span>
         </Link>
       </div>

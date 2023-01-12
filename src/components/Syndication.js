@@ -15,18 +15,15 @@ const Syndication = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4 border-gray-700 border-solid border-l-2 pl-10 py-6">
+          <div className="flex flex-col gap-4  pl-10 py-6">
             <h2 className="flex flex-col">
               <span className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-                INTEGRATION
+                INTÉGRATION
               </span>
               <span className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 SYNDICATION
               </span>
             </h2>
-            <p>
-              Notre portfolio inclus deja plusieurs marques de vehicules neufs:
-            </p>
 
             <ul className="list-disc ml-6">
               <li>
@@ -35,24 +32,24 @@ const Syndication = () => {
               </li>
               <li>
                 <span className="font-bold">Canadian Black Book</span> <br />
-                (Evaluation de vehicule d'echange)
+                (Évaluation de vehicule d'echange)
               </li>
-              <li className="flex flex-col">
-                <span className="font-bold">DealerCorp</span>{" "}
-                <span>(gestionaire d'inventaire)</span>
+              <li>
+                <span className="font-bold">DealerCorp</span>
+                <br /> <span>(Gestionaire d'inventaire)</span>
               </li>
             </ul>
 
             <p>
               Vous voulez ajouter une Syndication? <br />
-              Ecrivez-nous et nous vous contacterons!
+              Écrivez-nous et nous l'ajouterons!
             </p>
 
             <Link
               to="/"
               className="text-black bg-white z-20 mr-auto mt-8 rounded-full px-6 py-2 brightness-100 hover:brightness-90 duration-100 ease-in "
             >
-              DEMANDER UNE DEMO
+              DEMANDER UNE DÉMO
             </Link>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Contact = () => {
                 LIENS RAPIDES
               </h2>
               <p>Produits</p>
-              <p>Demo</p>
+              <p>Démo</p>
               <p>Support</p>
               <p>Contact</p>
             </div>

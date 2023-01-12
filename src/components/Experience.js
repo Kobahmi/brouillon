@@ -8,8 +8,8 @@ const Experience = () => {
       <div className="flex flex-col items-center ">
         <div className="flex flex-col justify-center items-center text-center px-6">
           <h1 className="flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">
-            <span className="bg-clip-text  text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
-              UNE EXPERIENCE OPTIMISEE
+            <span className="pt-2 bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300">
+              UNE EXPÉRIENCE OPTIMISÉE
             </span>
           </h1>
           <p className=" pt-2">POUR VOUS ET VOS CLIENTS</p>
@@ -42,10 +42,10 @@ const Experience = () => {
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              DES SITES WEBS ULTRA RAPIDES
+              DES SITES WEB ULTRA RAPIDES
             </h2>
             <p>
-              Avec l'utilisation des dernieres technologies pour offrir des
+              Avec l'utilisation des dernières technologies pour offrir des
               sites web ultra rapides.
             </p>
           </div>
@@ -65,10 +65,10 @@ const Experience = () => {
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              PLATEFORME (CMS)FACILE A UTILISER
+              PLATEFORME (CMS)FACILE À UTILISER
             </h2>
             <p>
-              Pour l'integration de contenus personnalises sur le site Web
+              Pour l'intégration de contenus personnalisés sur le site Web
               (article de blogue, landing pages, promotions du mois, textes SEO
               et plus).
             </p>
@@ -86,10 +86,10 @@ const Experience = () => {
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              DEMANDES WEB DE QUALITE (LEADS)
+              DEMANDES WEB DE QUALITÉ (LEADS)
             </h2>
             <p>
-              Offrant un taux de conversion plus eleve et un cout d'acquisition
+              Offrant un taux de conversion plus élevé et un coût d'acquisition
               plus bas.
             </p>
           </div>
@@ -109,9 +109,9 @@ const Experience = () => {
           </div>
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              CONCEPTION GRAPHIQUE ET EXPERIENCE EN LIGNE OPTIMALE
+              CONCEPTION GRAPHIQUE ET EXPÉRIENCE EN LIGNE OPTIMALE
             </h2>
-            <p>Pour facilite la navigation.</p>
+            <p>Pour faciliter la navigation.</p>
           </div>
         </div>
 
@@ -126,7 +126,7 @@ const Experience = () => {
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
             <h2 className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-              MISES A JOUR AUTOMATISEE DES PROGRAMMES ET PROMOTIONS
+              MISES A JOUR AUTOMATISÉE DES PROGRAMMES ET PROMOTIONS
             </h2>
             <p>Des manifacturiers.</p>
           </div>
@@ -151,7 +151,7 @@ const Experience = () => {
             </h2>
             <p>
               Incluant la gestion de la taille des images, des balises, des
-              donnees structurees, des sitemaps, etc.
+              donnees structurées, des sitemaps, etc.
             </p>
           </div>
         </div>
