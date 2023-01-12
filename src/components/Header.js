@@ -9,11 +9,13 @@ import Letter4 from "../images/Vector4.svg";
 import Letter5 from "../images/Vector3b.svg";
 import Letter6 from "../images/Vector6b.svg";
 
-const Header = () => {
+const Header = ({ backgroundColor }) => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-lime-300 bg-opacity-100 z-40 lg:absolute lg:bg-opacity-0">
+    <nav
+      className={`w-full ${backgroundColor} bg-opacity-100 z-40 lg:absolute lg:bg-opacity-0`}
+    >
       <div className="justify-between px-6 mx-auto lg:pt-[2px] lg:max-w-7xl lg:items-center lg:flex">
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">

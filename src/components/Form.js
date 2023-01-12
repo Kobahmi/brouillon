@@ -12,7 +12,7 @@ const Form = () => {
 
       <form className="flex flex-col bg-gradient-to-t from-[#30F9FC] to-lime-300 gap-4 max-w-3xl mx-auto px-10 py-16 w-full md:rounded-xl">
         <div className="flex flex-col gap-1 w-full md:w-[40rem]">
-          <label>Nom complet</label>
+          <label htmlFor="nomComplet">Nom complet</label>
           <input
             className="border-2 border-gray-200 p-2 rounded"
             id="nom"
@@ -22,7 +22,7 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col gap-1 w-full md:w-[40rem]">
-          <label>Prénom</label>
+          <label htmlFor="prénom">Prénom</label>
           <input
             className="border-2 border-gray-200 p-2 rounded"
             id="prenom"
@@ -32,7 +32,7 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col gap-1 w-full md:w-[40rem]">
-          <label>Votre courriel</label>
+          <label htmlFor="votreCourriel">Votre courriel</label>
           <input
             className="border-2 border-gray-200 p-2 rounded"
             id="entreprise"
@@ -42,7 +42,7 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col gap-1 w-full md:w-[40rem]">
-          <label>Votre numéros téléphone</label>
+          <label htmlFor="votreTéléphone">Votre numéros téléphone</label>
           <input
             className="border-2 border-gray-200 p-2 rounded"
             id="entreprise"
@@ -52,7 +52,7 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col gap-1 w-full md:w-[40rem]">
-          <label>Votre message</label>
+          <label htmlFor="votreMessage">Votre message</label>
           <textarea
             className="border-2 border-gray-200 p-2 rounded"
             id="message"

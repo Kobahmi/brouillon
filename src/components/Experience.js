@@ -23,7 +23,7 @@ const Experience = () => {
 
           <div className="rounded-xl mb-8 bg-gray-300 h-[2px] max-w-[30rem] w-full "></div>
 
-          <Link to="/">
+          <Link to="/demo">
             <span className="border-[1px] px-4 py-2 border-neutral-700 rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
               COMMENCER
             </span>

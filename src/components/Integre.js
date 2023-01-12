@@ -34,7 +34,7 @@ const Integre = () => {
 
         <div className="rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "></div>
 
-        <Link className="mt-8 mx-auto" to="/">
+        <Link className="mt-8 mx-auto" to="/demo">
           <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black ">
             COMMENCER
           </span>

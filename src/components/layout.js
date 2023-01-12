@@ -1,7 +1,6 @@
 import * as React from "react";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Header from "./Header";
 
 const Layout = ({ children }) => {
   let AOS;
@@ -18,7 +17,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
       <main>{children}</main>
     </>
   );

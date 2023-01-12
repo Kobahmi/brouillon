@@ -19,10 +19,12 @@ import Rapide from "../components/Rapide";
 import Seo from "../components/seo";
 import Syndication from "../components/Syndication";
 import Automatisation from "../components/Automatisation";
+import Header from "../components/Header";
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Header backgroundColor="bg-lime-300" />
       <Hero />
       <Divider />
       <Rapide />

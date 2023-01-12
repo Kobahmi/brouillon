@@ -3,11 +3,13 @@ import Contact from "../components/Contact";
 import Dividerleftthree from "../components/Dividerleftthree";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
+import Header from "../components/Header";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const SecondPage = () => (
   <Layout>
+    <Header backgroundColor="bg-white" />
     <Form />
     <Dividerleftthree />
     <Contact />
