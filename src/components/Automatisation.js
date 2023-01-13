@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Automatisation = () => {
   return (
-    <section className="overflow-y-hidden py-6">
+    <section className="py-6">
       <div className="flex flex-col items-center max-w-7xl mx-auto">
         <h1
           data-aos="fade-up"

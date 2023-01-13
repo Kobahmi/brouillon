@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Integration = () => {
   return (
-    <section className="overflow-y-hidden bg-black relative z-0 py-6">
+    <section className="bg-black relative z-0 py-6">
       <div className="flex flex-col  max-w-7xl mx-auto">
         <h1
           data-aos="fade-up"
