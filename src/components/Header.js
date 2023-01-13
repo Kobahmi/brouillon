@@ -8,6 +8,7 @@ import Letter3 from "../images/Vector2b.svg";
 import Letter4 from "../images/Vector4.svg";
 import Letter5 from "../images/Vector3b.svg";
 import Letter6 from "../images/Vector6b.svg";
+import Icone from "../images/iconconnexion.webp";
 
 const Header = ({ backgroundColor }) => {
   const [navbar, setNavbar] = useState(false);
@@ -185,14 +186,19 @@ const Header = ({ backgroundColor }) => {
             </div>
           </div>
         </div>
-        <div className="hidden space-x-2 items-center lg:flex">
+        <div className="hidden space-x-5 items-center lg:flex">
           <Link
-            className="btn group  bg-transparent tracking-widest text-white"
+            className="flex groupe gap-2 items-center btn group  bg-transparent tracking-widest text-white"
             to="/"
           >
             <span className="relative font-bold pb-[2px] text-neutral-700 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-700 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
               CONNEXION
             </span>
+            <img
+              className="h-[24px] w-[24px] transition-all duration-200 ease-out group-hover:scale-105"
+              alt="icon"
+              src={Icone}
+            />
           </Link>
           <Link
             to="/"
