@@ -1,6 +1,20 @@
 import * as React from "react";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Layout = ({ children }) => {
+  let AOS;
+  useEffect(() => {
+    const AOS = require("aos");
+    AOS.init();
+  }, []);
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
+
   return (
     <>
       <main>{children}</main>
