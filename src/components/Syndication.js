@@ -15,7 +15,7 @@ const Syndication = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4  pl-10 py-6">
+          <div className="flex flex-col gap-4 py-6 sm:pl-10">
             <h2 className="flex flex-col">
               <span className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 INTÉGRATION
@@ -46,7 +46,7 @@ const Syndication = () => {
             </p>
 
             <Link className="mt-10" to="/">
-              <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white mr-6">
+              <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white sm:mr-6">
                 DEMANDER UNE DÉMO
               </span>
             </Link>

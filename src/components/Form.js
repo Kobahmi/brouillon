@@ -17,7 +17,7 @@ const Form = () => {
             className="border-2 border-gray-200 p-2 rounded"
             id="nom"
             type="text"
-            placeholder="Votre nom"
+            placeholder="Votre Nom"
           />
         </div>
 
