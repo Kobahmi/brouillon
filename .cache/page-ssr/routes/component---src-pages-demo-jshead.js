@@ -1032,10 +1032,18 @@ __webpack_require__.r(__webpack_exports__);
 const Layout = ({
   children
 }) => {
+  let AOS;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    aos__WEBPACK_IMPORTED_MODULE_2__["default"].init();
-    aos__WEBPACK_IMPORTED_MODULE_2__["default"].refresh();
+    const AOS = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.esm.js");
+    AOS.init({
+      once: true
+    });
   }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
