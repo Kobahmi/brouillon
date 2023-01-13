@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Syndication = () => {
   return (
-    <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
+    <section className="overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300">
       <div className="flex flex-col text-neutral-700 items-center max-w-7xl mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
