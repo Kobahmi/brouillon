@@ -23,11 +23,7 @@ const Hero = () => {
         </div>
 
         <div className="relative pb-10 mt-[1rem] lg:ml-[-18rem] lg:pb-0">
-          <div
-            data-sal="slide-up"
-            data-sal-duration="2000"
-            className="absolute"
-          >
+          <div data-aos="fade-up" data-aos-duration="2000" className="absolute">
             <StaticImage
               src="../images/stars.webp"
               alt="stars"
