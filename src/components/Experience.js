@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Experience = () => {
   return (
-    <section className="overflow-y-hidden bg-white pt-6 pb-[8.5rem]">
+    <section className="bg-white pt-6 pb-[8.5rem]">
       <div className="flex flex-col items-center text-neutral-700">
         <div className="flex flex-col justify-center items-center text-center px-6">
           <h1 className="flex flex-col text-2xl font-bold  md:text-5xl lg:text-6xl">

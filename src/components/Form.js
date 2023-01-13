@@ -4,9 +4,9 @@ const Form = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col text-neutral-700  items-center pt-[6rem] pb-10"
+      className="flex flex-col text-neutral-700  items-center pb-[4rem] pt-[2rem] lg:pt-[6rem]"
     >
-      <h1 className="flex flex-col pb-6 z-20 text-neutral-700 text-2xl font-bold  md:text-3xl ">
+      <h1 className="flex flex-col pb-6 z-20 text-neutral-700 text-xl font-bold  md:text-3xl ">
         DEMANDEZ VOTRE DÉMO
       </h1>
 
