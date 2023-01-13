@@ -44,10 +44,26 @@ const Automatisation = () => {
               <li>Conseils et stratégies de marketing</li>
             </ul>
 
-            <Link className="mt-10" to="/demo">
-              <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white mr-6">
-                COMMENCER
-              </span>
+            <Link
+              to="/"
+              className="flex group btn items-center mr-auto mt-4 text-neutral-700 border-[1px] border-neutral-700 rounded-full transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white"
+            >
+              <span className=" px-4 py-2  font-bold ">COMMENCER</span>
+              <svg
+                viewBox="0 0 46 16"
+                height="10"
+                width="30"
+                xmlns="http://www.w3.org/2000/svg"
+                id="arrow-horizontal"
+                class="-translate-x-2 fill-neutral-700 transition-all duration-300 ease-out group-hover:scale-x-105 group-hover:fill-white"
+              >
+                <path
+                  transform="translate(30)"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10"
+                  id="Path_10"
+                ></path>
+              </svg>
             </Link>
           </div>
         </div>
