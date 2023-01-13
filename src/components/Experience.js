@@ -52,8 +52,8 @@ const Experience = () => {
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-sal="slide-left"
+            data-sal-duration="1000"
             className="lg:order-2"
           >
             <StaticImage

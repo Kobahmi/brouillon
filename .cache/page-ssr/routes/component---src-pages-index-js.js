@@ -1,635 +1,7 @@
+"use strict";
 exports.id = "component---src-pages-index-js";
 exports.ids = ["component---src-pages-index-js"];
 exports.modules = {
-
-/***/ "./node_modules/aos/dist/aos.esm.js":
-/*!******************************************!*\
-  !*** ./node_modules/aos/dist/aos.esm.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var lodash_throttle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash.throttle */ "./node_modules/lodash.throttle/index.js");
-/* harmony import */ var lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_throttle__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash.debounce */ "./node_modules/lodash.debounce/index.js");
-/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-var callback = function callback() {};
-
-function containsAOSNode(nodes) {
-  var i = void 0,
-      currentNode = void 0,
-      result = void 0;
-
-  for (i = 0; i < nodes.length; i += 1) {
-    currentNode = nodes[i];
-
-    if (currentNode.dataset && currentNode.dataset.aos) {
-      return true;
-    }
-
-    result = currentNode.children && containsAOSNode(currentNode.children);
-
-    if (result) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function check(mutations) {
-  if (!mutations) return;
-
-  mutations.forEach(function (mutation) {
-    var addedNodes = Array.prototype.slice.call(mutation.addedNodes);
-    var removedNodes = Array.prototype.slice.call(mutation.removedNodes);
-    var allNodes = addedNodes.concat(removedNodes);
-
-    if (containsAOSNode(allNodes)) {
-      return callback();
-    }
-  });
-}
-
-function getMutationObserver() {
-  return window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-}
-
-function isSupported() {
-  return !!getMutationObserver();
-}
-
-function ready(selector, fn) {
-  var doc = window.document;
-  var MutationObserver = getMutationObserver();
-
-  var observer = new MutationObserver(check);
-  callback = fn;
-
-  observer.observe(doc.documentElement, {
-    childList: true,
-    subtree: true,
-    removedNodes: true
-  });
-}
-
-var observer = { isSupported: isSupported, ready: ready };
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-/**
- * Device detector
- */
-
-var fullNameRe = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i;
-var prefixRe = /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i;
-var fullNameMobileRe = /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i;
-var prefixMobileRe = /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i;
-
-function ua() {
-  return navigator.userAgent || navigator.vendor || window.opera || '';
-}
-
-var Detector = function () {
-  function Detector() {
-    classCallCheck(this, Detector);
-  }
-
-  createClass(Detector, [{
-    key: 'phone',
-    value: function phone() {
-      var a = ua();
-      return !!(fullNameRe.test(a) || prefixRe.test(a.substr(0, 4)));
-    }
-  }, {
-    key: 'mobile',
-    value: function mobile() {
-      var a = ua();
-      return !!(fullNameMobileRe.test(a) || prefixMobileRe.test(a.substr(0, 4)));
-    }
-  }, {
-    key: 'tablet',
-    value: function tablet() {
-      return this.mobile() && !this.phone();
-    }
-
-    // http://browserhacks.com/#hack-acea075d0ac6954f275a70023906050c
-
-  }, {
-    key: 'ie11',
-    value: function ie11() {
-      return '-ms-scroll-limit' in document.documentElement.style && '-ms-ime-align' in document.documentElement.style;
-    }
-  }]);
-  return Detector;
-}();
-
-var detect = new Detector();
-
-/**
- * Adds multiple classes on node
- * @param {DOMNode} node
- * @param {array}  classes
- */
-var addClasses = function addClasses(node, classes) {
-  return classes && classes.forEach(function (className) {
-    return node.classList.add(className);
-  });
-};
-
-/**
- * Removes multiple classes from node
- * @param {DOMNode} node
- * @param {array}  classes
- */
-var removeClasses = function removeClasses(node, classes) {
-  return classes && classes.forEach(function (className) {
-    return node.classList.remove(className);
-  });
-};
-
-var fireEvent = function fireEvent(eventName, data) {
-  var customEvent = void 0;
-
-  if (detect.ie11()) {
-    customEvent = document.createEvent('CustomEvent');
-    customEvent.initCustomEvent(eventName, true, true, { detail: data });
-  } else {
-    customEvent = new CustomEvent(eventName, {
-      detail: data
-    });
-  }
-
-  return document.dispatchEvent(customEvent);
-};
-
-/**
- * Set or remove aos-animate class
- * @param {node} el         element
- * @param {int}  top        scrolled distance
- */
-var applyClasses = function applyClasses(el, top) {
-  var options = el.options,
-      position = el.position,
-      node = el.node,
-      data = el.data;
-
-
-  var hide = function hide() {
-    if (!el.animated) return;
-
-    removeClasses(node, options.animatedClassNames);
-    fireEvent('aos:out', node);
-
-    if (el.options.id) {
-      fireEvent('aos:in:' + el.options.id, node);
-    }
-
-    el.animated = false;
-  };
-
-  var show = function show() {
-    if (el.animated) return;
-
-    addClasses(node, options.animatedClassNames);
-
-    fireEvent('aos:in', node);
-    if (el.options.id) {
-      fireEvent('aos:in:' + el.options.id, node);
-    }
-
-    el.animated = true;
-  };
-
-  if (options.mirror && top >= position.out && !options.once) {
-    hide();
-  } else if (top >= position.in) {
-    show();
-  } else if (el.animated && !options.once) {
-    hide();
-  }
-};
-
-/**
- * Scroll logic - add or remove 'aos-animate' class on scroll
- *
- * @param  {array} $elements         array of elements nodes
- * @return {void}
- */
-var handleScroll = function handleScroll($elements) {
-  return $elements.forEach(function (el, i) {
-    return applyClasses(el, window.pageYOffset);
-  });
-};
-
-/**
- * Get offset of DOM element
- * like there were no transforms applied on it
- *
- * @param  {Node} el [DOM element]
- * @return {Object} [top and left offset]
- */
-var offset = function offset(el) {
-  var _x = 0;
-  var _y = 0;
-
-  while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-    _x += el.offsetLeft - (el.tagName != 'BODY' ? el.scrollLeft : 0);
-    _y += el.offsetTop - (el.tagName != 'BODY' ? el.scrollTop : 0);
-    el = el.offsetParent;
-  }
-
-  return {
-    top: _y,
-    left: _x
-  };
-};
-
-/**
- * Get inline option with a fallback.
- *
- * @param  {Node} el [Dom element]
- * @param  {String} key [Option key]
- * @param  {String} fallback [Default (fallback) value]
- * @return {Mixed} [Option set with inline attributes or fallback value if not set]
- */
-
-var getInlineOption = (function (el, key, fallback) {
-  var attr = el.getAttribute('data-aos-' + key);
-
-  if (typeof attr !== 'undefined') {
-    if (attr === 'true') {
-      return true;
-    } else if (attr === 'false') {
-      return false;
-    }
-  }
-
-  return attr || fallback;
-});
-
-/**
- * Calculate offset
- * basing on element's settings like:
- * - anchor
- * - offset
- *
- * @param  {Node} el [Dom element]
- * @return {Integer} [Final offset that will be used to trigger animation in good position]
- */
-
-var getPositionIn = function getPositionIn(el, defaultOffset, defaultAnchorPlacement) {
-  var windowHeight = window.innerHeight;
-  var anchor = getInlineOption(el, 'anchor');
-  var inlineAnchorPlacement = getInlineOption(el, 'anchor-placement');
-  var additionalOffset = Number(getInlineOption(el, 'offset', inlineAnchorPlacement ? 0 : defaultOffset));
-  var anchorPlacement = inlineAnchorPlacement || defaultAnchorPlacement;
-  var finalEl = el;
-
-  if (anchor && document.querySelectorAll(anchor)) {
-    finalEl = document.querySelectorAll(anchor)[0];
-  }
-
-  var triggerPoint = offset(finalEl).top - windowHeight;
-
-  switch (anchorPlacement) {
-    case 'top-bottom':
-      // Default offset
-      break;
-    case 'center-bottom':
-      triggerPoint += finalEl.offsetHeight / 2;
-      break;
-    case 'bottom-bottom':
-      triggerPoint += finalEl.offsetHeight;
-      break;
-    case 'top-center':
-      triggerPoint += windowHeight / 2;
-      break;
-    case 'center-center':
-      triggerPoint += windowHeight / 2 + finalEl.offsetHeight / 2;
-      break;
-    case 'bottom-center':
-      triggerPoint += windowHeight / 2 + finalEl.offsetHeight;
-      break;
-    case 'top-top':
-      triggerPoint += windowHeight;
-      break;
-    case 'bottom-top':
-      triggerPoint += windowHeight + finalEl.offsetHeight;
-      break;
-    case 'center-top':
-      triggerPoint += windowHeight + finalEl.offsetHeight / 2;
-      break;
-  }
-
-  return triggerPoint + additionalOffset;
-};
-
-var getPositionOut = function getPositionOut(el, defaultOffset) {
-  var windowHeight = window.innerHeight;
-  var anchor = getInlineOption(el, 'anchor');
-  var additionalOffset = getInlineOption(el, 'offset', defaultOffset);
-  var finalEl = el;
-
-  if (anchor && document.querySelectorAll(anchor)) {
-    finalEl = document.querySelectorAll(anchor)[0];
-  }
-
-  var elementOffsetTop = offset(finalEl).top;
-
-  return elementOffsetTop + finalEl.offsetHeight - additionalOffset;
-};
-
-/* Clearing variables */
-
-var prepare = function prepare($elements, options) {
-  $elements.forEach(function (el, i) {
-    var mirror = getInlineOption(el.node, 'mirror', options.mirror);
-    var once = getInlineOption(el.node, 'once', options.once);
-    var id = getInlineOption(el.node, 'id');
-    var customClassNames = options.useClassNames && el.node.getAttribute('data-aos');
-
-    var animatedClassNames = [options.animatedClassName].concat(customClassNames ? customClassNames.split(' ') : []).filter(function (className) {
-      return typeof className === 'string';
-    });
-
-    if (options.initClassName) {
-      el.node.classList.add(options.initClassName);
-    }
-
-    el.position = {
-      in: getPositionIn(el.node, options.offset, options.anchorPlacement),
-      out: mirror && getPositionOut(el.node, options.offset)
-    };
-
-    el.options = {
-      once: once,
-      mirror: mirror,
-      animatedClassNames: animatedClassNames,
-      id: id
-    };
-  });
-
-  return $elements;
-};
-
-/**
- * Generate initial array with elements as objects
- * This array will be extended later with elements attributes values
- * like 'position'
- */
-var elements = (function () {
-  var elements = document.querySelectorAll('[data-aos]');
-  return Array.prototype.map.call(elements, function (node) {
-    return { node: node };
-  });
-});
-
-/**
- * *******************************************************
- * AOS (Animate on scroll) - wowjs alternative
- * made to animate elements on scroll in both directions
- * *******************************************************
- */
-
-/**
- * Private variables
- */
-var $aosElements = [];
-var initialized = false;
-
-/**
- * Default options
- */
-var options = {
-  offset: 120,
-  delay: 0,
-  easing: 'ease',
-  duration: 400,
-  disable: false,
-  once: false,
-  mirror: false,
-  anchorPlacement: 'top-bottom',
-  startEvent: 'DOMContentLoaded',
-  animatedClassName: 'aos-animate',
-  initClassName: 'aos-init',
-  useClassNames: false,
-  disableMutationObserver: false,
-  throttleDelay: 99,
-  debounceDelay: 50
-};
-
-// Detect not supported browsers (<=IE9)
-// http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-var isBrowserNotSupported = function isBrowserNotSupported() {
-  return document.all && !window.atob;
-};
-
-var initializeScroll = function initializeScroll() {
-  // Extend elements objects in $aosElements with their positions
-  $aosElements = prepare($aosElements, options);
-  // Perform scroll event, to refresh view and show/hide elements
-  handleScroll($aosElements);
-
-  /**
-   * Handle scroll event to animate elements on scroll
-   */
-  window.addEventListener('scroll', lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-    handleScroll($aosElements, options.once);
-  }, options.throttleDelay));
-
-  return $aosElements;
-};
-
-/**
- * Refresh AOS
- */
-var refresh = function refresh() {
-  var initialize = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-
-  // Allow refresh only when it was first initialized on startEvent
-  if (initialize) initialized = true;
-  if (initialized) initializeScroll();
-};
-
-/**
- * Hard refresh
- * create array with new elements and trigger refresh
- */
-var refreshHard = function refreshHard() {
-  $aosElements = elements();
-
-  if (isDisabled(options.disable) || isBrowserNotSupported()) {
-    return disable();
-  }
-
-  refresh();
-};
-
-/**
- * Disable AOS
- * Remove all attributes to reset applied styles
- */
-var disable = function disable() {
-  $aosElements.forEach(function (el, i) {
-    el.node.removeAttribute('data-aos');
-    el.node.removeAttribute('data-aos-easing');
-    el.node.removeAttribute('data-aos-duration');
-    el.node.removeAttribute('data-aos-delay');
-
-    if (options.initClassName) {
-      el.node.classList.remove(options.initClassName);
-    }
-
-    if (options.animatedClassName) {
-      el.node.classList.remove(options.animatedClassName);
-    }
-  });
-};
-
-/**
- * Check if AOS should be disabled based on provided setting
- */
-var isDisabled = function isDisabled(optionDisable) {
-  return optionDisable === true || optionDisable === 'mobile' && detect.mobile() || optionDisable === 'phone' && detect.phone() || optionDisable === 'tablet' && detect.tablet() || typeof optionDisable === 'function' && optionDisable() === true;
-};
-
-/**
- * Initializing AOS
- * - Create options merging defaults with user defined options
- * - Set attributes on <body> as global setting - css relies on it
- * - Attach preparing elements to options.startEvent,
- *   window resize and orientation change
- * - Attach function that handle scroll and everything connected to it
- *   to window scroll event and fire once document is ready to set initial state
- */
-var init = function init(settings) {
-  options = _extends(options, settings);
-
-  // Create initial array with elements -> to be fullfilled later with prepare()
-  $aosElements = elements();
-
-  /**
-   * Disable mutation observing if not supported
-   */
-  if (!options.disableMutationObserver && !observer.isSupported()) {
-    console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    ');
-    options.disableMutationObserver = true;
-  }
-
-  /**
-   * Observe [aos] elements
-   * If something is loaded by AJAX
-   * it'll refresh plugin automatically
-   */
-  if (!options.disableMutationObserver) {
-    observer.ready('[data-aos]', refreshHard);
-  }
-
-  /**
-   * Don't init plugin if option `disable` is set
-   * or when browser is not supported
-   */
-  if (isDisabled(options.disable) || isBrowserNotSupported()) {
-    return disable();
-  }
-
-  /**
-   * Set global settings on body, based on options
-   * so CSS can use it
-   */
-  document.querySelector('body').setAttribute('data-aos-easing', options.easing);
-
-  document.querySelector('body').setAttribute('data-aos-duration', options.duration);
-
-  document.querySelector('body').setAttribute('data-aos-delay', options.delay);
-
-  /**
-   * Handle initializing
-   */
-  if (['DOMContentLoaded', 'load'].indexOf(options.startEvent) === -1) {
-    // Listen to options.startEvent and initialize AOS
-    document.addEventListener(options.startEvent, function () {
-      refresh(true);
-    });
-  } else {
-    window.addEventListener('load', function () {
-      refresh(true);
-    });
-  }
-
-  if (options.startEvent === 'DOMContentLoaded' && ['complete', 'interactive'].indexOf(document.readyState) > -1) {
-    // Initialize AOS if default startEvent was already fired
-    refresh(true);
-  }
-
-  /**
-   * Refresh plugin on window resize or orientation change
-   */
-  window.addEventListener('resize', lodash_debounce__WEBPACK_IMPORTED_MODULE_1___default()(refresh, options.debounceDelay, true));
-
-  window.addEventListener('orientationchange', lodash_debounce__WEBPACK_IMPORTED_MODULE_1___default()(refresh, options.debounceDelay, true));
-
-  return $aosElements;
-};
-
-/**
- * Export Public API
- */
-
-var aos = {
-  init: init,
-  refresh: refresh,
-  refreshHard: refreshHard
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (aos);
-
-
-/***/ }),
 
 /***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
 /*!**********************************************************************!*\
@@ -637,7 +9,6 @@ var aos = {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "GatsbyImage": () => (/* binding */ B),
@@ -1328,7 +699,6 @@ V.displayName = "StaticImage", V.propTypes = Y;
   \**************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 const preserveCamelCase = string => {
@@ -1394,7 +764,6 @@ module.exports["default"] = camelCase;
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1458,7 +827,6 @@ const Automatisation = () => {
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1514,7 +882,6 @@ const Contact = () => {
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1537,7 +904,6 @@ const Divider = () => {
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1560,7 +926,6 @@ const Dividerleft = () => {
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1583,7 +948,6 @@ const Dividerleftthree = () => {
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1606,7 +970,6 @@ const Dividerlefttwo = () => {
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1629,7 +992,6 @@ const Dividerright = () => {
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1652,7 +1014,6 @@ const Dividerrightthree = () => {
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1675,7 +1036,6 @@ const Dividerrighttwo = () => {
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1725,8 +1085,8 @@ const Experience = () => {
   }, "DES SITES WEB ULTRA RAPIDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Avec l'utilisation des derni\xE8res technologies pour offrir des sites web ultra rapides."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    "data-aos": "fade-left",
-    "data-aos-duration": "1000",
+    "data-sal": "slide-left",
+    "data-sal-duration": "1000",
     className: "lg:order-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images2-min.svg",
@@ -1807,7 +1167,6 @@ const Experience = () => {
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1832,7 +1191,6 @@ const Footer = () => {
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1874,72 +1232,72 @@ const Header = ({
     to: "/",
     className: "flex gap-[1px]"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "flip-left",
-    "data-aos-duration": "500",
+    "data-sal": "flip-left",
+    "data-sal-duration": "500",
     className: "h-[1.5rem] w-[1.5rem]",
     src: _images_Vector_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "Letter A"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-down",
-    "data-aos-duration": "500",
-    "data-aos-easing": "ease-in",
+    "data-sal": "slide-down",
+    "data-sal-duration": "500",
+    "data-sal-easing": "ease-in",
     className: "h-[1.5rem] w-[1.5rem] ",
     src: _images_Vector1b_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
     alt: "Letter U"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-down",
-    "data-aos-duration": "500",
-    "data-aos-delay": "200",
-    "data-aos-easing": "ease-in",
+    "data-sal": "slide-down",
+    "data-sal-duration": "500",
+    "data-sal-delay": "200",
+    "data-sal-easing": "ease-in",
     className: "h-[1.5rem] w-[1.5rem] ml-[-0.3rem]",
     src: _images_Vector2b_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
     alt: "Letter T"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-down",
-    "data-aos-duration": "500",
-    "data-aos-delay": "400",
-    "data-aos-easing": "ease-in",
+    "data-sal": "slide-down",
+    "data-sal-duration": "500",
+    "data-sal-delay": "400",
+    "data-sal-easing": "ease-in",
     className: "h-[1.5rem] w-[1.5rem] ml-[-0.3rem]",
     src: _images_Vector3b_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
     alt: "Letter O"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-left",
-    "data-aos-delay": "700",
-    "data-aos-duration": "500",
-    "data-aos-easing": "ease-in-out-back",
+    "data-sal": "slide-left",
+    "data-sal-delay": "700",
+    "data-sal-duration": "500",
+    "data-sal-easing": "ease-in-out-back",
     className: "h-[1.5rem] w-[1.5rem] ml-[-0.3rem]",
     src: _images_Vector4_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
     alt: "Letter R"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-left",
-    "data-aos-delay": "700",
-    "data-aos-duration": "500",
-    "data-aos-easing": "ease-in-out-back",
+    "data-sal": "slide-left",
+    "data-sal-delay": "700",
+    "data-sal-duration": "500",
+    "data-sal-easing": "ease-in-out-back",
     className: "h-[1.5rem] w-[1.5rem] ml-[-0.4rem]",
     src: _images_Vector3b_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
     alt: "Letter O"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-left",
-    "data-aos-delay": "700",
-    "data-aos-duration": "500",
-    "data-aos-easing": "ease-in-out-back",
+    "data-sal": "slide-left",
+    "data-sal-delay": "700",
+    "data-sal-duration": "500",
+    "data-sal-easing": "ease-in-out-back",
     className: "h-[1.5rem] w-[1.5rem]",
     src: _images_Vector3b_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
     alt: "Letter O"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-left",
-    "data-aos-delay": "700",
-    "data-aos-duration": "500",
-    "data-aos-easing": "ease-in-out-back",
+    "data-sal": "slide-left",
+    "data-sal-delay": "700",
+    "data-sal-duration": "500",
+    "data-sal-easing": "ease-in-out-back",
     className: "h-[1.5rem] w-[1.5rem] ml-[-0.3rem]",
     src: _images_Vector2b_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
     alt: "Letter T"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex justify-start items-end ml-[-0.2rem]"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-    "data-aos": "fade-in",
-    "data-aos-delay": "1350",
-    "data-aos-duration": "1500",
+    "data-sal": "fade",
+    "data-sal-delay": "1000",
+    "data-sal-duration": "1500",
     className: "h-[0.7rem] w-[0.7rem] ",
     src: _images_Vector6b_svg__WEBPACK_IMPORTED_MODULE_8__["default"],
     alt: "Rights"
@@ -2025,7 +1383,6 @@ const Header = ({
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2058,8 +1415,8 @@ const Hero = () => {
   }, "DEMANDER UNE D\xC9MO"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "relative pb-10 mt-[1rem] lg:ml-[-18rem] lg:pb-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    "data-aos": "fade-up",
-    "data-aos-duration": "2000",
+    "data-sal": "slide-up",
+    "data-sal-duration": "2000",
     className: "absolute"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/stars.webp",
@@ -2085,7 +1442,6 @@ const Hero = () => {
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2154,7 +1510,6 @@ const Integration = () => {
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2208,7 +1563,6 @@ const Integre = () => {
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2318,7 +1672,6 @@ const Produits = () => {
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2364,7 +1717,6 @@ const Rapide = () => {
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2424,33 +1776,16 @@ const Syndication = () => {
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_1__);
-
-
 
 const Layout = ({
   children
 }) => {
-  let AOS;
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    const AOS = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.esm.js");
-    AOS.init({
-      once: true
-    });
-  }, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    if (AOS) {
-      AOS.refresh();
-    }
-  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
@@ -2463,7 +1798,6 @@ const Layout = ({
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2527,7 +1861,6 @@ function Seo({
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Head": () => (/* binding */ Head),
@@ -2588,859 +1921,12 @@ const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 /***/ }),
 
-/***/ "./node_modules/lodash.debounce/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/lodash.debounce/index.js ***!
-  \***********************************************/
-/***/ ((module) => {
-
-/**
- * lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash modularize exports="npm" -o ./`
- * Copyright jQuery Foundation and other contributors <https://jquery.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
-
-/** Used as the `TypeError` message for "Functions" methods. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/** Used as references for various `Number` constants. */
-var NAN = 0 / 0;
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/** Used to match leading and trailing whitespace. */
-var reTrim = /^\s+|\s+$/g;
-
-/** Used to detect bad signed hexadecimal string values. */
-var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
-
-/** Used to detect binary string values. */
-var reIsBinary = /^0b[01]+$/i;
-
-/** Used to detect octal string values. */
-var reIsOctal = /^0o[0-7]+$/i;
-
-/** Built-in method references without a dependency on `root`. */
-var freeParseInt = parseInt;
-
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var objectToString = objectProto.toString;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max,
-    nativeMin = Math.min;
-
-/**
- * Gets the timestamp of the number of milliseconds that have elapsed since
- * the Unix epoch (1 January 1970 00:00:00 UTC).
- *
- * @static
- * @memberOf _
- * @since 2.4.0
- * @category Date
- * @returns {number} Returns the timestamp.
- * @example
- *
- * _.defer(function(stamp) {
- *   console.log(_.now() - stamp);
- * }, _.now());
- * // => Logs the number of milliseconds it took for the deferred invocation.
- */
-var now = function() {
-  return root.Date.now();
-};
-
-/**
- * Creates a debounced function that delays invoking `func` until after `wait`
- * milliseconds have elapsed since the last time the debounced function was
- * invoked. The debounced function comes with a `cancel` method to cancel
- * delayed `func` invocations and a `flush` method to immediately invoke them.
- * Provide `options` to indicate whether `func` should be invoked on the
- * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
- * with the last arguments provided to the debounced function. Subsequent
- * calls to the debounced function return the result of the last `func`
- * invocation.
- *
- * **Note:** If `leading` and `trailing` options are `true`, `func` is
- * invoked on the trailing edge of the timeout only if the debounced function
- * is invoked more than once during the `wait` timeout.
- *
- * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
- * until to the next tick, similar to `setTimeout` with a timeout of `0`.
- *
- * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
- * for details over the differences between `_.debounce` and `_.throttle`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to debounce.
- * @param {number} [wait=0] The number of milliseconds to delay.
- * @param {Object} [options={}] The options object.
- * @param {boolean} [options.leading=false]
- *  Specify invoking on the leading edge of the timeout.
- * @param {number} [options.maxWait]
- *  The maximum time `func` is allowed to be delayed before it's invoked.
- * @param {boolean} [options.trailing=true]
- *  Specify invoking on the trailing edge of the timeout.
- * @returns {Function} Returns the new debounced function.
- * @example
- *
- * // Avoid costly calculations while the window size is in flux.
- * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
- *
- * // Invoke `sendMail` when clicked, debouncing subsequent calls.
- * jQuery(element).on('click', _.debounce(sendMail, 300, {
- *   'leading': true,
- *   'trailing': false
- * }));
- *
- * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
- * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
- * var source = new EventSource('/stream');
- * jQuery(source).on('message', debounced);
- *
- * // Cancel the trailing debounced invocation.
- * jQuery(window).on('popstate', debounced.cancel);
- */
-function debounce(func, wait, options) {
-  var lastArgs,
-      lastThis,
-      maxWait,
-      result,
-      timerId,
-      lastCallTime,
-      lastInvokeTime = 0,
-      leading = false,
-      maxing = false,
-      trailing = true;
-
-  if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  wait = toNumber(wait) || 0;
-  if (isObject(options)) {
-    leading = !!options.leading;
-    maxing = 'maxWait' in options;
-    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
-    trailing = 'trailing' in options ? !!options.trailing : trailing;
-  }
-
-  function invokeFunc(time) {
-    var args = lastArgs,
-        thisArg = lastThis;
-
-    lastArgs = lastThis = undefined;
-    lastInvokeTime = time;
-    result = func.apply(thisArg, args);
-    return result;
-  }
-
-  function leadingEdge(time) {
-    // Reset any `maxWait` timer.
-    lastInvokeTime = time;
-    // Start the timer for the trailing edge.
-    timerId = setTimeout(timerExpired, wait);
-    // Invoke the leading edge.
-    return leading ? invokeFunc(time) : result;
-  }
-
-  function remainingWait(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime,
-        result = wait - timeSinceLastCall;
-
-    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
-  }
-
-  function shouldInvoke(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime;
-
-    // Either this is the first call, activity has stopped and we're at the
-    // trailing edge, the system time has gone backwards and we're treating
-    // it as the trailing edge, or we've hit the `maxWait` limit.
-    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
-      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
-  }
-
-  function timerExpired() {
-    var time = now();
-    if (shouldInvoke(time)) {
-      return trailingEdge(time);
-    }
-    // Restart the timer.
-    timerId = setTimeout(timerExpired, remainingWait(time));
-  }
-
-  function trailingEdge(time) {
-    timerId = undefined;
-
-    // Only invoke if we have `lastArgs` which means `func` has been
-    // debounced at least once.
-    if (trailing && lastArgs) {
-      return invokeFunc(time);
-    }
-    lastArgs = lastThis = undefined;
-    return result;
-  }
-
-  function cancel() {
-    if (timerId !== undefined) {
-      clearTimeout(timerId);
-    }
-    lastInvokeTime = 0;
-    lastArgs = lastCallTime = lastThis = timerId = undefined;
-  }
-
-  function flush() {
-    return timerId === undefined ? result : trailingEdge(now());
-  }
-
-  function debounced() {
-    var time = now(),
-        isInvoking = shouldInvoke(time);
-
-    lastArgs = arguments;
-    lastThis = this;
-    lastCallTime = time;
-
-    if (isInvoking) {
-      if (timerId === undefined) {
-        return leadingEdge(lastCallTime);
-      }
-      if (maxing) {
-        // Handle invocations in a tight loop.
-        timerId = setTimeout(timerExpired, wait);
-        return invokeFunc(lastCallTime);
-      }
-    }
-    if (timerId === undefined) {
-      timerId = setTimeout(timerExpired, wait);
-    }
-    return result;
-  }
-  debounced.cancel = cancel;
-  debounced.flush = flush;
-  return debounced;
-}
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return !!value && (type == 'object' || type == 'function');
-}
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return !!value && typeof value == 'object';
-}
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return typeof value == 'symbol' ||
-    (isObjectLike(value) && objectToString.call(value) == symbolTag);
-}
-
-/**
- * Converts `value` to a number.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to process.
- * @returns {number} Returns the number.
- * @example
- *
- * _.toNumber(3.2);
- * // => 3.2
- *
- * _.toNumber(Number.MIN_VALUE);
- * // => 5e-324
- *
- * _.toNumber(Infinity);
- * // => Infinity
- *
- * _.toNumber('3.2');
- * // => 3.2
- */
-function toNumber(value) {
-  if (typeof value == 'number') {
-    return value;
-  }
-  if (isSymbol(value)) {
-    return NAN;
-  }
-  if (isObject(value)) {
-    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-    value = isObject(other) ? (other + '') : other;
-  }
-  if (typeof value != 'string') {
-    return value === 0 ? value : +value;
-  }
-  value = value.replace(reTrim, '');
-  var isBinary = reIsBinary.test(value);
-  return (isBinary || reIsOctal.test(value))
-    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
-    : (reIsBadHex.test(value) ? NAN : +value);
-}
-
-module.exports = debounce;
-
-
-/***/ }),
-
-/***/ "./node_modules/lodash.throttle/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/lodash.throttle/index.js ***!
-  \***********************************************/
-/***/ ((module) => {
-
-/**
- * lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash modularize exports="npm" -o ./`
- * Copyright jQuery Foundation and other contributors <https://jquery.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
-
-/** Used as the `TypeError` message for "Functions" methods. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/** Used as references for various `Number` constants. */
-var NAN = 0 / 0;
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/** Used to match leading and trailing whitespace. */
-var reTrim = /^\s+|\s+$/g;
-
-/** Used to detect bad signed hexadecimal string values. */
-var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
-
-/** Used to detect binary string values. */
-var reIsBinary = /^0b[01]+$/i;
-
-/** Used to detect octal string values. */
-var reIsOctal = /^0o[0-7]+$/i;
-
-/** Built-in method references without a dependency on `root`. */
-var freeParseInt = parseInt;
-
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var objectToString = objectProto.toString;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max,
-    nativeMin = Math.min;
-
-/**
- * Gets the timestamp of the number of milliseconds that have elapsed since
- * the Unix epoch (1 January 1970 00:00:00 UTC).
- *
- * @static
- * @memberOf _
- * @since 2.4.0
- * @category Date
- * @returns {number} Returns the timestamp.
- * @example
- *
- * _.defer(function(stamp) {
- *   console.log(_.now() - stamp);
- * }, _.now());
- * // => Logs the number of milliseconds it took for the deferred invocation.
- */
-var now = function() {
-  return root.Date.now();
-};
-
-/**
- * Creates a debounced function that delays invoking `func` until after `wait`
- * milliseconds have elapsed since the last time the debounced function was
- * invoked. The debounced function comes with a `cancel` method to cancel
- * delayed `func` invocations and a `flush` method to immediately invoke them.
- * Provide `options` to indicate whether `func` should be invoked on the
- * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
- * with the last arguments provided to the debounced function. Subsequent
- * calls to the debounced function return the result of the last `func`
- * invocation.
- *
- * **Note:** If `leading` and `trailing` options are `true`, `func` is
- * invoked on the trailing edge of the timeout only if the debounced function
- * is invoked more than once during the `wait` timeout.
- *
- * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
- * until to the next tick, similar to `setTimeout` with a timeout of `0`.
- *
- * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
- * for details over the differences between `_.debounce` and `_.throttle`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to debounce.
- * @param {number} [wait=0] The number of milliseconds to delay.
- * @param {Object} [options={}] The options object.
- * @param {boolean} [options.leading=false]
- *  Specify invoking on the leading edge of the timeout.
- * @param {number} [options.maxWait]
- *  The maximum time `func` is allowed to be delayed before it's invoked.
- * @param {boolean} [options.trailing=true]
- *  Specify invoking on the trailing edge of the timeout.
- * @returns {Function} Returns the new debounced function.
- * @example
- *
- * // Avoid costly calculations while the window size is in flux.
- * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
- *
- * // Invoke `sendMail` when clicked, debouncing subsequent calls.
- * jQuery(element).on('click', _.debounce(sendMail, 300, {
- *   'leading': true,
- *   'trailing': false
- * }));
- *
- * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
- * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
- * var source = new EventSource('/stream');
- * jQuery(source).on('message', debounced);
- *
- * // Cancel the trailing debounced invocation.
- * jQuery(window).on('popstate', debounced.cancel);
- */
-function debounce(func, wait, options) {
-  var lastArgs,
-      lastThis,
-      maxWait,
-      result,
-      timerId,
-      lastCallTime,
-      lastInvokeTime = 0,
-      leading = false,
-      maxing = false,
-      trailing = true;
-
-  if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  wait = toNumber(wait) || 0;
-  if (isObject(options)) {
-    leading = !!options.leading;
-    maxing = 'maxWait' in options;
-    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
-    trailing = 'trailing' in options ? !!options.trailing : trailing;
-  }
-
-  function invokeFunc(time) {
-    var args = lastArgs,
-        thisArg = lastThis;
-
-    lastArgs = lastThis = undefined;
-    lastInvokeTime = time;
-    result = func.apply(thisArg, args);
-    return result;
-  }
-
-  function leadingEdge(time) {
-    // Reset any `maxWait` timer.
-    lastInvokeTime = time;
-    // Start the timer for the trailing edge.
-    timerId = setTimeout(timerExpired, wait);
-    // Invoke the leading edge.
-    return leading ? invokeFunc(time) : result;
-  }
-
-  function remainingWait(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime,
-        result = wait - timeSinceLastCall;
-
-    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
-  }
-
-  function shouldInvoke(time) {
-    var timeSinceLastCall = time - lastCallTime,
-        timeSinceLastInvoke = time - lastInvokeTime;
-
-    // Either this is the first call, activity has stopped and we're at the
-    // trailing edge, the system time has gone backwards and we're treating
-    // it as the trailing edge, or we've hit the `maxWait` limit.
-    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
-      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
-  }
-
-  function timerExpired() {
-    var time = now();
-    if (shouldInvoke(time)) {
-      return trailingEdge(time);
-    }
-    // Restart the timer.
-    timerId = setTimeout(timerExpired, remainingWait(time));
-  }
-
-  function trailingEdge(time) {
-    timerId = undefined;
-
-    // Only invoke if we have `lastArgs` which means `func` has been
-    // debounced at least once.
-    if (trailing && lastArgs) {
-      return invokeFunc(time);
-    }
-    lastArgs = lastThis = undefined;
-    return result;
-  }
-
-  function cancel() {
-    if (timerId !== undefined) {
-      clearTimeout(timerId);
-    }
-    lastInvokeTime = 0;
-    lastArgs = lastCallTime = lastThis = timerId = undefined;
-  }
-
-  function flush() {
-    return timerId === undefined ? result : trailingEdge(now());
-  }
-
-  function debounced() {
-    var time = now(),
-        isInvoking = shouldInvoke(time);
-
-    lastArgs = arguments;
-    lastThis = this;
-    lastCallTime = time;
-
-    if (isInvoking) {
-      if (timerId === undefined) {
-        return leadingEdge(lastCallTime);
-      }
-      if (maxing) {
-        // Handle invocations in a tight loop.
-        timerId = setTimeout(timerExpired, wait);
-        return invokeFunc(lastCallTime);
-      }
-    }
-    if (timerId === undefined) {
-      timerId = setTimeout(timerExpired, wait);
-    }
-    return result;
-  }
-  debounced.cancel = cancel;
-  debounced.flush = flush;
-  return debounced;
-}
-
-/**
- * Creates a throttled function that only invokes `func` at most once per
- * every `wait` milliseconds. The throttled function comes with a `cancel`
- * method to cancel delayed `func` invocations and a `flush` method to
- * immediately invoke them. Provide `options` to indicate whether `func`
- * should be invoked on the leading and/or trailing edge of the `wait`
- * timeout. The `func` is invoked with the last arguments provided to the
- * throttled function. Subsequent calls to the throttled function return the
- * result of the last `func` invocation.
- *
- * **Note:** If `leading` and `trailing` options are `true`, `func` is
- * invoked on the trailing edge of the timeout only if the throttled function
- * is invoked more than once during the `wait` timeout.
- *
- * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
- * until to the next tick, similar to `setTimeout` with a timeout of `0`.
- *
- * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
- * for details over the differences between `_.throttle` and `_.debounce`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to throttle.
- * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
- * @param {Object} [options={}] The options object.
- * @param {boolean} [options.leading=true]
- *  Specify invoking on the leading edge of the timeout.
- * @param {boolean} [options.trailing=true]
- *  Specify invoking on the trailing edge of the timeout.
- * @returns {Function} Returns the new throttled function.
- * @example
- *
- * // Avoid excessively updating the position while scrolling.
- * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
- *
- * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
- * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
- * jQuery(element).on('click', throttled);
- *
- * // Cancel the trailing throttled invocation.
- * jQuery(window).on('popstate', throttled.cancel);
- */
-function throttle(func, wait, options) {
-  var leading = true,
-      trailing = true;
-
-  if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  if (isObject(options)) {
-    leading = 'leading' in options ? !!options.leading : leading;
-    trailing = 'trailing' in options ? !!options.trailing : trailing;
-  }
-  return debounce(func, wait, {
-    'leading': leading,
-    'maxWait': wait,
-    'trailing': trailing
-  });
-}
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return !!value && (type == 'object' || type == 'function');
-}
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return !!value && typeof value == 'object';
-}
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return typeof value == 'symbol' ||
-    (isObjectLike(value) && objectToString.call(value) == symbolTag);
-}
-
-/**
- * Converts `value` to a number.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to process.
- * @returns {number} Returns the number.
- * @example
- *
- * _.toNumber(3.2);
- * // => 3.2
- *
- * _.toNumber(Number.MIN_VALUE);
- * // => 5e-324
- *
- * _.toNumber(Infinity);
- * // => Infinity
- *
- * _.toNumber('3.2');
- * // => 3.2
- */
-function toNumber(value) {
-  if (typeof value == 'number') {
-    return value;
-  }
-  if (isSymbol(value)) {
-    return NAN;
-  }
-  if (isObject(value)) {
-    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-    value = isObject(other) ? (other + '') : other;
-  }
-  if (typeof value != 'string') {
-    return value === 0 ? value : +value;
-  }
-  value = value.replace(reTrim, '');
-  var isBinary = reIsBinary.test(value);
-  return (isBinary || reIsOctal.test(value))
-    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
-    : (reIsBadHex.test(value) ? NAN : +value);
-}
-
-module.exports = throttle;
-
-
-/***/ }),
-
-/***/ "./node_modules/aos/dist/aos.css":
-/*!***************************************!*\
-  !*** ./node_modules/aos/dist/aos.css ***!
-  \***************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./src/images/Logo.svg":
 /*!*****************************!*\
   !*** ./src/images/Logo.svg ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3455,7 +1941,6 @@ __webpack_require__.r(__webpack_exports__);
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3470,7 +1955,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3485,7 +1969,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3500,7 +1983,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3515,7 +1997,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3530,7 +2011,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3545,7 +2025,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3560,7 +2039,6 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRpwAAABXRUJQVlA4WAoAAAAQAAAAEwAADgAAQUxQSDwAAAABZ6AgbQMWtjsREdi5+5iAQSNJiuYYNPCzvJf2Et7bsYOI/k8AgJcBH6a7jrNj6d9RNRWOtuxoJ9sqnwZWUDggOgAAALACAJ0BKhQADwA+0VqkTCglI6IwCAEAGglpAAB7IAD+7eX+7dy/qnEkxtmULgC75/j/zhLYZ1Z0AAA="},"images":{"fallback":{"src":"/static/5217fff88e54abd5ae169a90e5c2e9c5/027f9/stars.webp","srcSet":"/static/5217fff88e54abd5ae169a90e5c2e9c5/91034/stars.webp 185w,\\n/static/5217fff88e54abd5ae169a90e5c2e9c5/5e843/stars.webp 370w,\\n/static/5217fff88e54abd5ae169a90e5c2e9c5/027f9/stars.webp 740w","sizes":"(min-width: 740px) 740px, 100vw"},"sources":[]},"width":740,"height":554}');
 
 /***/ }),
@@ -3571,7 +2049,6 @@ module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/71984a32ad65b4562e144de236f4472a/b62fd/auto.webp","srcSet":"/static/71984a32ad65b4562e144de236f4472a/fc4df/auto.webp 151w,\\n/static/71984a32ad65b4562e144de236f4472a/32234/auto.webp 301w,\\n/static/71984a32ad65b4562e144de236f4472a/b62fd/auto.webp 602w","sizes":"(min-width: 602px) 602px, 100vw"},"sources":[]},"width":602,"height":656}');
 
 /***/ }),
@@ -3582,7 +2059,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/a27be/Images-min.svg","srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/48a86/Images-min.svg 214w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/7c210/Images-min.svg 428w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/a27be/Images-min.svg 856w","sizes":"(min-width: 856px) 856px, 100vw"},"sources":[{"srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/951f5/Images-min.webp 214w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/dda13/Images-min.webp 428w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/2e7f4/Images-min.webp 856w","type":"image/webp","sizes":"(min-width: 856px) 856px, 100vw"}]},"width":856,"height":781}');
 
 /***/ }),
@@ -3593,7 +2069,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \*********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/7f8cd/Icons-min.svg","srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/51544/Icons-min.svg 37w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/08987/Icons-min.svg 74w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/7f8cd/Icons-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/7e23d/Icons-min.webp 37w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/e1943/Icons-min.webp 74w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/4c54c/Icons-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
@@ -3604,7 +2079,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/ece95a6121d5c094fa280a4019e76327/4ae50/Images4-min.svg","srcSet":"/static/ece95a6121d5c094fa280a4019e76327/03b70/Images4-min.svg 112w,\\n/static/ece95a6121d5c094fa280a4019e76327/e7094/Images4-min.svg 224w,\\n/static/ece95a6121d5c094fa280a4019e76327/4ae50/Images4-min.svg 447w","sizes":"(min-width: 447px) 447px, 100vw"},"sources":[{"srcSet":"/static/ece95a6121d5c094fa280a4019e76327/ac2b7/Images4-min.webp 112w,\\n/static/ece95a6121d5c094fa280a4019e76327/6c40a/Images4-min.webp 224w,\\n/static/ece95a6121d5c094fa280a4019e76327/72834/Images4-min.webp 447w","type":"image/webp","sizes":"(min-width: 447px) 447px, 100vw"}]},"width":447,"height":636}');
 
 /***/ }),
@@ -3615,7 +2089,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \**********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/7f8cd/Icons4-min.svg","srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/51544/Icons4-min.svg 37w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/08987/Icons4-min.svg 74w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/7f8cd/Icons4-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/7e23d/Icons4-min.webp 37w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/e1943/Icons4-min.webp 74w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/4c54c/Icons4-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
@@ -3626,7 +2099,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \**********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/ae442ead174df1e063d260176cf091f0/7f8cd/Icons3-min.svg","srcSet":"/static/ae442ead174df1e063d260176cf091f0/51544/Icons3-min.svg 37w,\\n/static/ae442ead174df1e063d260176cf091f0/08987/Icons3-min.svg 74w,\\n/static/ae442ead174df1e063d260176cf091f0/7f8cd/Icons3-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/ae442ead174df1e063d260176cf091f0/7e23d/Icons3-min.webp 37w,\\n/static/ae442ead174df1e063d260176cf091f0/e1943/Icons3-min.webp 74w,\\n/static/ae442ead174df1e063d260176cf091f0/4c54c/Icons3-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
@@ -3637,7 +2109,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \**********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/7f8cd/Icons5-min.svg","srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/51544/Icons5-min.svg 37w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/08987/Icons5-min.svg 74w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/7f8cd/Icons5-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/7e23d/Icons5-min.webp 37w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/e1943/Icons5-min.webp 74w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/4c54c/Icons5-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
@@ -3648,7 +2119,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/13a9a6a8b2a89773fb6f281cca938256/85740/bureau.webp","srcSet":"/static/13a9a6a8b2a89773fb6f281cca938256/b1fc4/bureau.webp 145w,\\n/static/13a9a6a8b2a89773fb6f281cca938256/db8a2/bureau.webp 290w,\\n/static/13a9a6a8b2a89773fb6f281cca938256/85740/bureau.webp 580w","sizes":"(min-width: 580px) 580px, 100vw"},"sources":[]},"width":580,"height":630}');
 
 /***/ }),
@@ -3659,7 +2129,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/6deb1/Logo2.webp","srcSet":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/b5c68/Logo2.webp 284w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/5766a/Logo2.webp 569w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/6deb1/Logo2.webp 1137w","sizes":"(min-width: 1137px) 1137px, 100vw"},"sources":[]},"width":1137,"height":60}');
 
 /***/ }),
@@ -3670,7 +2139,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/ac88c706cd0c363b999e449c205f2fb9/b58f4/Images3-min.svg","srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/b2762/Images3-min.svg 165w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/eb336/Images3-min.svg 331w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/b58f4/Images3-min.svg 661w","sizes":"(min-width: 661px) 661px, 100vw"},"sources":[{"srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/bddb3/Images3-min.webp 165w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/3879a/Images3-min.webp 331w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/facfd/Images3-min.webp 661w","type":"image/webp","sizes":"(min-width: 661px) 661px, 100vw"}]},"width":661,"height":551}');
 
 /***/ }),
@@ -3681,7 +2149,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/212d51d960e98f74eabfe70511a41e2d/38205/Images1-min.svg","srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/d8439/Images1-min.svg 135w,\\n/static/212d51d960e98f74eabfe70511a41e2d/fb93f/Images1-min.svg 270w,\\n/static/212d51d960e98f74eabfe70511a41e2d/38205/Images1-min.svg 540w","sizes":"(min-width: 540px) 540px, 100vw"},"sources":[{"srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/a478e/Images1-min.webp 135w,\\n/static/212d51d960e98f74eabfe70511a41e2d/77543/Images1-min.webp 270w,\\n/static/212d51d960e98f74eabfe70511a41e2d/76646/Images1-min.webp 540w","type":"image/webp","sizes":"(min-width: 540px) 540px, 100vw"}]},"width":540,"height":640}');
 
 /***/ }),
@@ -3692,7 +2159,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/3fa7a18ea519a76267fc517bf50aab92/7f8cd/Icons2-min.svg","srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/51544/Icons2-min.svg 37w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/08987/Icons2-min.svg 74w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/7f8cd/Icons2-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/7e23d/Icons2-min.webp 37w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/e1943/Icons2-min.webp 74w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/4c54c/Icons2-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
@@ -3703,7 +2169,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/8440c93a3f8358773fc53f0038a32fbd/6cdb1/Imags-min.svg","srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/db891/Imags-min.svg 136w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/4765c/Imags-min.svg 271w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/6cdb1/Imags-min.svg 542w","sizes":"(min-width: 542px) 542px, 100vw"},"sources":[{"srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/eb6ee/Imags-min.webp 136w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/ff74e/Imags-min.webp 271w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/428d1/Imags-min.webp 542w","type":"image/webp","sizes":"(min-width: 542px) 542px, 100vw"}]},"width":542,"height":528}');
 
 /***/ }),
@@ -3714,7 +2179,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \***********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/15ca356854dd8d9161dc269902b2819c/50121/Images2-min.svg","srcSet":"/static/15ca356854dd8d9161dc269902b2819c/ff88c/Images2-min.svg 129w,\\n/static/15ca356854dd8d9161dc269902b2819c/a4b1b/Images2-min.svg 257w,\\n/static/15ca356854dd8d9161dc269902b2819c/50121/Images2-min.svg 514w","sizes":"(min-width: 514px) 514px, 100vw"},"sources":[{"srcSet":"/static/15ca356854dd8d9161dc269902b2819c/f49ca/Images2-min.webp 129w,\\n/static/15ca356854dd8d9161dc269902b2819c/5ad0e/Images2-min.webp 257w,\\n/static/15ca356854dd8d9161dc269902b2819c/3f595/Images2-min.webp 514w","type":"image/webp","sizes":"(min-width: 514px) 514px, 100vw"}]},"width":514,"height":590}');
 
 /***/ }),
@@ -3725,7 +2189,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \**********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src":"/static/b3b191630832c296290f5eac5d67b6b2/733cb/Images5-min.svg","srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/af957/Images5-min.svg 105w,\\n/static/b3b191630832c296290f5eac5d67b6b2/e7067/Images5-min.svg 210w,\\n/static/b3b191630832c296290f5eac5d67b6b2/733cb/Images5-min.svg 420w","sizes":"(min-width: 420px) 420px, 100vw"},"sources":[{"srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/8062e/Images5-min.webp 105w,\\n/static/b3b191630832c296290f5eac5d67b6b2/c47fe/Images5-min.webp 210w,\\n/static/b3b191630832c296290f5eac5d67b6b2/adb9a/Images5-min.webp 420w","type":"image/webp","sizes":"(min-width: 420px) 420px, 100vw"}]},"width":420,"height":511}');
 
 /***/ }),
@@ -3736,7 +2199,6 @@ module.exports = JSON.parse('{"layout":"constrained","images":{"fallback":{"src"
   \**********************************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRvABAABXRUJQVlA4WAoAAAAQAAAAEwAAGQAAQUxQSNYAAAANgBzZtmplnXuffNxlzJgIKPLwmYXgEAcZQAQk4C6hODy9Bzv/vxAiYgJAnACoBmzfankB6iyrDElWdoMC0eF+pv/RO83/s9eF4eLCcFHB/z6o0aNRXoIqLmBqv099mZdFLWpNHg06Fydn6zlt+l4BZObyWcWyYxpI69CA4hp4a0XBdQSq0gRNNlNLLdJJ5aU4mfIg0jdg5F6L4wMHms4tGypB868KhN5uA7TyqqDiXBtkPgaoQ/yfqkBWR6KhvB5r/dGnXgFCpSD3G5X86Y2wQ1nUCogAVlA4IPQAAABwBQCdASoUABoAPtFcqE4oJSQiKAqpABoJZQAD4ukJWXBbJlwwavovzuYYHr9kvh+Ci0YwAP7k6DGyRLIg7I7JJeUXlNyQJtqnxJyxzUVJ882GKHBbvYnirzn7tPJ8d77vIhgY1QO4SPrMCFBPkCi+7AkBVp0X+RqRu0AtR3pd4EkTaCLkFyA0T7Q0ra04jMVyn9Nqn3usinkXV5Tea6C+nsNyI+t018MIzSN4b3ttc7hDztGhOEfa7P9co+npEGoDjJcxHK7vD4YTjZziTlEXGgv/9yN/7wtlzhe0//aN+Lf8r2FPRHxlZyuWf2HxYjqOAAAA"},"images":{"fallback":{"src":"/static/f5596e8cecdbe18dc9f2624de0e324ff/05bdd/Mockup.webp","srcSet":"/static/f5596e8cecdbe18dc9f2624de0e324ff/ab924/Mockup.webp 201w,\\n/static/f5596e8cecdbe18dc9f2624de0e324ff/3c501/Mockup.webp 401w,\\n/static/f5596e8cecdbe18dc9f2624de0e324ff/05bdd/Mockup.webp 802w","sizes":"(min-width: 802px) 802px, 100vw"},"sources":[]},"width":802,"height":1036}');
 
 /***/ }),
@@ -3747,7 +2209,6 @@ module.exports = JSON.parse('{"layout":"constrained","placeholder":{"fallback":"
   \*********************************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Brouillon","description":"SEO Testing","author":"@gatsbyjs"}}}}');
 
 /***/ })

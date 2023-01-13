@@ -21,79 +21,79 @@ const Header = ({ backgroundColor }) => {
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
             <Link to="/" className="flex gap-[1px]">
               <img
-                data-aos="flip-left"
-                data-aos-duration="500"
+                data-sal="flip-left"
+                data-sal-duration="500"
                 className="h-[1.5rem] w-[1.5rem]"
                 src={Letter1}
                 alt="Letter A"
               />
               <img
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-easing="ease-in"
+                data-sal="slide-down"
+                data-sal-duration="500"
+                data-sal-easing="ease-in"
                 className="h-[1.5rem] w-[1.5rem] "
                 src={Letter2}
                 alt="Letter U"
               />
               <img
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                data-aos-easing="ease-in"
+                data-sal="slide-down"
+                data-sal-duration="500"
+                data-sal-delay="200"
+                data-sal-easing="ease-in"
                 className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
                 src={Letter3}
                 alt="Letter T"
               />
               <img
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-delay="400"
-                data-aos-easing="ease-in"
+                data-sal="slide-down"
+                data-sal-duration="500"
+                data-sal-delay="400"
+                data-sal-easing="ease-in"
                 className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
                 src={Letter5}
                 alt="Letter O"
               />
               <img
-                data-aos="fade-left"
-                data-aos-delay="700"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out-back"
+                data-sal="slide-left"
+                data-sal-delay="700"
+                data-sal-duration="500"
+                data-sal-easing="ease-in-out-back"
                 className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
                 src={Letter4}
                 alt="Letter R"
               />
               <img
-                data-aos="fade-left"
-                data-aos-delay="700"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out-back"
+                data-sal="slide-left"
+                data-sal-delay="700"
+                data-sal-duration="500"
+                data-sal-easing="ease-in-out-back"
                 className="h-[1.5rem] w-[1.5rem] ml-[-0.4rem]"
                 src={Letter5}
                 alt="Letter O"
               />
               <img
-                data-aos="fade-left"
-                data-aos-delay="700"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out-back"
+                data-sal="slide-left"
+                data-sal-delay="700"
+                data-sal-duration="500"
+                data-sal-easing="ease-in-out-back"
                 className="h-[1.5rem] w-[1.5rem]"
                 src={Letter5}
                 alt="Letter O"
               />
               <img
-                data-aos="fade-left"
-                data-aos-delay="700"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out-back"
+                data-sal="slide-left"
+                data-sal-delay="700"
+                data-sal-duration="500"
+                data-sal-easing="ease-in-out-back"
                 className="h-[1.5rem] w-[1.5rem] ml-[-0.3rem]"
                 src={Letter3}
                 alt="Letter T"
               />
               <div className="flex justify-start items-end ml-[-0.2rem]">
                 <img
-                  data-aos="fade-in"
-                  data-aos-delay="1350"
-                  data-aos-duration="1500"
+                  data-sal="fade"
+                  data-sal-delay="1000"
+                  data-sal-duration="1500"
                   className="h-[0.7rem] w-[0.7rem] "
                   src={Letter6}
                   alt="Rights"
