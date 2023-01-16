@@ -1428,9 +1428,7 @@ const Automatisation = () => {
   }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/bureau.webp",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3571744660.json */ "./.cache/caches/gatsby-plugin-image/3571744660.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1188075098.json */ "./.cache/caches/gatsby-plugin-image/1188075098.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col text-neutral-700 gap-4 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -1748,9 +1746,7 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images2-min.svg",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "white",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1567288330.json */ "./.cache/caches/gatsby-plugin-image/1567288330.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1749916111.json */ "./.cache/caches/gatsby-plugin-image/1749916111.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -1763,9 +1759,7 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images3-min.svg",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "white",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/432922359.json */ "./.cache/caches/gatsby-plugin-image/432922359.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3583419443.json */ "./.cache/caches/gatsby-plugin-image/3583419443.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -1779,9 +1773,7 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Imags-min.svg",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "white",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/249437113.json */ "./.cache/caches/gatsby-plugin-image/249437113.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1834112685.json */ "./.cache/caches/gatsby-plugin-image/1834112685.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -1794,9 +1786,7 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images4-min.svg",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "white",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3778458505.json */ "./.cache/caches/gatsby-plugin-image/3778458505.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3091706457.json */ "./.cache/caches/gatsby-plugin-image/3091706457.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -1810,9 +1800,7 @@ const Experience = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images5-min.svg",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "white",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/597856759.json */ "./.cache/caches/gatsby-plugin-image/597856759.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1001272542.json */ "./.cache/caches/gatsby-plugin-image/1001272542.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6 lg:order-1 md:border-l-0 md:border-r-2 md:pl-0 md:pr-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -2101,17 +2089,13 @@ const Hero = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/stars.webp",
     alt: "stars",
-    placeholder: "none",
-    backgroundColor: "transparent",
     loading: "eager",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1351413715.json */ "./.cache/caches/gatsby-plugin-image/1351413715.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2313090409.json */ "./.cache/caches/gatsby-plugin-image/2313090409.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Images-min.svg",
     alt: "stock",
-    placeholder: "none",
-    backgroundColor: "transparent",
     loading: "eager",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1370267383.json */ "./.cache/caches/gatsby-plugin-image/1370267383.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1612517777.json */ "./.cache/caches/gatsby-plugin-image/1612517777.json")
   }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
@@ -2159,9 +2143,7 @@ const Integration = () => {
     className: "rounded-tr-[10rem] rounded-bl-[10rem]",
     src: "../images/auto.webp",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1428942429.json */ "./.cache/caches/gatsby-plugin-image/1428942429.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2862542644.json */ "./.cache/caches/gatsby-plugin-image/2862542644.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-4 py-6 md:pl-10 md:border-gray-700 md:border-solid md:border-l-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -2224,9 +2206,7 @@ const Integre = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Logo2.webp",
     alt: "logo",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4268940255.json */ "./.cache/caches/gatsby-plugin-image/4268940255.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4049634999.json */ "./.cache/caches/gatsby-plugin-image/4049634999.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center"
   }, "Vous ne trouvez pas votre CRM? \xC9crivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2287,9 +2267,7 @@ const Produits = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Icons-min.svg",
     alt: "icon1",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4020184378.json */ "./.cache/caches/gatsby-plugin-image/4020184378.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/814458658.json */ "./.cache/caches/gatsby-plugin-image/814458658.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "font-bold py-3"
   }, "SITES WEB DE CONCESSIONAIRES AUTOS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2302,9 +2280,7 @@ const Produits = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Icons2-min.svg",
     alt: "icon2",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3467912581.json */ "./.cache/caches/gatsby-plugin-image/3467912581.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/182149915.json */ "./.cache/caches/gatsby-plugin-image/182149915.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "font-bold py-3"
   }, "MODULE D'ACHAT EN LIGNE COMPLET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2317,9 +2293,7 @@ const Produits = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Icons3-min.svg",
     alt: "icon3",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3146544204.json */ "./.cache/caches/gatsby-plugin-image/3146544204.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1937663312.json */ "./.cache/caches/gatsby-plugin-image/1937663312.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "font-bold py-3"
   }, "GESTIONNAIRE D'INVENTAIRE D'OCCASIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2332,9 +2306,7 @@ const Produits = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Icons4-min.svg",
     alt: "icon4",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3308349393.json */ "./.cache/caches/gatsby-plugin-image/3308349393.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1125053069.json */ "./.cache/caches/gatsby-plugin-image/1125053069.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "font-bold py-3"
   }, "MODULE DE PUBLICATION AUTOMATISEE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2347,9 +2319,7 @@ const Produits = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Icons5-min.svg",
     alt: "icon5",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/951581409.json */ "./.cache/caches/gatsby-plugin-image/951581409.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3858852603.json */ "./.cache/caches/gatsby-plugin-image/3858852603.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "font-bold py-3"
   }, "SITES WEB D'OCCASIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
@@ -2441,9 +2411,7 @@ const Syndication = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/Mockup.webp",
     alt: "travail",
-    placeholder: "none",
-    backgroundColor: "transparent",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2578157972.json */ "./.cache/caches/gatsby-plugin-image/2578157972.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/904492745.json */ "./.cache/caches/gatsby-plugin-image/904492745.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-col gap-4 py-6 sm:pl-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -3616,47 +3584,47 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1351413715.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1001272542.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1351413715.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1001272542.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/5217fff88e54abd5ae169a90e5c2e9c5/a401b/stars.webp","srcSet":"/static/5217fff88e54abd5ae169a90e5c2e9c5/a401b/stars.webp 740w","sizes":"(min-width: 740px) 740px, 100vw"},"sources":[]},"width":740,"height":554}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/b3b191630832c296290f5eac5d67b6b2/cb32c/Images5-min.svg","srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/c1ec2/Images5-min.svg 105w,\\n/static/b3b191630832c296290f5eac5d67b6b2/ffa58/Images5-min.svg 210w,\\n/static/b3b191630832c296290f5eac5d67b6b2/cb32c/Images5-min.svg 420w","sizes":"(min-width: 420px) 420px, 100vw"},"sources":[{"srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/3600d/Images5-min.webp 105w,\\n/static/b3b191630832c296290f5eac5d67b6b2/c73bf/Images5-min.webp 210w,\\n/static/b3b191630832c296290f5eac5d67b6b2/94712/Images5-min.webp 420w","type":"image/webp","sizes":"(min-width: 420px) 420px, 100vw"}]},"width":420,"height":511}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1370267383.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1125053069.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1370267383.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1125053069.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/7aed9/Images-min.svg","srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/77c6f/Images-min.svg 750w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/7aed9/Images-min.svg 856w","sizes":"(min-width: 856px) 856px, 100vw"},"sources":[{"srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/15ebd/Images-min.webp 750w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/f0104/Images-min.webp 856w","type":"image/webp","sizes":"(min-width: 856px) 856px, 100vw"}]},"width":856,"height":781}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/b694c/Icons4-min.svg","srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/08cdf/Icons4-min.svg 37w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/0d864/Icons4-min.svg 74w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/b694c/Icons4-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/03cae/Icons4-min.webp 37w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/cd135/Icons4-min.webp 74w,\\n/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/a9709/Icons4-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1428942429.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1188075098.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1428942429.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1188075098.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/71984a32ad65b4562e144de236f4472a/d9de0/auto.webp","srcSet":"/static/71984a32ad65b4562e144de236f4472a/d9de0/auto.webp 602w","sizes":"(min-width: 602px) 602px, 100vw"},"sources":[]},"width":602,"height":656}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/13a9a6a8b2a89773fb6f281cca938256/3b0a1/bureau.webp","srcSet":"/static/13a9a6a8b2a89773fb6f281cca938256/dc28c/bureau.webp 145w,\\n/static/13a9a6a8b2a89773fb6f281cca938256/02b4f/bureau.webp 290w,\\n/static/13a9a6a8b2a89773fb6f281cca938256/3b0a1/bureau.webp 580w","sizes":"(min-width: 580px) 580px, 100vw"},"sources":[]},"width":580,"height":630}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1567288330.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1612517777.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1567288330.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1612517777.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","images":{"fallback":{"src":"/static/15ca356854dd8d9161dc269902b2819c/28c31/Images2-min.svg","srcSet":"/static/15ca356854dd8d9161dc269902b2819c/28c31/Images2-min.svg 514w","sizes":"(min-width: 514px) 514px, 100vw"},"sources":[{"srcSet":"/static/15ca356854dd8d9161dc269902b2819c/491fd/Images2-min.webp 514w","type":"image/webp","sizes":"(min-width: 514px) 514px, 100vw"}]},"width":514,"height":590}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/afcd9/Images-min.svg","srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/86a36/Images-min.svg 214w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/6f400/Images-min.svg 428w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/afcd9/Images-min.svg 856w","sizes":"(min-width: 856px) 856px, 100vw"},"sources":[{"srcSet":"/static/a1eedd49f6ffdb56906d1cbafef1f2a5/e8df0/Images-min.webp 214w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/71911/Images-min.webp 428w,\\n/static/a1eedd49f6ffdb56906d1cbafef1f2a5/2b47a/Images-min.webp 856w","type":"image/webp","sizes":"(min-width: 856px) 856px, 100vw"}]},"width":856,"height":781}');
 
 /***/ }),
 
@@ -3667,139 +3635,139 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/212d51d960e98f74eabfe70511a41e2d/342ed/Images1-min.svg","srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/342ed/Images1-min.svg 540w","sizes":"(min-width: 540px) 540px, 100vw"},"sources":[{"srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/fff96/Images1-min.webp 540w","type":"image/webp","sizes":"(min-width: 540px) 540px, 100vw"}]},"width":540,"height":640}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/212d51d960e98f74eabfe70511a41e2d/1700c/Images1-min.svg","srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/fb2a4/Images1-min.svg 135w,\\n/static/212d51d960e98f74eabfe70511a41e2d/8a811/Images1-min.svg 270w,\\n/static/212d51d960e98f74eabfe70511a41e2d/1700c/Images1-min.svg 540w","sizes":"(min-width: 540px) 540px, 100vw"},"sources":[{"srcSet":"/static/212d51d960e98f74eabfe70511a41e2d/770a0/Images1-min.webp 135w,\\n/static/212d51d960e98f74eabfe70511a41e2d/7c47d/Images1-min.webp 270w,\\n/static/212d51d960e98f74eabfe70511a41e2d/6218a/Images1-min.webp 540w","type":"image/webp","sizes":"(min-width: 540px) 540px, 100vw"}]},"width":540,"height":640}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/249437113.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1749916111.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1749916111.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/15ca356854dd8d9161dc269902b2819c/b1330/Images2-min.svg","srcSet":"/static/15ca356854dd8d9161dc269902b2819c/cdafb/Images2-min.svg 129w,\\n/static/15ca356854dd8d9161dc269902b2819c/199be/Images2-min.svg 257w,\\n/static/15ca356854dd8d9161dc269902b2819c/b1330/Images2-min.svg 514w","sizes":"(min-width: 514px) 514px, 100vw"},"sources":[{"srcSet":"/static/15ca356854dd8d9161dc269902b2819c/21d1e/Images2-min.webp 129w,\\n/static/15ca356854dd8d9161dc269902b2819c/d15d4/Images2-min.webp 257w,\\n/static/15ca356854dd8d9161dc269902b2819c/8c67a/Images2-min.webp 514w","type":"image/webp","sizes":"(min-width: 514px) 514px, 100vw"}]},"width":514,"height":590}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/182149915.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/249437113.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/182149915.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","images":{"fallback":{"src":"/static/8440c93a3f8358773fc53f0038a32fbd/405a7/Imags-min.svg","srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/405a7/Imags-min.svg 542w","sizes":"(min-width: 542px) 542px, 100vw"},"sources":[{"srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/5d1f8/Imags-min.webp 542w","type":"image/webp","sizes":"(min-width: 542px) 542px, 100vw"}]},"width":542,"height":528}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/3fa7a18ea519a76267fc517bf50aab92/b694c/Icons2-min.svg","srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/08cdf/Icons2-min.svg 37w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/0d864/Icons2-min.svg 74w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/b694c/Icons2-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/03cae/Icons2-min.webp 37w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/cd135/Icons2-min.webp 74w,\\n/static/3fa7a18ea519a76267fc517bf50aab92/a9709/Icons2-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2578157972.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1834112685.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2578157972.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1834112685.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/f5596e8cecdbe18dc9f2624de0e324ff/dec54/Mockup.webp","srcSet":"/static/f5596e8cecdbe18dc9f2624de0e324ff/1a034/Mockup.webp 750w,\\n/static/f5596e8cecdbe18dc9f2624de0e324ff/dec54/Mockup.webp 802w","sizes":"(min-width: 802px) 802px, 100vw"},"sources":[]},"width":802,"height":1036}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/8440c93a3f8358773fc53f0038a32fbd/1c700/Imags-min.svg","srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/19ecd/Imags-min.svg 136w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/58b35/Imags-min.svg 271w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/1c700/Imags-min.svg 542w","sizes":"(min-width: 542px) 542px, 100vw"},"sources":[{"srcSet":"/static/8440c93a3f8358773fc53f0038a32fbd/ce86e/Imags-min.webp 136w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/c8f30/Imags-min.webp 271w,\\n/static/8440c93a3f8358773fc53f0038a32fbd/06b7e/Imags-min.webp 542w","type":"image/webp","sizes":"(min-width: 542px) 542px, 100vw"}]},"width":542,"height":528}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3146544204.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1937663312.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3146544204.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1937663312.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/ae442ead174df1e063d260176cf091f0/9ab05/Icons3-min.svg","srcSet":"/static/ae442ead174df1e063d260176cf091f0/9ab05/Icons3-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/ae442ead174df1e063d260176cf091f0/6292f/Icons3-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/ae442ead174df1e063d260176cf091f0/b694c/Icons3-min.svg","srcSet":"/static/ae442ead174df1e063d260176cf091f0/08cdf/Icons3-min.svg 37w,\\n/static/ae442ead174df1e063d260176cf091f0/0d864/Icons3-min.svg 74w,\\n/static/ae442ead174df1e063d260176cf091f0/b694c/Icons3-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/ae442ead174df1e063d260176cf091f0/03cae/Icons3-min.webp 37w,\\n/static/ae442ead174df1e063d260176cf091f0/cd135/Icons3-min.webp 74w,\\n/static/ae442ead174df1e063d260176cf091f0/a9709/Icons3-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3308349393.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2313090409.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3308349393.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2313090409.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/9ab05/Icons4-min.svg","srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/9ab05/Icons4-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b9b8d9fe89422c8e4dd9b0cdf721f3e8/6292f/Icons4-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/5217fff88e54abd5ae169a90e5c2e9c5/a9027/stars.webp","srcSet":"/static/5217fff88e54abd5ae169a90e5c2e9c5/3e179/stars.webp 185w,\\n/static/5217fff88e54abd5ae169a90e5c2e9c5/30133/stars.webp 370w,\\n/static/5217fff88e54abd5ae169a90e5c2e9c5/a9027/stars.webp 740w","sizes":"(min-width: 740px) 740px, 100vw"},"sources":[]},"width":740,"height":554}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3467912581.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2862542644.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3467912581.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2862542644.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/3fa7a18ea519a76267fc517bf50aab92/9ab05/Icons2-min.svg","srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/9ab05/Icons2-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/3fa7a18ea519a76267fc517bf50aab92/6292f/Icons2-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/71984a32ad65b4562e144de236f4472a/33275/auto.webp","srcSet":"/static/71984a32ad65b4562e144de236f4472a/c5456/auto.webp 151w,\\n/static/71984a32ad65b4562e144de236f4472a/54706/auto.webp 301w,\\n/static/71984a32ad65b4562e144de236f4472a/33275/auto.webp 602w","sizes":"(min-width: 602px) 602px, 100vw"},"sources":[]},"width":602,"height":656}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3571744660.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3091706457.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3571744660.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3091706457.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/13a9a6a8b2a89773fb6f281cca938256/45694/bureau.webp","srcSet":"/static/13a9a6a8b2a89773fb6f281cca938256/45694/bureau.webp 580w","sizes":"(min-width: 580px) 580px, 100vw"},"sources":[]},"width":580,"height":630}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/ece95a6121d5c094fa280a4019e76327/f76e7/Images4-min.svg","srcSet":"/static/ece95a6121d5c094fa280a4019e76327/0c9f4/Images4-min.svg 112w,\\n/static/ece95a6121d5c094fa280a4019e76327/e3d3e/Images4-min.svg 224w,\\n/static/ece95a6121d5c094fa280a4019e76327/f76e7/Images4-min.svg 447w","sizes":"(min-width: 447px) 447px, 100vw"},"sources":[{"srcSet":"/static/ece95a6121d5c094fa280a4019e76327/f8c8f/Images4-min.webp 112w,\\n/static/ece95a6121d5c094fa280a4019e76327/53e4a/Images4-min.webp 224w,\\n/static/ece95a6121d5c094fa280a4019e76327/b9dd0/Images4-min.webp 447w","type":"image/webp","sizes":"(min-width: 447px) 447px, 100vw"}]},"width":447,"height":636}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3778458505.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3583419443.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3778458505.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3583419443.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","images":{"fallback":{"src":"/static/ece95a6121d5c094fa280a4019e76327/7633c/Images4-min.svg","srcSet":"/static/ece95a6121d5c094fa280a4019e76327/7633c/Images4-min.svg 447w","sizes":"(min-width: 447px) 447px, 100vw"},"sources":[{"srcSet":"/static/ece95a6121d5c094fa280a4019e76327/96e68/Images4-min.webp 447w","type":"image/webp","sizes":"(min-width: 447px) 447px, 100vw"}]},"width":447,"height":636}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/ac88c706cd0c363b999e449c205f2fb9/ab79b/Images3-min.svg","srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/120c9/Images3-min.svg 165w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/c2fbb/Images3-min.svg 331w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/ab79b/Images3-min.svg 661w","sizes":"(min-width: 661px) 661px, 100vw"},"sources":[{"srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/5e13f/Images3-min.webp 165w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/1b891/Images3-min.webp 331w,\\n/static/ac88c706cd0c363b999e449c205f2fb9/7f87e/Images3-min.webp 661w","type":"image/webp","sizes":"(min-width: 661px) 661px, 100vw"}]},"width":661,"height":551}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/4020184378.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3858852603.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/4020184378.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3858852603.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/9ab05/Icons-min.svg","srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/9ab05/Icons-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/6292f/Icons-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/b694c/Icons5-min.svg","srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/08cdf/Icons5-min.svg 37w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/0d864/Icons5-min.svg 74w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/b694c/Icons5-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/03cae/Icons5-min.webp 37w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/cd135/Icons5-min.webp 74w,\\n/static/bc79a7ca291dbe57bfb04f57315f2e9e/a9709/Icons5-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/4268940255.json":
+/***/ "./.cache/caches/gatsby-plugin-image/4049634999.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/4268940255.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/4049634999.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/2ce82/Logo2.webp","srcSet":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/aa66d/Logo2.webp 750w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/d756e/Logo2.webp 1080w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/2ce82/Logo2.webp 1137w","sizes":"(min-width: 1137px) 1137px, 100vw"},"sources":[]},"width":1137,"height":60}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/7cb36/Logo2.webp","srcSet":"/static/a80bf1c4ac5e0fb37b4209fb873cee95/cb227/Logo2.webp 284w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/b0e98/Logo2.webp 569w,\\n/static/a80bf1c4ac5e0fb37b4209fb873cee95/7cb36/Logo2.webp 1137w","sizes":"(min-width: 1137px) 1137px, 100vw"},"sources":[]},"width":1137,"height":60}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/432922359.json":
+/***/ "./.cache/caches/gatsby-plugin-image/814458658.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/432922359.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/814458658.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","images":{"fallback":{"src":"/static/ac88c706cd0c363b999e449c205f2fb9/d63f7/Images3-min.svg","srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/d63f7/Images3-min.svg 661w","sizes":"(min-width: 661px) 661px, 100vw"},"sources":[{"srcSet":"/static/ac88c706cd0c363b999e449c205f2fb9/ce1bc/Images3-min.webp 661w","type":"image/webp","sizes":"(min-width: 661px) 661px, 100vw"}]},"width":661,"height":551}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/b694c/Icons-min.svg","srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/08cdf/Icons-min.svg 37w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/0d864/Icons-min.svg 74w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/b694c/Icons-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/03cae/Icons-min.webp 37w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/cd135/Icons-min.webp 74w,\\n/static/b4cfbba0d3bcbeb6c8d6b843c535b0b1/a9709/Icons-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/597856759.json":
+/***/ "./.cache/caches/gatsby-plugin-image/904492745.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/597856759.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/904492745.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"white","images":{"fallback":{"src":"/static/b3b191630832c296290f5eac5d67b6b2/ce25e/Images5-min.svg","srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/ce25e/Images5-min.svg 420w","sizes":"(min-width: 420px) 420px, 100vw"},"sources":[{"srcSet":"/static/b3b191630832c296290f5eac5d67b6b2/6beed/Images5-min.webp 420w","type":"image/webp","sizes":"(min-width: 420px) 420px, 100vw"}]},"width":420,"height":511}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/951581409.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/951581409.json ***!
-  \**********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/9ab05/Icons5-min.svg","srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/9ab05/Icons5-min.svg 148w","sizes":"(min-width: 148px) 148px, 100vw"},"sources":[{"srcSet":"/static/bc79a7ca291dbe57bfb04f57315f2e9e/6292f/Icons5-min.webp 148w","type":"image/webp","sizes":"(min-width: 148px) 148px, 100vw"}]},"width":148,"height":148}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"transparent","images":{"fallback":{"src":"/static/f5596e8cecdbe18dc9f2624de0e324ff/4873a/Mockup.webp","srcSet":"/static/f5596e8cecdbe18dc9f2624de0e324ff/c8b2e/Mockup.webp 201w,\\n/static/f5596e8cecdbe18dc9f2624de0e324ff/68701/Mockup.webp 401w,\\n/static/f5596e8cecdbe18dc9f2624de0e324ff/4873a/Mockup.webp 802w","sizes":"(min-width: 802px) 802px, 100vw"},"sources":[]},"width":802,"height":1036}');
 
 /***/ }),
 
