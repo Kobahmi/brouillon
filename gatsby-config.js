@@ -15,6 +15,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-image`,
     "gatsby-plugin-postcss",
     {
