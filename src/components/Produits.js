@@ -95,7 +95,7 @@ const Produits = () => {
           </li>
         </ul>
         <Link className="mt-12 mx-auto" to="/demo">
-          <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black mr-6">
+          <span className="border-[1px] px-4 py-3 border-white rounded-full font-bold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black">
             DEMANDER UNE DÉMO
           </span>
         </Link>

@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
 
           <Link className="mt-10" to="/demo">
-            <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white mr-6">
+            <span className="px-4 py-3 border-neutral-700 border-[1px] rounded-full font-bold text-neutral-700 transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white">
               DEMANDER UNE DÉMO
             </span>
           </Link>
