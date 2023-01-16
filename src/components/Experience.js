@@ -44,12 +44,8 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <StaticImage
-              src="../images/Images1-min.svg"
-              alt="travail"
-              placeholder="white"
-            />
+          <div>
+            <StaticImage src="../images/Images1-min.svg" alt="travail" />
           </div>
 
           <div className="flex flex-col max-w-[25rem] gap-4 border-gray-300 border-solid border-l-2 pl-10 py-6">
@@ -64,11 +60,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            className="lg:order-2"
-          >
+          <div className="lg:order-2">
             <StaticImage
               src="../images/Images2-min.svg"
               alt="travail"

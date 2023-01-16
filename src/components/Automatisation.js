@@ -51,7 +51,7 @@ const Automatisation = () => {
               <span className=" px-4 py-2  font-bold ">COMMENCER</span>
               <svg
                 viewBox="0 0 46 16"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000svg"
                 className="-translate-x-2 h-[10px] w-[30px] fill-neutral-700 transition-all duration-300 ease-out group-hover:scale-x-105 group-hover:fill-white"
               >
                 <path
