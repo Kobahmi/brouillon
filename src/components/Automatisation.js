@@ -23,7 +23,8 @@ const Automatisation = () => {
             <StaticImage
               src="../images/bureau.webp"
               alt="travail"
-              placeholder="white"
+              placeholder="none"
+              backgroundColor="transparent"
             />
           </div>
 

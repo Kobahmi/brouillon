@@ -25,7 +25,8 @@ const Integre = () => {
           <StaticImage
             src="../images/Logo2.webp"
             alt="logo"
-            placeholder="black"
+            placeholder="none"
+            backgroundColor="transparent"
           />
         </div>
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">

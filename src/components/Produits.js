@@ -21,7 +21,8 @@ const Produits = () => {
               <StaticImage
                 src="../images/Icons-min.svg"
                 alt="icon1"
-                placeholder="rgb(23 23 23)"
+                placeholder="none"
+                backgroundColor="transparent"
               />
             </div>
             <h2 className="font-bold py-3">
@@ -35,7 +36,8 @@ const Produits = () => {
               <StaticImage
                 src="../images/Icons2-min.svg"
                 alt="icon2"
-                placeholder="rgb(23 23 23)"
+                placeholder="none"
+                backgroundColor="transparent"
               />
             </div>
             <h2 className="font-bold py-3">MODULE D'ACHAT EN LIGNE COMPLET</h2>
@@ -49,7 +51,8 @@ const Produits = () => {
               <StaticImage
                 src="../images/Icons3-min.svg"
                 alt="icon3"
-                placeholder="rgb(23 23 23)"
+                placeholder="none"
+                backgroundColor="transparent"
               />
             </div>
             <h2 className="font-bold py-3">
@@ -66,7 +69,8 @@ const Produits = () => {
               <StaticImage
                 src="../images/Icons4-min.svg"
                 alt="icon4"
-                placeholder="rgb(23 23 23)"
+                placeholder="none"
+                backgroundColor="transparent"
               />
             </div>
             <h2 className="font-bold py-3">
@@ -83,7 +87,8 @@ const Produits = () => {
               <StaticImage
                 src="../images/Icons5-min.svg"
                 alt="icon5"
-                placeholder="rgb(23 23 23)"
+                placeholder="none"
+                backgroundColor="transparent"
               />
             </div>
             <h2 className="font-bold py-3">SITES WEB D'OCCASIONS</h2>

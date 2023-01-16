@@ -11,7 +11,8 @@ const Syndication = () => {
             <StaticImage
               src="../images/Mockup.webp"
               alt="travail"
-              placeholder="blurred"
+              placeholder="none"
+              backgroundColor="transparent"
             />
           </div>
 
