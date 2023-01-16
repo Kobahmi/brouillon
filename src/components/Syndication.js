@@ -8,12 +8,7 @@ const Syndication = () => {
       <div className="flex flex-col text-neutral-700 items-center max-w-7xl mx-auto">
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
-            <StaticImage
-              src="../images/Mockup.webp"
-              alt="travail"
-              placeholder="none"
-              backgroundColor="transparent"
-            />
+            <StaticImage src="../images/Mockup.webp" alt="travail" />
           </div>
 
           <div className="flex flex-col gap-4 py-6 sm:pl-10">

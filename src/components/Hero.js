@@ -27,16 +27,12 @@ const Hero = () => {
             <StaticImage
               src="../images/stars.webp"
               alt="stars"
-              placeholder="none"
-              backgroundColor="transparent"
               loading="eager"
             />
           </div>
           <StaticImage
             src="../images/Images-min.svg"
             alt="stock"
-            placeholder="none"
-            backgroundColor="transparent"
             loading="eager"
           />
         </div>

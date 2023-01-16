@@ -22,12 +22,7 @@ const Integre = () => {
           POUR VOUS ET VOS CLIENTS
         </p>
         <div className="py-6">
-          <StaticImage
-            src="../images/Logo2.webp"
-            alt="logo"
-            placeholder="none"
-            backgroundColor="transparent"
-          />
+          <StaticImage src="../images/Logo2.webp" alt="logo" />
         </div>
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
           Vous ne trouvez pas votre CRM? Écrivez-nous et nous vous contacterons!

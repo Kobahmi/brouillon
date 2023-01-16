@@ -24,8 +24,6 @@ const Integration = () => {
               className="rounded-tr-[10rem] rounded-bl-[10rem]"
               src="../images/auto.webp"
               alt="travail"
-              placeholder="none"
-              backgroundColor="transparent"
             />
           </div>
 

@@ -18,12 +18,7 @@ const Produits = () => {
         <ul className="text-white grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <div data-aos="fade-left">
-              <StaticImage
-                src="../images/Icons-min.svg"
-                alt="icon1"
-                placeholder="none"
-                backgroundColor="transparent"
-              />
+              <StaticImage src="../images/Icons-min.svg" alt="icon1" />
             </div>
             <h2 className="font-bold py-3">
               SITES WEB DE CONCESSIONAIRES AUTOS
@@ -33,12 +28,7 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <div data-aos="fade-left" data-aos-delay="50">
-              <StaticImage
-                src="../images/Icons2-min.svg"
-                alt="icon2"
-                placeholder="none"
-                backgroundColor="transparent"
-              />
+              <StaticImage src="../images/Icons2-min.svg" alt="icon2" />
             </div>
             <h2 className="font-bold py-3">MODULE D'ACHAT EN LIGNE COMPLET</h2>
             <p className="text-sm">
@@ -48,12 +38,7 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <div data-aos="fade-left" data-aos-delay="100">
-              <StaticImage
-                src="../images/Icons3-min.svg"
-                alt="icon3"
-                placeholder="none"
-                backgroundColor="transparent"
-              />
+              <StaticImage src="../images/Icons3-min.svg" alt="icon3" />
             </div>
             <h2 className="font-bold py-3">
               GESTIONNAIRE D'INVENTAIRE D'OCCASIONS
@@ -66,12 +51,7 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <div data-aos="fade-left" data-aos-delay="150">
-              <StaticImage
-                src="../images/Icons4-min.svg"
-                alt="icon4"
-                placeholder="none"
-                backgroundColor="transparent"
-              />
+              <StaticImage src="../images/Icons4-min.svg" alt="icon4" />
             </div>
             <h2 className="font-bold py-3">
               MODULE DE PUBLICATION AUTOMATISEE
@@ -84,12 +64,7 @@ const Produits = () => {
 
           <li className="border-gray-700 border-solid border-l-2 px-6 py-4">
             <div data-aos="fade-left" data-aos-delay="200">
-              <StaticImage
-                src="../images/Icons5-min.svg"
-                alt="icon5"
-                placeholder="none"
-                backgroundColor="transparent"
-              />
+              <StaticImage src="../images/Icons5-min.svg" alt="icon5" />
             </div>
             <h2 className="font-bold py-3">SITES WEB D'OCCASIONS</h2>
             <p className="text-sm">

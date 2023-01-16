@@ -20,12 +20,7 @@ const Automatisation = () => {
             <div data-aos="fade-in" data-aos-duration="1000">
               <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full  bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>{" "}
             </div>
-            <StaticImage
-              src="../images/bureau.webp"
-              alt="travail"
-              placeholder="none"
-              backgroundColor="transparent"
-            />
+            <StaticImage src="../images/bureau.webp" alt="travail" />
           </div>
 
           <div className="flex flex-col text-neutral-700 gap-4 pl-10 py-6">
