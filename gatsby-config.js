@@ -15,7 +15,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    "gatsby-plugin-webpack-bundle-analyzer",
     `gatsby-plugin-image`,
     "gatsby-plugin-postcss",
     {
