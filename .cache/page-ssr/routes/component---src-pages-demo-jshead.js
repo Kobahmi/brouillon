@@ -651,7 +651,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Contact = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6"
+    className: "bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {

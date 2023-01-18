@@ -1,5 +1,7 @@
 import * as React from "react";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 import Divider from "../components/Divider";
 import Dividerleft from "../components/Dividerleft";
 import Dividerleftthree from "../components/Dividerleftthree";
@@ -22,6 +24,11 @@ import Automatisation from "../components/Automatisation";
 import Header from "../components/Header";
 
 const IndexPage = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Layout>
       <Header backgroundColor="bg-lime-300" />

@@ -1438,7 +1438,7 @@ const Automatisation = () => {
   }, "NOS SITES WEB G\xC9N\xC8RENT DES FEEDS POUR LE GOOGLE MERCHANT CENTER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "max-w-lg"
   }, "Nos services de marketing seront offerts en partenariat avec l'agence Leadstream."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-disc  font-bold ml-6"
+    className: "list-disc font-bold ml-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Campagne Facebook et Google Ads"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "R\xE9f\xE9rencement et r\xE9daction de contenus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Conseils et strat\xE9gies de marketing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
     className: "flex group btn items-center mr-auto mt-4 text-neutral-700 border-[1px] border-neutral-700 rounded-full transition duration-300 ease-in-out hover:bg-neutral-700 hover:text-white"
@@ -1478,7 +1478,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Contact = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: "overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6"
+    className: "bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "max-w-[1200px] mx-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -2138,9 +2138,8 @@ const Integration = () => {
     "data-aos": "fade-in",
     "data-aos-duration": "1500"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"
+    className: "absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full bg-gradient-to-t from-[#30F9FC] to-lime-300"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-    className: "rounded-tr-[10rem] rounded-bl-[10rem]",
     src: "../images/auto.webp",
     alt: "travail",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2862542644.json */ "./.cache/caches/gatsby-plugin-image/2862542644.json")
@@ -2208,10 +2207,8 @@ const Integre = () => {
     alt: "logo",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4049634999.json */ "./.cache/caches/gatsby-plugin-image/4049634999.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center"
-  }, "Vous ne trouvez pas votre CRM? \xC9crivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 mx-auto text-center"
+  }, "Vous ne trouvez pas votre CRM? \xC9crivez-nous et nous vous contacterons!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/",
     className: "flex group mt-6 btn items-center text-white border-[1px] border-white rounded-full transition duration-300 ease-in-out hover:bg-white hover:text-black"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2402,9 +2399,9 @@ const Syndication = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col text-neutral-700 items-center max-w-7xl mx-auto"
+    className: "flex flex-col text-neutral-700 items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-10 items-center p-10 lg:flex-row"
+    className: "flex flex-col gap-10 items-center px-10 lg:flex-row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     "data-aos": "fade-up",
     "data-aos-duration": "1000"
@@ -2413,7 +2410,7 @@ const Syndication = () => {
     alt: "travail",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/904492745.json */ "./.cache/caches/gatsby-plugin-image/904492745.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex flex-col gap-4 py-6 sm:pl-10"
+    className: "flex flex-col gap-4 pb-6 lg:pt-6 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "flex flex-col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2421,7 +2418,7 @@ const Syndication = () => {
   }, "INT\xC9GRATION"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl"
   }, "SYNDICATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
-    className: "list-disc ml-6"
+    className: "flex flex-col  list-disc ml-6 md:gap-10 lg:py-4 lg:pl-10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "font-bold"
   }, "Facebook"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "(Carroussel et Marketplace)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
