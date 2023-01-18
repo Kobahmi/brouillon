@@ -34,7 +34,7 @@ const Automatisation = () => {
               l'agence Leadstream.
             </p>
 
-            <ul className="list-disc  font-bold ml-6">
+            <ul className="list-disc font-bold ml-6">
               <li>Campagne Facebook et Google Ads</li>
               <li>Référencement et rédaction de contenus</li>
               <li>Conseils et stratégies de marketing</li>

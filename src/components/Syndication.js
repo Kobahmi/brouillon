@@ -5,13 +5,13 @@ import { StaticImage } from "gatsby-plugin-image";
 const Syndication = () => {
   return (
     <section className="overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300">
-      <div className="flex flex-col text-neutral-700 items-center max-w-7xl mx-auto">
-        <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
+      <div className="flex flex-col text-neutral-700 items-center">
+        <div className="flex flex-col gap-10 items-center px-10 lg:flex-row">
           <div data-aos="fade-up" data-aos-duration="1000">
             <StaticImage src="../images/Mockup.webp" alt="travail" />
           </div>
 
-          <div className="flex flex-col gap-4 py-6 sm:pl-10">
+          <div className="flex flex-col gap-4 pb-6 lg:pt-6 ">
             <h2 className="flex flex-col">
               <span className="text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 INTÉGRATION
@@ -21,7 +21,7 @@ const Syndication = () => {
               </span>
             </h2>
 
-            <ul className="list-disc ml-6">
+            <ul className="flex flex-col  list-disc ml-6 md:gap-10 lg:py-4 lg:pl-10">
               <li>
                 <span className="font-bold">Facebook</span> <br />{" "}
                 <span>(Carroussel et Marketplace)</span>

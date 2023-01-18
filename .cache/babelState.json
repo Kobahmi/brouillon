@@ -7,11 +7,6 @@
           "options": {}
         },
         {
-          "name": "@prefresh/babel-plugin",
-          "stage": "develop",
-          "options": {}
-        },
-        {
           "name": "/home/nobel/work/brouillon/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
           "options": {
             "cacheDir": "/home/nobel/work/brouillon/.cache/caches/gatsby-plugin-image"

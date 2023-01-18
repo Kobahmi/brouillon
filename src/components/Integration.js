@@ -17,14 +17,10 @@ const Integration = () => {
         <div className="flex flex-col gap-10 items-center p-10 lg:flex-row">
           <div className="relative">
             <div data-aos="fade-in" data-aos-duration="1500">
-              <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full rounded-tr-[10rem] rounded-bl-[10rem] bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
+              <div className="absolute -z-10 translate-y-[1rem] translate-x-[-1rem] h-full w-full bg-gradient-to-t from-[#30F9FC] to-lime-300"></div>
             </div>
 
-            <StaticImage
-              className="rounded-tr-[10rem] rounded-bl-[10rem]"
-              src="../images/auto.webp"
-              alt="travail"
-            />
+            <StaticImage src="../images/auto.webp" alt="travail" />
           </div>
 
           <div className="flex flex-col gap-4 py-6 md:pl-10 md:border-gray-700 md:border-solid md:border-l-2">

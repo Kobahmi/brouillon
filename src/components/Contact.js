@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Contact = () => {
   return (
-    <section className="overflow-y-hidden bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6">
+    <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300 px-6 pb-6">
       <div className="max-w-[1200px] mx-auto">
         <Link to="/">
           <img

@@ -24,11 +24,9 @@ const Integre = () => {
         <div className="py-6">
           <StaticImage src="../images/Logo2.webp" alt="logo" />
         </div>
-        <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 max-w-xl mx-auto text-center">
+        <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#30F9FC] to-lime-300 mx-auto text-center">
           Vous ne trouvez pas votre CRM? Écrivez-nous et nous vous contacterons!
         </p>
-
-        <div className="rounded-xl bg-gray-700 h-[1px] max-w-[30rem] mx-auto w-full "></div>
 
         <Link
           to="/"

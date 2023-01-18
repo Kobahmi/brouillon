@@ -10188,25 +10188,25 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "react":
-/*!***************************************************************************************!*\
-  !*** external "/home/nobel/work/brouillon/node_modules/preact/compat/dist/compat.js" ***!
-  \***************************************************************************************/
+/***/ "react-dom/server":
+/*!******************************************************************************!*\
+  !*** external "/home/nobel/work/brouillon/node_modules/react-dom/server.js" ***!
+  \******************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/home/nobel/work/brouillon/node_modules/preact/compat/dist/compat.js");
+module.exports = require("/home/nobel/work/brouillon/node_modules/react-dom/server.js");
 
 /***/ }),
 
-/***/ "react-dom/server":
-/*!**********************************************************************************!*\
-  !*** external "/home/nobel/work/brouillon/node_modules/preact/compat/server.js" ***!
-  \**********************************************************************************/
+/***/ "react":
+/*!*************************************************************************!*\
+  !*** external "/home/nobel/work/brouillon/node_modules/react/index.js" ***!
+  \*************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/home/nobel/work/brouillon/node_modules/preact/compat/server.js");
+module.exports = require("/home/nobel/work/brouillon/node_modules/react/index.js");
 
 /***/ }),
 
