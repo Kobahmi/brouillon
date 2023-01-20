@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="bg-gradient-to-t from-[#30F9FC] to-lime-300">
       <div className="flex flex-col h-full max-w-[1280px] mx-auto px-6 gap-2 pt-8 lg:pt-16 lg:flex-row lg:items-center">
-        <div className="flex flex-col justify-center items-center mb-[1rem] text-center lg:items-start lg:text-start">
+        <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-start">
           <h1 className="flex flex-col z-20 text-neutral-700 text-2xl font-bold  md:text-5xl lg:text-6xl">
             <span>DES SITES WEB</span>
             <span className="whitespace-nowrap">DE CONCESSIONAIRES</span>
@@ -22,7 +22,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="relative lg:ml-[-18rem]">
+        <div className="relative mt-[1rem] lg:ml-[-18rem]">
           <div data-aos="fade-up" data-aos-duration="2000" className="absolute">
             <StaticImage
               src="../images/stars.webp"
