@@ -31,7 +31,7 @@ const Hero = () => {
             />
           </div>
           <StaticImage
-            src="../images/Images-min.webp"
+            src="../images/Images-min.svg"
             alt="stock"
             loading="eager"
           />
